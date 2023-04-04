@@ -61,13 +61,13 @@
             <div class="main-nav__wrapper main-nav__wrapper--active">
                 <ul class="main-nav__list site-list">
                     <li class="site-list__item ">
-                        <a class="item__link" href="index.html">Главная</a>
+                        <a class="item__link" href="source/index.html">Главная</a>
                     </li>
                     <li class="site-list__item ">
-                        <a class="item__link" href="catalog.html">Каталог продукции</a>
+                        <a class="item__link" href="source/catalog.html">Каталог продукции</a>
                     </li>
                     <li class="site-list__item ">
-                        <a class="item__link item__link--current-link" href="form.html">Подбор программы</a>
+                        <a class="item__link item__link--current-link" href="source/form.html">Подбор программы</a>
                     </li>
                 </ul>
             </div>
@@ -76,7 +76,7 @@
     <main class="form">
         <h1 class="visually-hidden">Страница подбора программы питания для котов с формой анкеты.</h1>
         <section class="container container--form">
-            <h2 class="title-form">Подбор программы</h1>
+            <h2 class="title-form">Подбор программы</h2>
                 <p class="title-text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
                 <form class="question" action="https://echo.htmlacademy.ru" method="post">
                     <div class="question__blocks">
@@ -128,6 +128,35 @@
                                 <span class="visually-hidden">Введите Ваш комментарий.</span>
                                 <textarea class="form-field__control form-field__control--comment" rows="7" name="text" cols="33" placeholder="Расскажите обо всех повадках кота"></textarea>
                             </label>
+                        </div>
+                        <fieldset class="question__field question__field--add">
+                            <h3 class="question__title-field">Дополнительно</h3>
+                            <div class="question__data-field">
+                                <ul class="question__list question__list--field">
+                                    <li class="question__item question__item--item">
+                                        <input class="question__checkbox question__checkbox--before" type="checkbox" name="checkbox" id="checkbox-1" checked>
+                                        <label class="form-field form-field--check" for="checkbox-1">Сахарозаменитель</label>
+                                    </li>
+                                    <li class="question__item question__item--item">
+                                        <input class="question__checkbox question__checkbox--before" type="checkbox" name="checkbox" id="checkbox-2" checked>
+                                        <label class="form-field form-field--check" for="checkbox-2">Питьевая вода</label>
+                                    </li>
+                                    <li class="question__item question__item--item">
+                                        <input class="question__checkbox question__checkbox--before" type="checkbox" name="checkbox" id="checkbox-3" checked>
+                                        <label class="form-field form-field--check" for="checkbox-3">Молоко</label>
+                                    </li>
+                                    <li class="question__item question__item--item">
+                                        <input class="question__checkbox question__checkbox--before" type="checkbox" name="checkbox" id="checkbox-4" checked>
+                                        <label class="form-field form-field--check" for="checkbox-4">Витамины</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </fieldset>
+                        <div class="question__data-field question__data-field--btn">
+                            <button class="question__button btn" type="submit">Oтправить заявку</button>
+                            <div class="question__field">
+                                <p class="question__text">* — Обязательные поля</p>
+                            </div>
                         </div>
                     </div>
                 </form>
