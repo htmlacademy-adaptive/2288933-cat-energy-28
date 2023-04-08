@@ -1,2 +1,8 @@
-// Начните писать стили здесь
-@use './base/fonts.scss'
+@import './base/fonts.scss';
+
+@import './base/base.scss';
+
+@import './global/mixins.scss';
+
+@import './global/variables.scss';
+
