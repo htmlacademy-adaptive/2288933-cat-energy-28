@@ -1,0 +1,32 @@
+.cooperation {
+  padding: 0 20px;
+  background-color: $white;
+}
+
+.cooperation__wrapper {
+  @include list-reset;
+}
+
+.cooperation__inner {
+  @include list-reset;
+}
+
+.cooperation__container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 26px 0;
+}
+
+.cooperation__title {
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+  max-width: 139px;
+}
+
+.cooperation__street {
+  line-height: 20px;
+  text-align: right;
+  max-width: 139px;
+}

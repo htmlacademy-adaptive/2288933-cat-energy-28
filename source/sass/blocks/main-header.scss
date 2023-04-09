@@ -1,20 +1,18 @@
 .main-header {
-  margin: 0;
-  padding: 0;
-  text-align: center;
+  position: relative;
+  max-width: 320px;
   padding: 10px 20px 17px;
+  background-color: $white;
 }
+
+
 
 .main-header__header {
   display: flex;
   justify-content: space-between;
-  padding-top: 10px;
-  padding-bottom: 11px;
+  align-items: center;
 }
 
-.main-header__logo {
-  margin: 0;
-  padding: 0;
-  width: 33px;
-  height: 38px;
+.main-nav__wrapper {
+ display: none;
 }

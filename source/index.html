@@ -58,19 +58,19 @@
           </svg>
         </a>
         <nav class="main-nav">
-          <button class="main-nav__toggle btn main-nav__toggle--close" type="button"><span
+          <button class="main-nav__toggle main-nav__toggle--open" type="button"><span
               class="visually-hidden">Открыть
               меню</span></button>
-          <div class="main-nav__wrapper main-nav__wrapper--active">
+          <div class="main-nav__wrapper main-nav--close">
             <ul class="main-nav__list site-list">
               <li class="site-list__item ">
-                <a class="item__link item__link--current-link" href="../index.html">Главная</a>
+                <a class="site-list__link item__link--current-link" href="../index.html">Главная</a>
               </li>
               <li class="site-list__item ">
-                <a class="item__link" href="../catalog.html">Каталог продукции</a>
+                <a class="site-list__link" href="../catalog.html">Каталог продукции</a>
               </li>
               <li class="site-list__item ">
-                <a class="item__link" href="../form.html">Подбор программы</a>
+                <a class="site-list__link" href="../form.html">Подбор программы</a>
               </li>
             </ul>
           </div>
@@ -83,13 +83,14 @@
     <section class="promo container">
       <div class="promo__wrapper">
         <h2 class="visually-hidden">Приветственный баннер с котом.</h2>
-        <img class="promo__image-cat" src="img/cat-photo.jpg" width="320" height="302" alt="Изображение серого кота.">
-        <p class="promo__slogan">Функциональное
-          питание для котов</p>
-        <p class="promo__slogan-text">Занялся собой? Займись котом!</p>
+        <div class="promo__image-cat">
+          <p class="promo__slogan promo__slogan--font">Функциональное
+            питание для котов</p>
+          <p class="promo__slogan-text promo__slogan-text--font">Занялся собой? Займись котом!</p>
+        </div>
         <img class="promo__image-soup" src="img/cat-soup.png" width="280" height="270"
           alt="Изображение супового набора для котов.">
-        <button type="button" class="program__button btn button-color">Подобрать программу</button>
+        <button type="button" class="promo__button btn button-color">Подобрать программу</button>
       </div>
     </section>
     <section class="program">
@@ -134,38 +135,35 @@
         Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов
         в день. </p>
       <div class="example__flexbox">
-        <div class="flexbox__spanbox">
-          <span class="spanbox__number spanbox-number">5 КГ</span>
-          <span class="spanbox__text spanbox-text">снижение веса</span>
+        <div class="example__spanbox-flex">
+          <span class="example__number-span example-number">5 КГ</span><br>
+          <span class="example__text-span text-span">снижение веса</span>
         </div>
-        <div class="flexbox__spanbox">
-          <span class="spanbox__number spanbox-number">60 ДНЕЙ</span>
-          <span class="spanbox__text spanbox-text">затрачено времени</span>
+        <div class="example__spanbox-flex">
+          <span class="example__number-span example-number">60 ДНЕЙ</span><br>
+          <span class="example__text-span text-span">затрачено времени</span>
         </div>
-        <div class="flexbox__spanbox">
-          <span class="spanbox__text spanbox-text">Затраты на питание: 15 000 РУБ. </span>
+        <div class="example__spanbox-flex">
+          <span class="example__price-span price-span">Затраты на питание: 15 000 РУБ. </span>
         </div>
       </div>
       <div class="slider">
-        <div>
           <div class="slider__demo">
             <div class="demo__cat demo__cat--before"></div>
             <div class="demo__cat demo__cat--after"></div>
             <input class="demo__cat cat-range" type="range" id="volume" name="volume" min="0" max="100">
             <label for="volume"></label>
           </div>
-        </div>
       </div>
     </section>
     <section class="cooperation cooperation--index">
       <div class="cooperation__wrapper">
-        <div class="container">
+        <div class="cooperation__container">
           <div class="cooperation__inner">
             <h2 class="cooperation__title">Приглашаем к сотрудничеству дилеров!</h2>
           </div>
           <div class="cooperation__address">
-            <p class="cooperation__street">ул. Большая Конюшенная, д. 19/8</p>
-            <span class="cooperation_city">Санкт-Петербург</span>
+            <p class="cooperation__street">ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург</p>
           </div>
         </div>
         <div class="cooperation__map">
@@ -177,7 +175,7 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="container">
+    <div class="footer__container">
       <div class="footer__wrapper">
         <div class="footer__block footer__block--logo">
           <a class="footer_logo-link">
@@ -250,7 +248,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer__block footer__block--copyright">
+        <div class="footer__block-html footer__block-html--copyright">
           <a class="footer__html-link">
             <h3 class="footer__html-text">HTML Academy</h3>
             <svg width="27" height="34" viewBox="0 0 27 34" aria-hidden="true" focusable="false" fill="none"
