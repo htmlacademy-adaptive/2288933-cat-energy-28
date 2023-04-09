@@ -1,8 +1,10 @@
+// Добавляем базовые свойства
 @import './base/fonts.scss';
-
 @import './base/base.scss';
 
+// Добавляем миксины и переменные
 @import './global/mixins.scss';
-
 @import './global/variables.scss';
 
+// Добавляем блоки и компоненты
+@import './blocks/main-header.scss';
