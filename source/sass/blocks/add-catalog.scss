@@ -86,7 +86,9 @@
   padding: 59px 61px 43px 58px;
 }
 
+
 .add-catalog__cat-image-xl-1 {
+  position: relative;
   margin: 0;
   padding: 0;
   margin-bottom: 48px;
@@ -106,3 +108,13 @@
   margin: 0;
   margin-bottom: 35px;
 }
+
+.add-catalog__cat-image-xl-1::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  background: $basic-green;}
+

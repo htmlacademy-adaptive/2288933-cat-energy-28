@@ -1,0 +1,34 @@
+.question__title-field {
+  margin: 0;
+  padding: 0;
+  color: $black;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.question__field {
+  @include list-reset;
+}
+
+.question__blocks {@include list-reset;}
+.question__data-field {
+  @include list-reset;
+  margin-bottom: 24px;
+
+}
+
+.question__list {
+  @include list-reset;
+}
+
+.question__form-text {
+  margin: 0;
+  padding: 0;
+  color: $black;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  margin-right: 13px;
+}

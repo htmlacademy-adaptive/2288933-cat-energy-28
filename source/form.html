@@ -80,35 +80,35 @@
   </header>
   <main class="form">
     <h1 class="visually-hidden">Страница подбора программы питания для котов с формой анкеты.</h1>
-    <section class="container container--form">
-      <h2 class="title-form">Подбор программы</h2>
-      <p class="title-text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <section class="form">
+      <h2 class="form__title">Подбор программы</h2>
+      <p class="form__text">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
       <form class="question" action="https://echo.htmlacademy.ru" method="post">
         <div class="question__blocks">
           <div class="question__data-field">
             <fieldset class="question__field">
-              <label class="form-field">
-                <span class="form-field__text">Имя</span>
-                <input class="form-field__control" type="text" placeholder="Барсик" required>
+              <label class="question__form-field">
+                <span class="question__form-text">Имя</span>
+                <input class="question__form-control" type="text" placeholder="Барсик" required>
               </label>
-              <label class="form-field">
-                <span class="form-field__text">Вес (кг):*</span>
-                <input class="form-field__control" type="text" placeholder="7" required>
+              <label class="question__form-field">
+                <span class="question__form-text">Вес (кг):*</span>
+                <input class="question__form-control" type="text" placeholder="7" required>
               </label>
-              <label class="form-field">
-                <span class="form-field__text">Возраст (лет):</span>
-                <input class="form-field__control" type="text" placeholder="7">
+              <label class="question__form-field">
+                <span class="question__form-text">Возраст (лет):</span>
+                <input class="question__form-control" type="text" placeholder="7">
               </label>
             </fieldset>
           </div>
           <div class="question__data-field">
             <fieldset class="question__field question__field--line-type">
-              <input class="radio" type="radio" id="radio-1" checked name="radio-1">
-              <label class="type-radio type-radio--form" for="radio-1">Похудение</label>
-              <input class="radio" type="radio" id="radio-2" name="radio-2">
-              <label class="type-radio type-radio--form" for="radio-2">Набор массы</label>
-              <input class="radio" type="radio" id="radio-3" name="radio-3">
-              <label class="type-radio type-radio--form" for="radio-3">Не знаю (нужен ваш
+              <input class="question__radio" type="radio" id="radio-1" checked name="radio-1">
+              <label class="question__type-radio type-radio--form" for="radio-1">Похудение</label>
+              <input class="question__radio" type="radio" id="radio-2" name="radio-2">
+              <label class="question__type-radio type-radio--form" for="radio-2">Набор массы</label>
+              <input class="question__radio" type="radio" id="radio-3" name="radio-3">
+              <label class="question__type-radio type-radio--form" for="radio-3">Не знаю (нужен ваш
                 совет)</label>
             </fieldset>
           </div>
@@ -142,22 +142,22 @@
                 <li class="question__item question__item--item">
                   <input class="question__checkbox question__checkbox--before" type="checkbox" name="checkbox"
                     id="checkbox-1" checked>
-                  <label class="form-field form-field--check" for="checkbox-1">Сахарозаменитель</label>
+                  <label class="question__label question__label--check" for="checkbox-1">Сахарозаменитель</label>
                 </li>
                 <li class="question__item question__item--item">
                   <input class="question__checkbox question__checkbox--before" type="checkbox" name="checkbox"
                     id="checkbox-2" checked>
-                  <label class="form-field form-field--check" for="checkbox-2">Питьевая вода</label>
+                  <label class="question__label question__label--check" for="checkbox-2">Питьевая вода</label>
                 </li>
                 <li class="question__item question__item--item">
                   <input class="question__checkbox question__checkbox--before" type="checkbox" name="checkbox"
                     id="checkbox-3" checked>
-                  <label class="form-field form-field--check" for="checkbox-3">Молоко</label>
+                  <label class="question__label question__label--check" for="checkbox-3">Молоко</label>
                 </li>
                 <li class="question__item question__item--item">
                   <input class="question__checkbox question__checkbox--before" type="checkbox" name="checkbox"
                     id="checkbox-4" checked>
-                  <label class="form-field form-field--check" for="checkbox-4">Витамины</label>
+                  <label class="question__label question__label--check" for="checkbox-4">Витамины</label>
                 </li>
               </ul>
             </div>
