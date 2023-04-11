@@ -78,9 +78,11 @@
   padding: 0;
   min-width: 280px;
   height: auto;
-  background-image: url('../img/cat-inbox.png');
-  background-position: center;
-  background-repeat: no-repeat;background-size: cover;
+  background: linear-gradient(
+    rgb(104 183 56 / 0.85),
+    rgb(104 183 56 / 0.85)
+  ) , url('../img/cat-inbox.png') no-repeat;
+  background-size: cover;
   box-sizing: border-box;
   text-align: center;
   padding: 59px 61px 43px 58px;

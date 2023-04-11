@@ -80,22 +80,22 @@
   </header>
   <main class="form">
     <h1 class="visually-hidden">Страница подбора программы питания для котов с формой анкеты.</h1>
-    <section class="form">
+    <section class="form__program">
       <h2 class="form__title">Подбор программы</h2>
       <p class="form__text">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
       <form class="question" action="https://echo.htmlacademy.ru" method="post">
         <div class="question__blocks">
           <div class="question__data-field">
             <fieldset class="question__field">
-              <label class="question__form-field">
+              <label class="question__labels">
                 <span class="question__form-text">Имя</span>
                 <input class="question__form-control" type="text" placeholder="Барсик" required>
               </label>
-              <label class="question__form-field">
+              <label class="question__labels">
                 <span class="question__form-text">Вес (кг):*</span>
                 <input class="question__form-control" type="text" placeholder="7" required>
               </label>
-              <label class="question__form-field">
+              <label class="question__labels">
                 <span class="question__form-text">Возраст (лет):</span>
                 <input class="question__form-control" type="text" placeholder="7">
               </label>
@@ -103,12 +103,12 @@
           </div>
           <div class="question__data-field">
             <fieldset class="question__field question__field--line-type">
-              <input class="question__radio" type="radio" id="radio-1" checked name="radio-1">
-              <label class="question__type-radio type-radio--form" for="radio-1">Похудение</label>
+              <input class="question__radio " type="radio" id="radio-1" checked name="radio-1">
+              <label class="question__form-text question__form-text--black-color" for="radio-1">Похудение</label>
               <input class="question__radio" type="radio" id="radio-2" name="radio-2">
-              <label class="question__type-radio type-radio--form" for="radio-2">Набор массы</label>
+              <label class="question__form-text question__form-text--black-color" for="radio-2">Набор массы</label>
               <input class="question__radio" type="radio" id="radio-3" name="radio-3">
-              <label class="question__type-radio type-radio--form" for="radio-3">Не знаю (нужен ваш
+              <label class="question__form-text question__form-text--black-color" for="radio-3">Не знаю (нужен ваш
                 совет)</label>
             </fieldset>
           </div>
@@ -116,13 +116,13 @@
             <h3 class="question__title-field">Контактные данные (владельца кота)</h3>
             <fieldset class="question__field">
               <label class="form-field">
-                <span class="form-field__text">E-mail:*</span>
-                <input class="form-field__control form-field__control--icon" type="email" name="email" required
+                <span class="question__form-text">E-mail:*</span>
+                <input class="question__form-control question__form-control--icon" type="email" name="email" required
                   placeholder="kuklachev@gmail.com">
               </label>
               <label class="form-field">
-                <span class="form-field__text">Телефон:*</span>
-                <input class="form-field__control form-field__control--icon" type="tel" name="tel" required
+                <span class="question__form-text">Телефон:*</span>
+                <input class="question__form-control question__form-control--icon" type="tel" name="tel" required
                   placeholder="8 (960) 900-60-90">
               </label>
             </fieldset>

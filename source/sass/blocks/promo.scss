@@ -8,9 +8,11 @@
 .promo__image-cat {
   min-width: 320px;
   min-height: 302px;
-  background-image: url('../img/cat-photo.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(
+    rgb(104 183 56 / 0.85),
+    rgb(104 183 56 / 0.85)
+  ) , url('../img/cat-photo.jpg') no-repeat;
+  background-size: contain;
   margin-bottom: 135px;
 }
 

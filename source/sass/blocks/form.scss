@@ -1,6 +1,13 @@
 .form {
   margin: 0;
   padding: 0;
+  min-width: 320px;
+
+}
+
+.form__program {
+  margin: 0;
+  padding: 0;
   min-width: 280px;
   margin: 0 20px;
 }
@@ -25,13 +32,4 @@
   font-weight: 400;
   min-width: 226px;
   margin-bottom: 39px;
-}
-
-.form-field__text {
-  @include list-reset;
-  font-family: "Oswald";
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  margin-right: 13px;
 }
