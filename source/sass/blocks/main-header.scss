@@ -1,14 +1,14 @@
 .main-header {
   position: relative;
-  max-width: 320px;
+  max-width: 280px;
   padding: 10px 20px 17px;
-  background-color: $white;
+  background-color: #FFFFFF;
 }
 
 
 
 .main-header__header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  max-width: 280px;
 }
