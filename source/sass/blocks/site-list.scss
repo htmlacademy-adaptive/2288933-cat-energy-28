@@ -1,0 +1,14 @@
+.site-list__link {
+  text-decoration: none;
+  color: #000;
+  background-color: $white;
+}
+
+.site-list__item {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 46px;
+  &:last-child {
+    margin-bottom: 24px;
+  }
+}

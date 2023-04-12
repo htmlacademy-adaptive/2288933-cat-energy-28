@@ -1,0 +1,54 @@
+.goods-more {
+  margin: 0;
+  padding: 0;
+  background-color: $white;
+  min-width: 280px;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.goods-more__icon-plus {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 23px;
+}
+
+.goods-more__subtitle {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 8px;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.goods-more__subtext {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 21px;
+}
+
+.goods-more__sublink {
+  margin: 0;
+  padding: 0;
+  min-width: 280px;
+  padding: 10px 94px;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+.goods-more__sublink--font-color {
+  background-color: $basic-grey;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}

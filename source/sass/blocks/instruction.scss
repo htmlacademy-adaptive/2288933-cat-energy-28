@@ -1,0 +1,26 @@
+.instruction {
+  padding: 0 20px;
+  background-color: $white;
+}
+
+.instruction__title {
+  @include list-reset;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: left;
+}
+
+.instruction__list {
+  @include list-reset;
+}
+
+.instruction__item {
+  @include list-reset;
+  margin-bottom: 24px;
+  max-width: 280px;
+  &:last-child {
+    margin-bottom: 49px;
+  }
+}

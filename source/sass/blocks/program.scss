@@ -1,0 +1,48 @@
+.program {
+  min-width: 280px;
+  background-color: $white;
+}
+
+.program__list {
+  @include list-reset;
+  margin: 0 20px;
+}
+
+.program__item {
+  background-color: $basic-grey;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.program-item__image {
+  margin: 0;
+  padding: 0;
+}
+
+.program-item__title {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: $black;
+  text-align: center;
+}
+
+.program-item__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  max-width: 227px;
+  text-align: left;
+}
+
+.program-item__link {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $black;
+  text-align: left;
+}

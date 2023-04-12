@@ -1,0 +1,22 @@
+.catalog {
+  min-width: 280px;
+  margin: 0;
+  padding: 0;
+  margin: 0px 20px;
+  background-color: $white;
+}
+
+.catalog__wrapper {
+  min-width: 280px;
+}
+
+.catalog__list {
+  @include list-reset;
+}
+
+.catalog__card-item {
+  margin-bottom: 19px;
+  &:last-child {
+    margin-bottom: 36px;
+  }
+}

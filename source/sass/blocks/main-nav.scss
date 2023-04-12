@@ -1,0 +1,40 @@
+.main-nav {
+  margin: 0;
+  padding: 0;
+  background-color: $white;
+}
+
+.main-nav__toggle {
+  content: "";
+  display: inline-block;
+  background-image: url("/source/img/menu_mobile.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 16px;
+}
+
+.main-nav__toggle--open .site-list {
+  display: block;
+}
+
+.main-nav__wrapper {
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+.main-nav__list {
+  @include list-reset;
+  font-family: "Oswald";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.main-nav__list--opened {
+  display: block;
+}
+
+.main-nav__list--closed {
+  display: none;
+}

@@ -1,0 +1,10 @@
+.social-list__item {
+  max-width: 132pxl;
+  justify-items: center;
+  &:nth-child(1) {
+    margin-right: 24px;
+  }
+  &:nth-child(2) {
+    margin-right: 26px;
+  }
+}

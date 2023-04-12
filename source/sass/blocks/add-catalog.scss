@@ -1,0 +1,122 @@
+.add-catalog {
+  margin: 0;
+  padding: 0;
+  background-color: $white;
+  min-width: 320px;
+}
+
+.add-catalog__container {
+  padding: 0;
+  margin: 0;
+  min-width: 280px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.add-catalog__title {
+  padding: 0;
+  margin: 0;
+  padding: 25px 0 36px;
+}
+
+.add-catalog__title-text {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: $black;
+}
+
+.add-catalog__list {
+  @include list-reset;
+}
+
+.add-catalog__item {
+  @include list-reset;
+  margin-top: 13px;
+  margin-bottom: 19px;
+  min-width: 280px;
+}
+
+.add-catalog__subtitle {
+  color: $black;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+}
+
+.add-catalog__span-flexbox {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.add-catalog__subtext {
+  line-height: 14px;
+}
+
+.add-catalog__link {
+  margin: 0;
+  padding: 0;
+  width: 280px;
+  padding: 10px 109px;
+  margin-top: 15px;
+}
+
+.add-catalog__active {
+  margin: 0;
+  padding: 0;
+  min-width: 280px;
+  height: auto;
+  background: linear-gradient(
+    rgb(104 183 56 / 0.85),
+    rgb(104 183 56 / 0.85)
+  ) , url('../img/cat-inbox.png') no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 59px 61px 43px 58px;
+}
+
+
+.add-catalog__cat-image-xl-1 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 48px;
+}
+
+.add-catalog__order-text {
+  margin: 0;
+  padding: 0;
+  color: $white;
+  font-size: 16px;
+  line-height: 20px;
+  min-width: 161px;
+}
+
+.add-catalog__image-cat {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.add-catalog__cat-image-xl-1::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  background: $basic-green;}
+

@@ -1,0 +1,46 @@
+.cooperation {
+  background-color: $white;
+}
+
+.cooperation__wrapper {
+  @include list-reset;
+}
+
+.cooperation__inner {
+  @include list-reset;
+  margin-left: 20px;
+}
+
+.cooperation__container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 26px 0;
+  background-color: $basic-grey;
+  min-width: 320px;
+}
+
+.cooperation__title {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+  max-width: 139px;
+  color: $black;
+  text-transform: uppercase;
+
+}
+
+.cooperation__street {
+  line-height: 20px;
+  text-align: left;
+  max-width: 139px;
+}
+
+.cooperation__map {
+  width: 280px;
+}
+
+.cooperation__address {
+  margin-right: 20px;
+}
