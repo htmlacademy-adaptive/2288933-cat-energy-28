@@ -16,7 +16,7 @@
     <div class="main-header__container">
       <div class="main-header__header">
         <a class="main-header__logo logo">
-          <img src="img/logo-cat.svg" width="34" height="38" alt="Логотип Кэт Энерджи.">
+          <img class="main-header__logo-img" src="img/logo-cat.svg" width="34" height="38" alt="Логотип Кэт Энерджи.">
         </a>
         <a class="main-header__logo logo-text">
           <h3 class="visually-hidden">Cat Energy</h3>
@@ -58,9 +58,12 @@
           </svg>
         </a>
         <nav class="main-nav">
-          <button class="main-nav__toggle main-nav__toggle--open" type="button"><span
-              class="visually-hidden">Открыть
-              меню</span></button>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+            <span class="main-nav__menu-btn"></span>
+            <span class="main-nav__menu-btn"></span>
+            <span class="main-nav__menu-btn"></span>
+          </button>
           <div class="main-nav__wrapper main-nav--close">
             <ul class="main-nav__list site-list main-nav__list--opened main-nav__list--closed">
               <li class="site-list__item ">
@@ -148,12 +151,12 @@
         </div>
       </div>
       <div class="slider">
-          <div class="slider__demo">
-            <div class="demo__cat demo__cat--before"></div>
-            <div class="demo__cat demo__cat--after"></div>
-            <input class="demo__cat cat-range" type="range" id="volume" name="volume" min="0" max="100">
-            <label for="volume"></label>
-          </div>
+        <div class="slider__demo">
+          <div class="demo__cat demo__cat--before"></div>
+          <div class="demo__cat demo__cat--after"></div>
+          <input class="demo__cat cat-range" type="range" id="volume" name="volume" min="0" max="100">
+          <label for="volume"></label>
+        </div>
       </div>
     </section>
     <section class="cooperation cooperation--index">

@@ -1,40 +1,55 @@
 .main-nav {
-  margin: 0;
-  padding: 0;
   background-color: $white;
+  margin-left: 62px;
 }
 
 .main-nav__toggle {
-  content: "";
-  display: inline-block;
-  background-image: url("/source/img/menu_mobile.svg");
-  background-repeat: no-repeat;
-  width: 24px;
-  height: 16px;
-}
+  padding: 0;
+  margin: 0;
+  border: none;
 
-.main-nav__toggle--open .site-list {
-  display: block;
 }
 
 .main-nav__wrapper {
   margin: 0;
   padding: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  /* min-width: 320px; */
+  top: 68px;
   z-index: 1;
+  background-color: #FFFFFF;
 }
 
 .main-nav__list {
   @include list-reset;
-  font-family: "Oswald";
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  width: 320px;
 }
 
-.main-nav__list--opened {
-  display: block;
+.main-nav__toggle {
+  padding: 0;
+  margin: 0;
+  background-color: #FFFFFF;
+  position: relative;
 }
 
-.main-nav__list--closed {
-  display: none;
+.main-nav__menu-btn {
+  padding: 0;
+  margin: 0;
+  border: 1.5px solid #000000;
+  margin-bottom: 8px;
+  width: 24px;
+  position: absolute;
+}
+
+.main-header__logo-img {
+  padding: 0;
+  margin: 0;
+  margin-right: 56px;
+  height: auto;
 }
