@@ -1,19 +1,21 @@
 .site-list__item  {
-  padding: 0;
-  margin: 0;
-  padding-top: 22px;
-  padding-bottom: 24px;
-  min-width: 320px;
+  @include list-reset;
+  margin-top: 22px;
+  margin-bottom: 24px;
+  @media (min-width: $tablet-width) {
+
+  }
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .site-list__link {
-  padding: 0;
-  margin: 0;
+  @include list-reset;
   text-decoration: none;
   color: #000;
   font-family: "Oswald";
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
-  text-align: center;
 }
