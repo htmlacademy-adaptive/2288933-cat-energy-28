@@ -1,20 +1,37 @@
 .footer {
-  padding: 40px 20px;
-  background-color: $white;
+  @include list-reset;
+  background-color: $basic-grey;
+  box-sizing: border-box;
+  min-width: 320px;
 }
 
-.footer__container {
+.footer__wrapper {
+  @include list-reset;
   min-width: 280px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .footer__list {
   @include list-reset;
-}
-
-.footer__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .footer__html-link {

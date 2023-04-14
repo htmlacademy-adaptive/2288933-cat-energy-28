@@ -8,15 +8,24 @@
 
 .cooperation__inner {
   @include list-reset;
-  margin-left: 20px;
 }
 
 .cooperation__container {
   display: flex;
   flex-wrap: wrap;
   padding: 26px 0;
-  background-color: $basic-grey;
-  min-width: 320px;
+  min-width: 280px;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding: 0 110px;
+  }
 }
 
 .cooperation__title {
@@ -38,9 +47,7 @@
 }
 
 .cooperation__map {
-  width: 280px;
-}
-
-.cooperation__address {
-  margin-right: 20px;
+  @include list-reset;
+  height: 100%;
+  width: 100%;
 }

@@ -1,17 +1,43 @@
 .program {
-  min-width: 280px;
+  width: 280px;
+  margin: 0 20px;
   background-color: $white;
+  @media (min-width: $tablet-width) {
+    min-width: 708px;
+    margin: 0 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 110px;
+  }
 }
 
 .program__list {
-  @include list-reset;
-  margin: 0 20px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .program__item {
   background-color: $basic-grey;
   padding: 20px;
   margin-bottom: 20px;
+  box-sizing: border-box;
+  width: 280px;
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    max-height: 372px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    max-height: 374px;
+    &:not(:nth-child(even)) {
+      margin-right: 80px;
+  }
+  }
 }
 
 .program-item__image {

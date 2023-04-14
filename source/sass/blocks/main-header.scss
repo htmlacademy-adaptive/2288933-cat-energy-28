@@ -8,11 +8,13 @@
   @media (min-width: $tablet-width) {
     min-height: 52px;
     min-width: 708px;
+    margin: 0 31px;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 59px;
     min-width: 1220px;
+    margin: 0 110px;
   }
 }
 
@@ -20,19 +22,6 @@
   @include list-reset;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
 }
 
 .main-header__header {
@@ -44,12 +33,16 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
+    min-width: 708px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
+    min-width: 1220px;
   }
 }
 
