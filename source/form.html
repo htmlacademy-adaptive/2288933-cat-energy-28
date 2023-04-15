@@ -87,16 +87,20 @@
   <main class="form">
     <h1 class="visually-hidden">Страница подбора программы питания для котов с формой анкеты.</h1>
     <section class="form__program">
-      <h2 class="form__title">Подбор программы</h2>
-      <p class="form__text">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
+      <div class="question__title-field">
+        <h2 class="form__title">Подбор программы</h2>
+        <p class="form__text">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
+      </div>
       <form class="question" action="https://echo.htmlacademy.ru" method="post">
         <div class="question__blocks">
           <div class="question__data-field">
             <fieldset class="question__field">
-              <label class="question__labels">
-                <span class="question__form-text">Имя</span>
-                <input class="question__form-control" type="text" placeholder="Барсик" required>
-              </label>
+              <div class="question__item">
+                <label class="question__labels">
+                  <span class="question__form-text">Имя</span>
+                  <input class="question__form-control" type="text" placeholder="Барсик" required>
+                </label>
+              </div>
               <label class="question__labels">
                 <span class="question__form-text">Вес (кг):*</span>
                 <input class="question__form-control" type="text" placeholder="7" required>
@@ -109,24 +113,30 @@
           </div>
           <div class="question__data-field">
             <fieldset class="question__field question__field--line-type">
-              <input class="question__radio " type="radio" id="radio-1" checked name="radio-1">
-              <label class="question__form-text question__form-text--black-color" for="radio-1">Похудение</label>
-              <input class="question__radio" type="radio" id="radio-2" name="radio-2">
-              <label class="question__form-text question__form-text--black-color" for="radio-2">Набор массы</label>
-              <input class="question__radio" type="radio" id="radio-3" name="radio-3">
-              <label class="question__form-text question__form-text--black-color" for="radio-3">Не знаю (нужен ваш
-                совет)</label>
+              <div class="question__field-wrapper">
+                <input class="question__radio " type="radio" id="radio-1" checked name="radio-1">
+                <label class="question__form-text question__form-text--black-color" for="radio-1">Похудение</label>
+              </div>
+              <div class="question__field-wrapper">
+                <input class="question__radio" type="radio" id="radio-2" name="radio-2">
+                <label class="question__form-text question__form-text--black-color" for="radio-2">Набор массы</label>
+              </div>
+              <div class="question__field-wrapper">
+                <input class="question__radio" type="radio" id="radio-3" name="radio-3">
+                <label class="question__form-text question__form-text--black-color" for="radio-3">Не знаю (нужен ваш
+                  совет)</label>
+              </div>
             </fieldset>
           </div>
           <div class="question__data-field">
             <h3 class="question__title-field">Контактные данные (владельца кота)</h3>
             <fieldset class="question__field">
-              <label class="form-field">
+              <label class="question__labels">
                 <span class="question__form-text">E-mail:*</span>
                 <input class="question__form-control question__form-control--icon" type="email" name="email" required
                   placeholder="kuklachev@gmail.com">
               </label>
-              <label class="form-field">
+              <label class="question__labels">
                 <span class="question__form-text">Телефон:*</span>
                 <input class="question__form-control question__form-control--icon" type="tel" name="tel" required
                   placeholder="8 (960) 900-60-90">
@@ -135,15 +145,17 @@
           </div>
           <div class="question__data-field">
             <h3 class="question__title-field">Комментарий</h3>
-            <label class="form-field">
-              <span class="visually-hidden">Введите Ваш комментарий.</span>
+
+            <fieldset class="question__field">
+              <label class="visually-hidden" for="comment">Комментарий</label>
               <textarea class="form-field__control form-field__control--comment" rows="7" name="text" cols="33"
-                placeholder="Расскажите обо всех повадках кота"></textarea>
-            </label>
+                id="comment" name="comment">Расскажите обо всех повадках кота></textarea>
+            </fieldset>
           </div>
-          <fieldset class="question__field question__field--add">
+
+          <div class="question__data-field">
             <h3 class="question__title-field">Дополнительно</h3>
-            <div class="question__data-field">
+            <fieldset class="question__field">
               <ul class="question__list question__list--field">
                 <li class="question__item question__item--item">
                   <input class="question__checkbox question__checkbox--before" type="checkbox" name="checkbox"
@@ -166,8 +178,8 @@
                   <label class="question__label question__label--check" for="checkbox-4">Витамины</label>
                 </li>
               </ul>
-            </div>
-          </fieldset>
+            </fieldset>
+          </div>
           <div class="question__data-field question__data-field--btn">
             <button class="question__button btn" type="submit">Oтправить заявку</button>
             <div class="question__field">
@@ -188,7 +200,9 @@
           </div>
         </div>
         <div class="cooperation__map">
-          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0e424fa056d916da6aed9e14cec6915b14b709e43ded48f321cc3e3887935456&amp;source=constructor" width="100%" height="280" frameborder="0"></iframe>
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A0e424fa056d916da6aed9e14cec6915b14b709e43ded48f321cc3e3887935456&amp;source=constructor"
+            width="100%" height="280" frameborder="0"></iframe>
         </div>
     </section>
   </main>

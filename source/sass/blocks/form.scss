@@ -8,8 +8,7 @@
 .form__program {
   margin: 0;
   padding: 0;
-  min-width: 280px;
-  margin: 0 20px;
+  min-width: 320px;
 }
 
 .form__title {
@@ -32,4 +31,12 @@
   font-weight: 400;
   min-width: 226px;
   margin-bottom: 39px;
+}
+
+@media (min-width: $tablet-width) {
+
+}
+
+@media (min-width: $desktop-width) {
+
 }
