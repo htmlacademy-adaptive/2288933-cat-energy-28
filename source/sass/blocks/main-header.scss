@@ -28,6 +28,8 @@
   @include list-reset;
   display: flex;
   padding-top: 10px;
+  justify-content: space-between;
+  min-width: 280px;
 
   @media (min-width: $tablet-width) {
     display: flex;
