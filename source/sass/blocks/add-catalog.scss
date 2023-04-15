@@ -9,8 +9,7 @@
   padding: 0;
   margin: 0;
   min-width: 280px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0 20px;
 }
 
 .add-catalog__title {
@@ -120,3 +119,16 @@
   left: 0;
   background: $basic-green;}
 
+  @media (min-width: $tablet-width) {
+    .add-catalog__container {
+      min-width: 708px;
+      margin: 0 30px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .add-catalog__container {
+      min-width: 1220px;
+      margin: 0 110px;
+    }
+  }

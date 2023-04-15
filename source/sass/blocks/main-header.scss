@@ -7,13 +7,13 @@
 
   @media (min-width: $tablet-width) {
     min-height: 52px;
-    min-width: 708px;
+    width: 708px;
     margin: 0 31px;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 59px;
-    min-width: 1220px;
+    width: 1220px;
     margin: 0 110px;
   }
 }
@@ -34,7 +34,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    min-width: 708px;
+    width: 708px;
   }
 
   @media (min-width: $desktop-width) {
@@ -42,7 +42,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    min-width: 1220px;
+    width: 1220px;
   }
 }
 

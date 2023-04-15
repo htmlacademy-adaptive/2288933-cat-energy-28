@@ -1,9 +1,9 @@
 .promo-catalog {
   background-color: $white;
-  min-width: 320px;
+  min-width: 280px;
   margin: 0;
   padding: 0;
-  padding: 27px 20px 41px;
+
 }
 
 .promo-catalog__container {
@@ -18,4 +18,32 @@
   text-align: left;
   text-transform: uppercase;
   color: $black;
+}
+
+//
+@media (min-width: $tablet-width) {
+  .promo-catalog__container {
+    width: 708px;
+    margin: 0 31px;
+  }
+
+  .promo-catalog__title {
+    margin-top: 64px;
+    margin-bottom: 90px;
+    max-width: 708px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo-catalog__container {
+    width: 1220px;
+    margin: 0 110px;
+  }
+
+  .promo-catalog__title {
+    margin-top: 74px;
+    margin-bottom: 85px;
+    max-width: 1220px;
+  }
+
 }
