@@ -1,25 +1,17 @@
 .example {
   @include list-reset;
   background-color: $basic-grey;
+  max-width: 320px;
+  margin: 0 auto;
+  justify-content: center;
   padding: 0 20px;
-  min-width: 280px;
-
-  @media (min-width: $tablet-width) {
-    width: 708px;
-    padding: 0 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1220px;
-    padding: 0 110px;
-  }
 }
 
 .example__wrapper {
   @include list-reset;
-  @media (min-width: $desktop-width) {
-    max-width: 436px;
-  }
+  max-width: 280px;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .example__container {
@@ -67,4 +59,39 @@
 .example__price-span {
   font-family: "Oswald";
   line-height: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    @include list-reset;
+    background-color: $white;
+    min-width: 768px;
+    max-width: 768px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .example__wrapper {
+    min-width: 708px;
+    max-width: 708px;
+  }
+
+  .example__flexbox {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    @include list-reset;
+    background-color: $white;
+    max-width: 1440px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .example__wrapper {
+    min-width: 1220px;
+    max-width: 1220px;
+  }
 }

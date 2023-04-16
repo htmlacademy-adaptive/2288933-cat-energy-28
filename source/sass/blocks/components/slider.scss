@@ -1,5 +1,36 @@
 .slider {
   @include list-reset;
-  min-width: 280px;
+  max-width: 320px;
   height: 256px;
+  background-color: $white;
+}
+
+.slider__wrapper {
+  @include list-reset;
+  max-width: 280px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+@media (min-width: $tablet-width) {
+  .slider {
+    min-width: 708px;
+    height: 622px;
+  }
+
+  .slider__wrapper {
+    min-width: 708px;
+    max-width: 708px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider {
+    max-width: 560px;
+    height: 512px;
+    margin: 0 auto;
+    justify-content: center;
+  }
 }

@@ -1,17 +1,9 @@
 .instruction {
   @include list-reset;
-  padding: 0 20px;
+  max-width: 280px;
+  margin: 0 auto;
   background-color: $white;
-
-  @media (min-width: $tablet-width) {
-    width: 708px;
-    padding: 0 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1220px;
-    padding: 0 110px;
-  }
+  justify-content: center
 }
 
 .instruction__title {
@@ -26,16 +18,6 @@
 
 .instruction__list {
   @include list-reset;
-
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-  }
 }
 
 .instruction__item {
@@ -48,16 +30,6 @@
 
   &:last-child {
     margin-bottom: 49px;
-  }
-
-  @media (min-width: $tablet-width) {
-  min-width: 230px;
-  max-width: 250px;
-    height: 280px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-right: 80px;
   }
 }
 
@@ -74,4 +46,44 @@
   max-width: 200px;
   height: 60px;
   margin-left: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .instruction {
+    min-width: 708px;
+    max-width: 708px;
+    margin: 0 auto;
+    background-color: $white;
+    justify-content: center;
+  }
+
+  .instruction__item {
+    min-width: 230px;
+    max-width: 250px;
+    height: 280px;
+  }
+
+  .instruction__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .instruction {
+    min-width: 1220px;
+    max-width: 1220px;
+    margin: 0 auto;
+    background-color: $white;
+    justify-content: center;
+  }
+
+  .instruction__item {
+    margin-right: 80px;
+  }
+
+  .instruction__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

@@ -1,16 +1,9 @@
 .program {
-  width: 280px;
-  margin: 0 20px;
+  @include list-reset;
+  max-width: 280px;
+  margin: 0 auto;
   background-color: $white;
-  @media (min-width: $tablet-width) {
-    min-width: 708px;
-    margin: 0 31px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1220px;
-    margin: 0 110px;
-  }
+  justify-content: center;
 }
 
 .program__list {
@@ -25,19 +18,6 @@
   padding: 20px;
   margin-bottom: 20px;
   box-sizing: border-box;
-  width: 280px;
-  @media (min-width: $tablet-width) {
-    width: 708px;
-    max-height: 372px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 570px;
-    max-height: 374px;
-    &:not(:nth-child(even)) {
-      margin-right: 80px;
-  }
-  }
 }
 
 .program-item__image {
@@ -71,4 +51,39 @@
   text-transform: uppercase;
   color: $black;
   text-align: left;
+}
+
+@media (min-width: $tablet-width) {
+  .program {
+    min-width: 708px;
+    max-width: 708px;
+    margin: 0 auto;
+    background-color: $white;
+    justify-content: center;
+  }
+
+  .program__item {
+    width: 708px;
+    max-height: 372px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program {
+    min-width: 1220px;
+    max-width: 1220px;
+    margin: 0 auto;
+    background-color: $white;
+    justify-content: center;
+  }
+
+  .program__item {
+    width: 570px;
+    max-height: 374px;
+
+    &:not(:nth-child(even)) {
+      margin-right: 80px;
+    }
+  }
+
 }
