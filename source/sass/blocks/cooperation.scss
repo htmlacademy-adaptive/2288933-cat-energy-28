@@ -1,6 +1,9 @@
 .cooperation {
   @include list-reset;
   background-color: $white;
+  max-width: 320px;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .cooperation__wrapper {
@@ -13,6 +16,8 @@
 
 .cooperation__container {
   @include list-reset;
+  max-width: 320px;
+  padding: 26px 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -40,12 +45,65 @@
   @include list-reset;
   height: 100%;
   width: 100%;
+  height: 362px;
+}
+
+.cooperation__map-height {
+  height: 362px;
 }
 
 @media (min-width: $tablet-width) {
+  .cooperation {
+    max-width: 768px;
+    margin: 0 auto;
+    justify-content: center;
+  }
 
+  .cooperation__container {
+    max-width: 768px;
+    padding: 60px 70px 56px 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cooperation__map {
+    height: 400px;
+  }
+
+  .cooperation__map-height {
+    height: 400px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .cooperation {
+    max-width: 1440px;
+    margin: 0 auto;
+    justify-content: center;
+  }
 
+  .cooperation__wrapper {
+    position: relative;
+  }
+
+  .cooperation__container {
+    position: absolute;
+    max-width: 565px;
+    padding: 60px 80px 56px 80px;
+    top: 95px;
+    left: 110px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: $white;
+  }
+
+  .cooperation__map {
+    height: 400px;
+  }
+
+  .cooperation__map-height {
+    height: 400px;
+  }
 }

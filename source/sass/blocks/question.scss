@@ -7,13 +7,12 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
-  margin: 0 20px;
 }
 
 .question__field {
   @include list-reset;
     margin: 0;
-    padding: 24px 20px;
+    padding: 24px 0;
     border: 0;
 }
 
@@ -35,7 +34,6 @@
 .question__button {
   width: calc(100% - 20px * 2);
   margin: 0;
-  margin: 0 20px;
   padding: 0;
   padding: 7px 44px;
 }
@@ -117,21 +115,13 @@
     grid-row-gap: 32px;
   }
 
-  .question__title-field {
-    margin: 0 70px;
-  }
-
-  .question__field {
-    padding: 24px 70px;
-  }
-
   .question__button-field {
     display: flex;
   }
 
   .question__button {
     width: 45%;
-    margin-left: 70px;
+    margin-right: 64px;
   }
 }
 
@@ -140,19 +130,40 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
-  .question__title-field {
-    margin: 0 110px;
-  }
 
   .question__field {
-    padding: 24px 110px;
+    padding: 24px 0;
+  }
+
+  .question__data-field--size-1 {
+     min-width: 569px;
+  }
+
+  .question__data-field--size-2 {
+    min-width: 570px;
+  }
+
+  .question__form-control--icon {
+    min-width: 486px;
+  }
+
+  .question__field--flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .question__form-control--icon {
+    min-width: 467px;
   }
 
   .question__button-field {
     display: flex;
+    justify-content: start;
+    min-width: 826px;
   }
 
   .question__button {
-    margin-left: 110px;
+    margin-right: 84px;
   }
 }
