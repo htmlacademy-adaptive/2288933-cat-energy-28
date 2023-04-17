@@ -146,6 +146,13 @@
   .add-catalog__link-block {
     width: 100%;
   }
+
+  .add-catalog__subtitle {
+    margin-bottom: 25px;
+  }
+  .add-catalog__item {
+    margin-bottom: 28px;
+  }
 }
 
 @media (min-width: $desktop-width) {

@@ -36,13 +36,14 @@
   /* min-width: 320px; */
   z-index: 1;
   top: 65px;
-  background-color: #FFFFFF;
-  max-width: 320px;
+  min-width: 320px;
+  max-width: 768px;
 }
 
 .main-nav__list {
   @include list-reset;
   text-align: center;
+  display: none;
 }
 
 .main-nav__menu-btn {

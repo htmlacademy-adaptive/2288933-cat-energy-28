@@ -1,22 +1,17 @@
 .catalog {
-  min-width: 280px;
   margin: 0;
   padding: 0;
-  margin: 0px 20px;
   background-color: $white;
-  @media (min-width: $tablet-width) {
-    min-width: 708px;
-    margin: 0px 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-width: 1220px;
-    margin: 0px 110px;
-  }
+  max-width: 320px;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .catalog__wrapper {
-  min-width: 280px;
+  @include list-reset;
+  max-width: 280px;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .catalog__icon-plus {
@@ -50,8 +45,6 @@
 .catalog__sublink {
   margin: 0;
   padding: 0;
-  min-width: 280px;
-  padding: 10px 94px;
   color: #444;
   margin-bottom: 25px;
 }
@@ -67,24 +60,58 @@
 
 .catalog__list {
   @include list-reset;
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(324px,1fr));
-    grid-column-gap: 60px;
-    grid-row-gap: 141px;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(245px,1fr));
-    grid-column-gap: 80px;
-    grid-row-gap: 143px;
-  }
 }
 
 .catalog__card-item {
   margin-bottom: 19px;
+
   &:last-child {
     margin-bottom: 36px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    min-width: 708px;
+    max-width: 708px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .catalog__wrapper {
+    min-width: 708px;
+    max-width: 708px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .catalog__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(324px, 1fr));
+    grid-column-gap: 60px;
+    grid-row-gap: 141px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    min-width: 1220px;
+    max-width: 1220px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .catalog__wrapper {
+    min-width: 1220px;
+    max-width: 1220px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .catalog__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+    grid-column-gap: 80px;
+    grid-row-gap: 143px;
   }
 }
