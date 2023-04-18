@@ -20,6 +20,10 @@
   margin-bottom: 20px;
 }
 
+.program__item:last-child {
+  margin-bottom: 0;
+}
+
 .program-item__image {
   @include list-reset;
   position: relative;

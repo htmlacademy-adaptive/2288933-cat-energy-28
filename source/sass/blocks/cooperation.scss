@@ -8,6 +8,7 @@
 
 .cooperation__wrapper {
   @include list-reset;
+  max-height: 112px;
 }
 
 .cooperation__inner {
@@ -24,6 +25,7 @@
 }
 
 .cooperation__title {
+  @include list-reset;
   font-family: "Oswald";
   font-weight: 400;
   font-size: 16px;
@@ -36,6 +38,7 @@
 }
 
 .cooperation__street {
+  @include list-reset;
   line-height: 20px;
   text-align: left;
   max-width: 139px;
