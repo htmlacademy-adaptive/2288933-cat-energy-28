@@ -15,14 +15,18 @@
 
 .program__item {
   background-color: $basic-grey;
+  flex-direction: column;
   padding: 20px;
   margin-bottom: 20px;
-  box-sizing: border-box;
 }
 
 .program-item__image {
-  margin: 0;
-  padding: 0;
+  @include list-reset;
+  position: relative;
+  padding-bottom: 21px;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 19px;
+  min-width: 240px;
 }
 
 .program-item__title {
@@ -31,11 +35,45 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
-  color: $black;
+  color: #000000;
   text-align: center;
+  position: relative;
+  margin: 0 0 18px 0;
+
+}
+
+.program-item__title--icon-x::after {
+  position: absolute;
+  content: "";
+  top: 52%;
+  transform: translateY(-58%);
+  left: 3px;
+  width: 50px;
+  height: 53px;
+  background: url(../img/cat_back.svg) no-repeat;
+}
+
+.program-item__title--marg-1 {
+  padding: 9px 0 11px 13px;
+}
+
+.program-item__title--marg-2 {
+  padding: 9px 0 11px 41px;
+}
+
+.program-item__title--icon-y::after {
+  position: absolute;
+  content: "";
+  top: 55%;
+  transform: translateY(-58%);
+  left: -6px;
+  width: 67px;
+  height: 50px;
+  background: url(../img/cat_back-x1.svg) no-repeat;
 }
 
 .program-item__text {
+  margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;

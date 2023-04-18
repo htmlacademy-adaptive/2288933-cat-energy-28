@@ -4,6 +4,7 @@
   margin-bottom: 20px;
   margin: 0 auto;
   justify-content: center;
+  margin-bottom: 22px;
 }
 
 .promo__image-cat {
@@ -20,9 +21,8 @@
 
 .promo__slogan {
   @include list-reset;
-  min-width: 249px;
-  padding-top: 23px;
-  margin-bottom: 29px;
+  padding-top: 26px;
+  margin-bottom: 27px;
 
   &--font {
     font-family: "Oswald";
@@ -36,7 +36,6 @@
 
 .promo__slogan-text {
   @include list-reset;
-  min-width: 198px;
   margin-bottom: 29px;
 
   &--font {
@@ -47,6 +46,7 @@
     text-align: center;
     color: $white;
     text-transform: uppercase;
+
   }
 }
 
@@ -69,6 +69,7 @@
   justify-content: center;
   min-width: 280px;
   margin: 0 20px;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
