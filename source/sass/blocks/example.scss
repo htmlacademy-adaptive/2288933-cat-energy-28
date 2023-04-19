@@ -123,4 +123,10 @@
     min-width: 1220px;
     max-width: 1220px;
   }
+
+  .example__flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
