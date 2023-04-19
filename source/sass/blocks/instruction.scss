@@ -86,15 +86,13 @@
     justify-content: center;
   }
 
-  .instruction__item {
-    min-width: 230px;
-    max-width: 250px;
-    height: 280px;
-  }
-
   .instruction__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .instruction__item {
+    height: 280px;
   }
 }
 
@@ -107,12 +105,10 @@
     justify-content: center;
   }
 
-  .instruction__item {
-    margin-right: 80px;
-  }
-
   .instruction__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+.instruction__item {}
