@@ -36,6 +36,14 @@
   &:focus {
     opacity: 0.6;
   }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -96,6 +104,7 @@
 
 .main-nav--opened .main-nav__wrapper {
   display: block;
+
 }
 
 .main-nav--closed .main-nav__wrapper {
@@ -109,9 +118,14 @@
 
 @media (min-width: $tablet-width) {
   .main-nav__wrapper {
+    display: block;
     position: relative;
     top: 0;
     min-width: 440px;
+  }
+
+  .main-nav--closed .main-nav__wrapper {
+    display: block;
   }
 
   .main-nav__list {
@@ -122,9 +136,14 @@
 
 @media (min-width: $desktop-width) {
   .main-nav__wrapper {
+    display: block;
     max-width: 478px;
     position: relative;
     top: 0;
+  }
+
+  .main-nav--closed .main-nav__wrapper {
+    display: block;
   }
 
   .main-nav__list {

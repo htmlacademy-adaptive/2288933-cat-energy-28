@@ -41,6 +41,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-header {
+    height: 52px;
+  }
+
   .main-header__logo-container {
     min-width: 174px;
   }
@@ -50,10 +54,6 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-  }
-
-  .main-header {
-    min-height: 52px;
   }
 
   .main-header__container {
