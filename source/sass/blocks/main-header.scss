@@ -10,7 +10,6 @@
   margin: 0 auto;
   justify-content: center;
   padding: 10px 20px;
-  height: 45px;
 }
 
 .main-header__header {
@@ -43,10 +42,23 @@
 @media (min-width: $tablet-width) {
   .main-header {
     height: 52px;
+    margin-bottom: 62px;
+  }
+
+  .main-header__container {
+    padding: 0;
   }
 
   .main-header__logo-container {
     min-width: 174px;
+    position: relative;
+    height: 52px;
+  }
+
+  .logo-text__image {
+    position: absolute;
+    top: 19px;
+    right: 0;
   }
 
   .main-header__header {
