@@ -11,13 +11,58 @@
   }
 }
 
-.main-nav__toggle {
+.main-nav--closed .main-nav__toggle {
   @include list-reset;
-  width: 24px;
-  height: 16px;
+  position: absolute;
   border: none;
-  background-color: $white;
-  position: relative;
+  margin: 0;
+  padding: 0;
+  background: url(../img/logo-closed.svg) no-repeat;
+  height: 20px;
+  width: 25px;
+  margin-left: auto;
+  cursor: pointer;
+  top: 24px;
+  right: 20px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  @include list-reset;
+  position: absolute;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background: url(../img/logo-opened.svg) no-repeat;
+  height: 20px;
+  width: 25px;
+  margin-left: auto;
+  cursor: pointer;
+  top: 24px;
+  right: 20px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -29,41 +74,26 @@
 }
 
 .main-nav__wrapper {
-  @include list-reset;
   position: absolute;
-  left: 0;
-  right: 0;
-  /* min-width: 320px; */
-  z-index: 1;
   top: 65px;
-  min-width: 320px;
-  max-width: 768px;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 2;
 }
 
 .main-nav__list {
   @include list-reset;
   text-align: center;
   background-color: $white;
-  display: none;
 }
 
-.main-nav__menu-btn {
-  @include list-reset;
-  border: 1.5px solid #000000;
-  position: absolute;
-  width: 24px;
-  transition: .5s ease-in-out;
-  cursor: pointer;
-  left: 0;
-  top: 0;
+.main-nav--opened .main-nav__wrapper {
+  display: block;
+}
 
-  &:nth-child(2) {
-    top: 8px;
-  }
-
-  &:nth-child(3) {
-    top: 16px;
-  }
+.main-nav--closed .main-nav__wrapper {
+  display: none;
 }
 
 .main-header__logo-img {
@@ -77,10 +107,11 @@
     top: 0;
     min-width: 440px;
   }
+
   .main-nav__list {
-      display: flex;
-      justify-content: space-between;
-    }
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -89,6 +120,7 @@
     position: relative;
     top: 0;
   }
+
   .main-nav__list {
     display: flex;
     justify-content: space-between;

@@ -1,7 +1,6 @@
 .site-list__item  {
   @include list-reset;
-  margin-top: 22px;
-  margin-bottom: 24px;
+  padding: 22px 20px;
   @media (min-width: $tablet-width) {
 
   }
@@ -17,5 +16,5 @@
   font-family: "Oswald";
   font-weight: 500;
   font-size: 20px;
-  line-height: 20px;
+  text-transform: uppercase;
 }

@@ -1,20 +1,21 @@
 .main-header {
   @include list-reset;
   position: relative;
+  height: 65px;
 }
 
 .main-header__container {
   @include list-reset;
   max-width: 280px;
   margin: 0 auto;
-  min-height: 65px;
   justify-content: center;
+  padding: 10px 20px;
+  height: 45px;
 }
 
 .main-header__header {
   @include list-reset;
   display: flex;
-  padding-top: 10px;
   justify-content: space-between;
 }
 
@@ -25,12 +26,14 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  height: 37px;
 }
 
 .main-header__logo-img {
   @include list-reset;
   width: 33px;
   height: 38px;
+  vertical-align: middle;
 }
 
 .main-nav__list {
