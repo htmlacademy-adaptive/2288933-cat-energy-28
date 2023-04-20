@@ -13,7 +13,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
+  <header class="main-header main-header--bg">
     <div class="main-header__container">
       <div class="main-header__header">
         <div class="main-header__logo-container">
@@ -60,15 +60,12 @@
             </svg>
           </a>
         </div>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed main-nav--nojs" >
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
-            <span class="main-nav__menu-btn"></span>
-            <span class="main-nav__menu-btn"></span>
-            <span class="main-nav__menu-btn"></span>
           </button>
-          <div class="main-nav__wrapper main-nav--close">
-            <ul class="main-nav__list site-list main-nav__list--opened main-nav__list--closed">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
               <li class="site-list__item ">
                 <a class="site-list__link item__link--current-link" href="../index.html">Главная</a>
               </li>
