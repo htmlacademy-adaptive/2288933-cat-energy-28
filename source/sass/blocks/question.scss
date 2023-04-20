@@ -1,3 +1,4 @@
+
 .question__title-field {
   margin: 0;
   padding: 0;
@@ -6,12 +7,13 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
-  margin-bottom: 35px;
 }
 
 .question__field {
   @include list-reset;
-  margin-bottom: 34px;
+    margin: 0;
+    padding: 24px 0;
+    border: 0;
 }
 
 .question__blocks {
@@ -20,7 +22,6 @@
 
 .question__data-field {
   @include list-reset;
-  min-width: 280px;
   margin-bottom: 24px;
 
 }
@@ -31,11 +32,10 @@
 }
 
 .question__button {
+  width: calc(100% - 20px * 2);
   margin: 0;
-  margin-bottom: 21px;
   padding: 0;
   padding: 7px 44px;
-  min-width: 280px;
 }
 
 .question__form-text {
@@ -63,16 +63,19 @@
 }
 
 .question__form-control {
-  padding: 14px 0 13px 20px;
-  margin-bottom: 14px;
+  min-width: 0;
+  width: 100%;
+  height: 45px;
+  padding: 13px 20px;
   &--icon {
     padding-left: 15px;
   }
 }
 
-.question__label {
+.question__labels {
   margin: 0;
   padding: 0;
+  display: flex;
   color: $black;
   font-family: "Oswald";
   font-weight: 400;
@@ -102,4 +105,65 @@
   line-height: 16px;
   color: $black;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .question__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(221px, 1fr));
+    grid-column-gap: 143px;
+    grid-row-gap: 32px;
+  }
+
+  .question__button-field {
+    display: flex;
+  }
+
+  .question__button {
+    width: 45%;
+    margin-right: 64px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .question__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .question__field {
+    padding: 24px 0;
+  }
+
+  .question__data-field--size-1 {
+     min-width: 569px;
+  }
+
+  .question__data-field--size-2 {
+    min-width: 570px;
+  }
+
+  .question__form-control--icon {
+    min-width: 486px;
+  }
+
+  .question__field--flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .question__form-control--icon {
+    min-width: 467px;
+  }
+
+  .question__button-field {
+    display: flex;
+    justify-content: start;
+    min-width: 826px;
+  }
+
+  .question__button {
+    margin-right: 84px;
+  }
 }

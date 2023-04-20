@@ -8,9 +8,12 @@
 .add-catalog__container {
   padding: 0;
   margin: 0;
-  min-width: 280px;
-  margin-left: 20px;
-  margin-right: 20px;
+
+  margin: 0 20px;
+}
+
+.add_-catalog__flex-block {
+  @include list-reset;
 }
 
 .add-catalog__title {
@@ -32,13 +35,12 @@
 
 .add-catalog__list {
   @include list-reset;
+
 }
 
 .add-catalog__item {
   @include list-reset;
-  margin-top: 13px;
-  margin-bottom: 19px;
-  min-width: 280px;
+
 }
 
 .add-catalog__subtitle {
@@ -50,6 +52,10 @@
   text-align: left;
   text-transform: uppercase;
   margin-bottom: 13px;
+}
+
+.add-catalog__text-flex {
+  @include list-reset;
 }
 
 .add-catalog__span-flexbox {
@@ -68,7 +74,7 @@
 .add-catalog__link {
   margin: 0;
   padding: 0;
-  width: 280px;
+
   padding: 10px 109px;
   margin-top: 15px;
 }
@@ -78,10 +84,8 @@
   padding: 0;
   min-width: 280px;
   height: auto;
-  background: linear-gradient(
-    rgb(104 183 56 / 0.85),
-    rgb(104 183 56 / 0.85)
-  ) , url('../img/cat-inbox.png') no-repeat;
+  background: linear-gradient(rgb(104 183 56 / 0.85),
+      rgb(104 183 56 / 0.85)), url('../img/cat-inbox.png') no-repeat;
   background-size: cover;
   box-sizing: border-box;
   text-align: center;
@@ -109,6 +113,7 @@
   padding: 0;
   margin: 0;
   margin-bottom: 35px;
+
 }
 
 .add-catalog__cat-image-xl-1::after {
@@ -118,5 +123,69 @@
   height: auto;
   top: 0;
   left: 0;
-  background: $basic-green;}
+  background: $basic-green;
+}
 
+.add-catalog__link-block {
+  min-width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .add-catalog__container {
+    margin: 0 30px;
+    min-width: 708px
+  }
+
+  .add-catalog__text-flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .add-catalog__link-block {
+    width: 100%;
+  }
+
+  .add-catalog__subtitle {
+    margin-bottom: 25px;
+  }
+  .add-catalog__item {
+    margin-bottom: 28px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .add-catalog__container {
+    min-width: 1220px;
+    margin: 0 110px;
+  }
+
+  .add_-catalog__flex-block {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  .add-catalog__text-flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+  .add-catalog__list {
+    max-width: 894px;
+  }
+
+  .add-catalog__item {
+    display: flex;
+    width: 894px;
+
+  }
+
+  .add-catalog__image-cat {
+    width: 245px;
+}
+}

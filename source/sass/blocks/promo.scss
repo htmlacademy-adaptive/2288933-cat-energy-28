@@ -1,40 +1,41 @@
 .promo {
   @include list-reset;
-  min-width: 280px;
+  max-width: 320px;
   margin-bottom: 20px;
-  background-color: $white;
+  margin: 0 auto;
+  justify-content: center;
+  margin-bottom: 22px;
 }
 
 .promo__image-cat {
-  min-width: 320px;
   min-height: 302px;
-  background: linear-gradient(
-    rgb(104 183 56 / 0.85),
-    rgb(104 183 56 / 0.85)
-  ) , url('../img/cat-photo.jpg') no-repeat;
-  background-size: contain;
+  background: linear-gradient(rgb(104 183 56 / 0.85),
+      rgb(104 183 56 / 0.85)), url('../img/cat-photo.jpg') no-repeat;
+  background-size: cover;
   margin-bottom: 135px;
+}
+
+.promo__text-block {
+  position: absolute;
 }
 
 .promo__slogan {
   @include list-reset;
-  min-width: 249px;
-  padding-top: 23px;
-  margin-bottom: 29px;
+  padding-top: 26px;
+  margin-bottom: 27px;
 
   &--font {
     font-family: "Oswald";
     font-weight: 400;
     font-size: 36px;
     line-height: 36px;
-    color: #FFF;
     text-align: center;
+    color: $white;
   }
 }
 
 .promo__slogan-text {
   @include list-reset;
-  min-width: 198px;
   margin-bottom: 29px;
 
   &--font {
@@ -42,9 +43,10 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 14px;
-    color: #FFF;
     text-align: center;
+    color: $white;
     text-transform: uppercase;
+
   }
 }
 
@@ -67,4 +69,56 @@
   justify-content: center;
   min-width: 280px;
   margin: 0 20px;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    min-width: 708px;
+    max-width: 708px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .promo__slogan-text {
+    &--font {
+      color: $black;
+    }
+  }
+
+  .promo__slogan {
+    &--font {
+      color: $black;
+    }
+  }
+
+  .promo__image-cat {
+    background: rgb(255 255 255 / 100%);
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    min-width: 1220px;
+    max-width: 1220px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .promo__slogan-text {
+    &--font {
+      color: $black;
+    }
+  }
+
+  .promo__slogan {
+    &--font {
+      color: $black;
+    }
+  }
+
+  .promo__image-cat {
+    background: transparent;
+  }
 }

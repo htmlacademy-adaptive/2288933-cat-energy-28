@@ -1,30 +1,58 @@
 .example {
   @include list-reset;
+  background-color: $basic-grey;
+  max-width: 320px;
+  margin: 0 auto;
+  justify-content: center;
   padding: 0 20px;
-  margin-bottom: 40px;
-  background-color: $white;
+  padding-bottom: 40px;
+}
+
+.example__wrapper {
+  @include list-reset;
+  max-width: 280px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.example__container {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 31px;
 }
 
 .example__title {
+  margin: 0;
+  padding: 0;
   font-family: "Oswald";
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   text-align: left;
+  padding-top: 25px;
+  margin-bottom: 30px;
 }
 
 .example__text {
-  min-width: 280px;
+  margin: 0;
+  padding: 0;
   text-align: left;
-}
-
-.example__flexbox {
-  display: flex;
-  flex-wrap: wrap;
+  padding-top: 11px;
+  margin-bottom: 20px;
 }
 
 .example__spanbox-flex {
+  @include list-reset;
+  position: relative;
+  list-style-type: none;
+  width: 124px;
   text-align: center;
+  padding: 13px 0 17px 0;
+  border: 1px solid #cdcdcd;
 }
 
 .example__number-span {
@@ -34,11 +62,71 @@
 }
 
 .example__text-span {
+  font-family: "Lato";
+  font-weight: 400;
   font-size: 12px;
   line-height: 12px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  padding: 0 10px;
+  text-align: center;
+  background-color: inherit;
+  transform: translate(-50%, 52%);
 }
 
 .example__price-span {
   font-family: "Oswald";
+  font-weight: 400;
+  font-size: 14px;
   line-height: 20px;
+  text-transform: uppercase;
+}
+
+.example__price-box {
+  color: $black;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    @include list-reset;
+    background-color: $white;
+    min-width: 768px;
+    max-width: 768px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .example__wrapper {
+    min-width: 708px;
+    max-width: 708px;
+  }
+
+  .example__flexbox {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    @include list-reset;
+    background-color: $white;
+    max-width: 1440px;
+    margin: 0 auto;
+    justify-content: center;
+    height: 598px;
+  }
+
+  .example__wrapper {
+    min-width: 1220px;
+    max-width: 1220px;
+  }
+
+  .example__flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }

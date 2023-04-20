@@ -4,6 +4,7 @@ img {
 }
 
 body {
+
   background-color: #FFF;
   font-style: normal;
   font-size: 14px;
@@ -13,9 +14,12 @@ body {
   color: #444;
 }
 
+* {
+  outline: 1px solid #000000;
+}
+
 html,
 body {
-  width: 320px;
   margin: 0;
   padding: 0;
 

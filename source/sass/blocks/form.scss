@@ -2,14 +2,23 @@
   margin: 0;
   padding: 0;
   min-width: 320px;
+}
 
+.form__wrapper {
+  @include list-reset;
+  max-width: 280px;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .form__program {
   margin: 0;
   padding: 0;
-  min-width: 280px;
-  margin: 0 20px;
+  min-width: 320px;
+}
+
+.form__flexbox-block {
+  @include list-reset;
 }
 
 .form__title {
@@ -32,4 +41,34 @@
   font-weight: 400;
   min-width: 226px;
   margin-bottom: 39px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__wrapper {
+    @include list-reset;
+    min-width: 628px;
+    max-width: 628px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .form-field__control {
+    width: 100%;
+    min-height: 174px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__flexbox-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form__wrapper {
+    max-width: 1220px;
+    max-width: 1220px;
+    margin: 0 auto;
+    justify-content: center;
+  }
 }
