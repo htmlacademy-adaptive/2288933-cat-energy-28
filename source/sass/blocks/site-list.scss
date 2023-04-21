@@ -26,6 +26,18 @@
   text-transform: uppercase;
 }
 
+.site-list__item:hover {
+  @media (min-width: $tablet-width) {
+    opacity: 0.6;
+  }
+}
+
+.site-list__item:active {
+  @media (min-width: $tablet-width) {
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: $mobile-width-only) {}
 
 @media (min-width: $tablet-width) {

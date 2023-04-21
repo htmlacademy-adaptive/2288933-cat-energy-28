@@ -139,6 +139,37 @@
     width: 100%;
     max-height: 372px;
     flex-direction: column;
+    padding: 0;
+    padding: 77px 28px 53px 53px;
+    margin-bottom: 30px;
+  }
+
+  .program-item__title {
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
+  }
+  .program-item__text {
+    font-size: 16px;
+    line-height: 24px;
+    min-width: 340px;
+  }
+
+  .program-item__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .program-item__image {
+    border: none;
+  }
+
+  .program-item__title--marg-1 {
+    padding: 0;
+  }
+
+  .program-item__title--marg-2 {
+    padding: 0;
   }
 }
 
