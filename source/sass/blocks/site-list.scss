@@ -21,24 +21,13 @@
 .site-list__link {
   @include list-reset;
   text-decoration: none;
-  color: $black;
   font-family: "Oswald";
   font-weight: 500;
   font-size: 20px;
   text-transform: uppercase;
+  color: $black;
 }
 
-.site-list__item:hover {
-  @media (min-width: $tablet-width) {
-    opacity: 0.6;
-  }
-}
-
-.site-list__item:active {
-  @media (min-width: $tablet-width) {
-    opacity: 0.3;
-  }
-}
 
 .site-list__link--current-link {
   padding-bottom: 10px;
@@ -47,22 +36,40 @@
 
 
 @media (min-width: $tablet-width) {
-
   .site-list__link--current-link {
     padding-bottom: 10px;
     border-bottom: 2px solid $basic-green;
   }
 
+  @media (min-width: $desktop-width) {
+    .site-list__link--current-link {
+      padding-bottom: 8px;
+    }
+  }
+
+
   .site-list__item {
     padding: 0;
     padding-top: 18px;
+
+    @media (min-width: $desktop-width) {
+      padding-top: 0;
+    }
   }
 
   .site-list__link {
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
+    color: $black;
   }
 }
 
-@media (min-width: $desktop-width) {}
+@media (min-width: $desktop-width) {
+  .site-list__link {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    color: $black;
+  }
+}
