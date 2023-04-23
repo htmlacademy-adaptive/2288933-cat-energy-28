@@ -40,6 +40,11 @@
   }
 }
 
+.site-list__link--current-link {
+  padding-bottom: 10px;
+  border-bottom: 2px solid $basic-green;
+}
+
 
 @media (min-width: $tablet-width) {
 
