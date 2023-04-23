@@ -9,11 +9,26 @@
 
 .main-header__header {
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 708px;
+    margin: 0 auto;
+  }
 }
 
 .main-header-wrapper {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    max-height: 52px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .main-header__container {
@@ -32,6 +47,14 @@
   justify-content: space-between;
   height: 38px;
   padding: 10px 20px 17px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {}
 }
 
 .main-header__toggle {
