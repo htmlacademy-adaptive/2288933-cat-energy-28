@@ -1,13 +1,15 @@
 .cooperation {
   @include list-reset;
   background-color: $white;
-  max-width: 320px;
+  width: 100%;
   margin: 0 auto;
   justify-content: center;
 }
 
 .cooperation__wrapper {
   @include list-reset;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .cooperation__inner {
@@ -45,7 +47,6 @@
 
 .cooperation__map {
   @include list-reset;
-  height: 100%;
   width: 100%;
   height: 362px;
 }
@@ -57,17 +58,40 @@
 
 @media (min-width: $tablet-width) {
   .cooperation {
-    max-width: 768px;
+    min-width: 768px;
     margin: 0 auto;
     justify-content: center;
   }
 
+  .cooperation__wrapper {
+    width: 768px;
+    margin: 0 auto;
+  }
+
   .cooperation__container {
-    max-width: 768px;
-    padding: 60px 70px 56px 70px;
+    max-width: 708px;
+    padding: 60px 70px 60px 70px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .cooperation__title {
+    font-size: 20px;
+    line-height: 26px;
+    max-width: 172px;
+  }
+
+  .cooperation__street {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    max-width: 160px;
+
+    &--mg {
+      margin-bottom: 15px;
+    }
   }
 
   .cooperation__map {
@@ -75,7 +99,7 @@
   }
 
   .cooperation__map-height {
-    height: 400px;
+    height: inherit;
   }
 }
 

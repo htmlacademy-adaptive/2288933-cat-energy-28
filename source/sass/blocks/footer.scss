@@ -42,21 +42,47 @@
 @media (min-width: $tablet-width) {
   .footer {
     min-width: 768px;
-    padding-top: 56px;
-    padding-bottom: 56px;
-    height: 147px;
+    max-height: 147px;
+    padding: 0;
   }
 
   .footer__wrapper {
-    min-width: 708px;
-    max-width: 708px;
-    margin: 0 auto;
+    max-width: 768px;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    padding: 55px 30px;
+  }
+
+  .footer_logo-link {
+    width: 143px;
+    height: 26px;
+    align-self: center;
+    display: block;
+  }
+
+  .footer__list {
+    @include list-reset;
+    justify-content: space-between;
+  }
+
+  .footer__block {
+    margin-bottom: 0;
+  }
+
+  .footer__block-html {}
+
+  .footer__html-link {
+    width: 168px;
+  }
+
+  .footer__html-text {
+    padding: 0;
+    margin: 0;
+    padding-top: 9px;
   }
 }
 

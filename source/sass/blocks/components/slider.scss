@@ -40,13 +40,13 @@
 
 @media (min-width: $tablet-width) {
   .slider {
-    min-width: 708px;
+    margin-top: 74px;
+    height: 512px;
+    margin: 0 auto;
   }
 
   .slider__wrapper {
-    min-width: 708px;
-    max-width: 708px;
-    max-height: 252px;
+    width: 708px;
     margin: 0 auto;
     justify-content: center;
   }
@@ -54,8 +54,7 @@
 
 @media (min-width: $desktop-width) {
   .slider {
-    max-width: 560px;
-    height: 512px;
+    max-width: 1440px;
     margin: 0 auto;
     justify-content: center;
   }
