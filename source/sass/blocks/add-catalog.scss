@@ -19,10 +19,11 @@
 .add-catalog__title {
   padding: 0;
   margin: 0;
-  padding: 25px 0 36px;
+  padding: 17px 0 24px;
 }
 
 .add-catalog__title-text {
+  position: relative;
   padding: 0;
   margin: 0;
   text-align: left;
@@ -31,6 +32,18 @@
   font-size: 24px;
   line-height: 24px;
   color: $black;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100vw;
+    height: 2px;
+    background-color: #68b738;
+    z-index: -1;
+    left: 0;
+  }
 }
 
 .add-catalog__list {
@@ -40,7 +53,14 @@
 
 .add-catalog__item {
   @include list-reset;
+  border-top: 1px solid #CDCDCD;
+  margin-top: 7px;
+  padding-bottom: 8px;
 
+  &:last-child {
+    padding-bottom: 19px;
+    border-bottom: 1px solid #CDCDCD;;
+  }
 }
 
 .add-catalog__subtitle {
@@ -74,9 +94,9 @@
 .add-catalog__link {
   margin: 0;
   padding: 0;
-
-  padding: 10px 109px;
-  margin-top: 15px;
+  padding: 10px 44px;
+  background-color: $basic-green;
+  display: block;
 }
 
 .add-catalog__active {
@@ -112,8 +132,8 @@
 .add-catalog__image-cat {
   padding: 0;
   margin: 0;
-  margin-bottom: 35px;
-
+  margin-bottom: 30px;
+  margin-top: 35px;
 }
 
 .add-catalog__cat-image-xl-1::after {
@@ -150,6 +170,7 @@
   .add-catalog__subtitle {
     margin-bottom: 25px;
   }
+
   .add-catalog__item {
     margin-bottom: 28px;
   }
@@ -187,5 +208,5 @@
 
   .add-catalog__image-cat {
     width: 245px;
-}
+  }
 }
