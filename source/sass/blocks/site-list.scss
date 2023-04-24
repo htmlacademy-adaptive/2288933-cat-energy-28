@@ -72,4 +72,14 @@
     font-weight: 400;
     color: $black;
   }
+
+  .site-list__item:nth-child(1),
+  .site-list__item:nth-child(2),
+  .site-list__item:nth-child(3) {
+    border: none;
+  }
+
+  .site-list__link {
+    color: $white;
+  }
 }

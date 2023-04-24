@@ -116,14 +116,15 @@
 
   .cooperation__container {
     position: absolute;
-    max-width: 565px;
+    min-width: 407px;
     padding: 60px 80px 56px 80px;
     top: 95px;
-    left: 110px;
+    left: -227px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: $white;
+
   }
 
   .cooperation__map {
@@ -132,5 +133,11 @@
 
   .cooperation__map-height {
     height: 400px;
+  }
+
+  .cooperation__street {
+    text-align: left;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
