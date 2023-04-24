@@ -186,6 +186,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .instruction {
+    margin-top: 41px;
+  }
+
   .instruction__wrapper {
     min-width: 1220px;
     max-width: 1220px;
@@ -197,5 +201,6 @@
   .instruction__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 79px;
   }
 }
