@@ -164,13 +164,24 @@
     justify-content: center;
   }
 
+  .promo__wrapper {
+    max-height: 554px;
+    margin-bottom: 82px;
+  }
+
   .promo__slogan-text {
+    padding-left: 80px;
+    margin-bottom: 52px;
     &--font {
       color: $black;
+      text-align: left;
     }
   }
 
   .promo__slogan {
+    padding-top: 84px;
+    padding-left: 80px;
+    max-width: 416px;
     &--font {
       color: $black;
     }
@@ -178,6 +189,18 @@
 
   .promo__image-cat {
     background: transparent;
+  }
+
+  .promo__button {
+    left: 80px;
+    top: 317px;
+  }
+
+  .promo__image-soup {
+    width: 509px;
+    height: 499px;
+    top: 0;
+    left: 40%;
   }
 }
 

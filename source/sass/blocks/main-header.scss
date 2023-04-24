@@ -4,7 +4,32 @@
   justify-content: space-between;
   font-weight: 500;
   margin: 0;
-  max-height: 264px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 32px;
+  }
+}
+
+.main-header--bg::before {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 720px;
+    min-height: 694px;
+    top: 0;
+    right: 0;
+    left: inherit;
+    background: linear-gradient(rgb(104 183 56 / 0.85),
+        rgb(104 183 56 / 0.85)), url('../img/index-bg-cat-desktop.jpg') no-repeat;
+    background-size: cover;
+    z-index: -1;
+
+  }
 }
 
 .main-header__header {
