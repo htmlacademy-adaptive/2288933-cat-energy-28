@@ -89,6 +89,10 @@
     justify-content: center;
   }
 
+  .catalog__list {
+    grid-row-gap: 145px;
+  }
+
   .catalog__wrapper {
     min-width: 1220px;
     max-width: 1220px;

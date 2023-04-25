@@ -2,7 +2,7 @@
   background-color: $white;
   margin: 0;
   padding: 0;
-    border-top: 1px solid #d9d9d9;
+  border-top: 1px solid #d9d9d9;
 
 }
 
@@ -25,6 +25,11 @@
 
 //
 @media (min-width: $tablet-width) {
+
+  .promo-catalog {
+    border: none;
+  }
+
   .promo-catalog__container {
     width: 708px;
     margin: 0 31px;
@@ -37,19 +42,25 @@
     margin-left: 0;
     font-size: 60px;
     line-height: 60px;
+    border: none;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .promo-catalog {
+    border: none;
+  }
+
   .promo-catalog__container {
-    width: 1220px;
-    margin: 0 110px;
+    max-width: 1220px;
+    margin: 0;
+    padding: 0;
   }
 
   .promo-catalog__title {
-    margin-top: 74px;
-    margin-bottom: 85px;
+    margin-top: 80px;
+    margin-bottom: 168px;
     max-width: 1220px;
+    border: none;
   }
-
 }
