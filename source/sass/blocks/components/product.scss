@@ -3,13 +3,7 @@
   flex-wrap: wrap;
 }
 
-.product__picture-block {
-  max-width: 140px;
-  box-sizing: border-box;
-  object-fit: cover;
-  object-position: center;
-  vertical-align: middle;
-}
+.product__picture-block {}
 
 .product__image {
   height: 86px;
@@ -22,11 +16,11 @@
 }
 
 .product__image--big-img {
-    margin: 0;
-    padding: 0;
-    margin: 11px 28px 1px;
-    width: 84px;
-    height: 100px;
+  margin: 0;
+  padding: 0;
+  margin: 11px 28px 1px;
+  width: 84px;
+  height: 100px;
 }
 
 .product__table {
@@ -146,22 +140,28 @@
     flex-direction: column;
   }
 
+  .product__picture-block {
+    width: 100%;
+  }
+
   .product__description {
     width: 100%;
   }
 
   .product__link {
     padding: 10px 0;
-    width: 100%;
+    margin-top: 11px;
   }
 
   .product__title {
     text-align: center;
     font-size: 20px;
     line-height: 24px;
+    padding-top: 161px;
+    margin: 0 auto 12px;
 
     &--wd {
-      max-width: 100%;
+      max-width: 60%;
     }
   }
 
@@ -172,6 +172,79 @@
 
   .product__table {
     width: 100%;
+    margin-bottom: 33px;
+    margin: 0 0 20px 0;
+  }
+
+  .product__row {
+    height: auto;
+    padding-bottom: 8px;
+    padding-top: 6px;
+    font-size: 16px;
+    line-height: 16px;
+    border-bottom: 1px solid #cdcdcd;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1px;
+  }
+
+  .product__image--small-img {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    margin: 14px 36px 12px;
+    top: -14%;
+    height: 172px;
+    width: auto;
+    left: 18%;
+  }
+
+  .product__image--big-img {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    margin: 14px 36px 12px;
+    top: -20%;
+    height: 200px;
+    width: auto;
+    left: 13%;
+  }
+
+  .product__title--mg {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+    padding-top: 162px;
+    margin: 0;
+    margin-bottom: 20px;
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  .product__options--mg {
+    padding: 0;
+    text-align: center;
+    text-transform: initial;
+    line-height: 18px;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .product__container--icon::before {
+    width: 60px;
+    height: 60px;
+    top: 53px;
+    left: 38%;
+  }
+
+  .product__button-link {
+    padding: 9px 44px;
+    margin-top: 86px;
+    color: $black;
+    width: 160px;
   }
 }
 

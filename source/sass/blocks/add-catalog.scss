@@ -59,7 +59,8 @@
 
   &:last-child {
     padding-bottom: 19px;
-    border-bottom: 1px solid #CDCDCD;;
+    border-bottom: 1px solid #CDCDCD;
+    ;
   }
 }
 
@@ -167,12 +168,84 @@
     width: 100%;
   }
 
-  .add-catalog__subtitle {
-    margin-bottom: 25px;
+  .add-catalog__title-text {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .add-catalog__title {
+    padding: 67px 36px 80px;
+  }
+
+  .add_-catalog__flex-block {
+    margin: 0;
+    padding: 0;
   }
 
   .add-catalog__item {
-    margin-bottom: 28px;
+    margin: 0;
+    padding: 0;
+    padding: 26px 38px 0;
+    padding-bottom: 28px;
+    border: 1px solid #CDCDCD;
+
+    &:last-child {
+      padding-bottom: 30px;
+    }
+  }
+
+  .add-catalog__image-cat {
+    margin-top: 69px;
+  }
+
+  .add-catalog__active {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    width: 100%;
+    background-position: center;
+  }
+
+  .add-catalog__cat-image-xl-1 {
+    position: absolute;
+    width: 80px;
+    height: 82px;
+    top: 56px;
+    left: 77px;
+  }
+
+  .add-catalog__order-text {
+    position: absolute;
+    top: 70px;
+    right: 124px;
+    text-align: left;
+  }
+
+  .add-catalog__subtitle {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .add-catalog__subtext {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .add-catalog__span-flexbox {
+    margin-bottom: 23px;
+  }
+
+  .add-catalog__subtext--right {
+    margin-left: 49px;
+  }
+
+  .add-catalog__link {
+    font-size: 16px;
+    padding: 10px 0;
+    width: 100%;
   }
 }
 
