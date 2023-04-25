@@ -19,6 +19,8 @@
   color: $black;
   margin-bottom: 38px;
   border-bottom: 1px solid #ebebeb;
+  text-transform: initial;
+  margin-left: 20px;
 }
 
 //
@@ -29,9 +31,12 @@
   }
 
   .promo-catalog__title {
-    margin-top: 64px;
+    margin-top: 0;
     margin-bottom: 90px;
     max-width: 708px;
+    margin-left: 0;
+    font-size: 60px;
+    line-height: 60px;
   }
 }
 

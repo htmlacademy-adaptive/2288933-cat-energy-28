@@ -57,7 +57,6 @@
 
   .catalog__wrapper {
     min-width: 708px;
-    max-width: 708px;
     margin: 0 auto;
     justify-content: center;
   }
@@ -67,6 +66,11 @@
     grid-template-columns: repeat(auto-fit, minmax(324px, 1fr));
     grid-column-gap: 60px;
     grid-row-gap: 141px;
+  }
+
+  .catalog__card-item {
+    max-width: 324px;
+    padding: 20px 0 24px;
   }
 }
 
