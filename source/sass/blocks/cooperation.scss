@@ -75,6 +75,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto;
+
+    &--grey-color {
+      background-color: $basic-grey;
+    }
   }
 
   .cooperation__title {
