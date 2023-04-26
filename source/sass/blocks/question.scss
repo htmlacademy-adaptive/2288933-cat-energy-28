@@ -1,4 +1,3 @@
-
 .question__title-field {
   margin: 0;
   padding: 0;
@@ -7,13 +6,19 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
+  margin-bottom: 35px;
 }
 
 .question__field {
   @include list-reset;
-    margin: 0;
-    padding: 24px 0;
-    border: 0;
+  margin: 0;
+  padding: 24px 0;
+  padding-top: 0;
+  border: 0;
+}
+
+.question__labels-list {
+  @include list-reset;
 }
 
 .question__blocks {
@@ -22,8 +27,6 @@
 
 .question__data-field {
   @include list-reset;
-  margin-bottom: 24px;
-
 }
 
 .question__list {
@@ -45,11 +48,38 @@
   font-family: "Oswald";
   font-weight: 400;
   font-size: 16px;
-  margin-right: 13px;
   text-transform: uppercase;
+  flex-shrink: 0;
+  margin: auto 13px auto 0;
+
   &--black-color {
     color: $black;
   }
+}
+
+.question__radio-field {
+  @include list-reset;
+
+  &--border {
+    border-bottom: 1px solid #d9d9d9;
+    margin: 0 -20px;
+    padding: 0 20px;
+    width: 280px;
+  }
+}
+
+.question__data-field--border {
+  border-bottom: 1px solid #d9d9d9;
+  margin: 0 -20px;
+  padding: 0 20px;
+  width: 280px;
+}
+
+.question__data-field--border {
+  border-bottom: 1px solid #d9d9d9;
+  margin: 0 -20px;
+  padding: 0 20px;
+  width: 280px;
 }
 
 .question__form-control::placeholder {
@@ -63,12 +93,20 @@
 }
 
 .question__form-control {
-  min-width: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
   width: 100%;
-  height: 45px;
-  padding: 13px 20px;
-  &--icon {
-    padding-left: 15px;
+  font-family: inherit;
+  padding: 13px 20px 12px 12px;
+  border: 1px solid #e7e7e7;
+}
+
+.question__item {
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -81,19 +119,6 @@
   font-weight: 400;
   font-size: 16px;
   text-transform: uppercase;
-  margin-bottom: 12px;
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-
-.question__labels {
-  margin: 0;
-  padding: 0;
-}
-
-.question__radio {
-  @include list-reset;
 }
 
 .question__text {
@@ -136,7 +161,7 @@
   }
 
   .question__data-field--size-1 {
-     min-width: 569px;
+    min-width: 569px;
   }
 
   .question__data-field--size-2 {
