@@ -103,7 +103,7 @@
 .add-catalog__active {
   margin: 0;
   padding: 0;
-  min-width: 280px;
+  width: 100%;
   height: auto;
   background: linear-gradient(rgb(104 183 56 / 0.85),
       rgb(104 183 56 / 0.85)), url('../img/cat-inbox.png') no-repeat;
@@ -251,6 +251,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .add-catalog {
+    margin-bottom: 57px;
+  }
+
   .add-catalog__container {
     min-width: 1220px;
     margin: 0 110px;
@@ -259,28 +263,99 @@
   .add_-catalog__flex-block {
     display: flex;
     flex-wrap: wrap;
-
-  }
-
-  .add-catalog__text-flex {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
     justify-content: space-between;
 
   }
 
   .add-catalog__list {
-    max-width: 894px;
+    width: 894px;
   }
 
   .add-catalog__item {
     display: flex;
-    width: 894px;
-
+    max-width: 894px;
+    padding: 14px 0 17px;
   }
 
   .add-catalog__image-cat {
     width: 245px;
+    margin-top: 0;
+  }
+
+  .add-catalog__title {
+    padding: 75px 0 80px;
+  }
+
+  .add-catalog__link {
+    width: 100%;
+  }
+
+  .add-catalog__text-flex {
+    min-width: 650px;
+    padding-left: 0;
+    padding-right: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .add-catalog__span-flexbox {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    margin: 0;
+    padding: 0;
+    margin: auto 0;
+  }
+
+  .add-catalog__subtitle {
+    margin: auto 0;
+  }
+
+  .add-catalog__title-text::before {
+    content: "";
+    position: absolute;
+    transform: translateY(-50%);
+    width: 5vw;
+    height: 2px;
+    background-color: #68b738;
+    top: 65%;
+    left: -110px;
+    z-index: 0;
+  }
+
+  .add-catalog__title-text::after {
+    content: "";
+    position: absolute;
+    transform: translateY(-50%);
+    width: 100vw;
+    height: 2px;
+    background-color: #68b738;
+    top: 65%;
+    left: 373px;
+  }
+
+  .add-catalog__subtext--right {
+    margin-right: 40px;
+  }
+
+  .add-catalog__active {
+    width: 245px;
+    height: 288px;
+    background-position: 115%;
+  }
+
+  .add-catalog__cat-image-xl-1 {
+    position: absolute;
+    width: 80px;
+    height: 82px;
+    top: 56px;
+    left: 84px;
+  }
+
+  .add-catalog__order-text {
+    position: absolute;
+    text-align: center;
+    padding-top: 186px;
+    top: 0;
+    left: 41px;
   }
 }
