@@ -25,6 +25,10 @@
   justify-content: space-between;
 }
 
+.cooperation__container--form {
+  background-color: $basic-grey;
+}
+
 .cooperation__title {
   @include list-reset;
   font-family: "Oswald";

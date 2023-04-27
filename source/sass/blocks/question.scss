@@ -6,7 +6,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
-  margin-bottom: 35px;
+  margin-bottom: 36px;
 }
 
 .question__field {
@@ -35,10 +35,14 @@
 }
 
 .question__button {
-  width: calc(100% - 20px * 2);
+  width: 100%;
   margin: 0;
   padding: 0;
-  padding: 7px 44px;
+  padding: 9px 44px;
+  background-color: $basic-green;
+  margin-bottom: 29px;
+
+  &--font {}
 }
 
 .question__form-text {
@@ -130,6 +134,10 @@
   line-height: 16px;
   color: $black;
   text-align: center;
+
+  &--mg {
+    margin-bottom: 7px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -158,6 +166,10 @@
 
   .question__field {
     padding: 24px 0;
+  }
+
+  .question__text-field {
+    @include list-reset;
   }
 
   .question__data-field--size-1 {

@@ -1,0 +1,55 @@
+.program-checkbox {
+  @include list-reset;
+
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 22px;
+}
+
+.program-checkbox__field {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.program-checkbox__control {
+  margin-right: 16px;
+}
+
+.program-checkbox__name {
+  cursor: pointer;
+  padding-left: 46px;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald";
+  font-weight: 400;
+  color: $black;
+}
+
+.program-checkbox__control[type=checkbox]:checked+.program-checkbox__name::before {
+  position: absolute;
+  top: 50%;
+  left: 7px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 14px;
+  content: "";
+  background-repeat: no-repeat;
+  background-image: url(../img/check-mark.svg);
+}
+
+.program-checkbox__field:hover .program-checkbox__mark {
+  border: 1px solid #bababa;
+}
+
+.program-checkbox__mark {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  border: 1px solid #cdcdcd;
+}

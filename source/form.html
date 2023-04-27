@@ -151,66 +151,72 @@
           <div class="form__wrapper">
             <div class="question__data-field">
               <h3 class="question__title-field">Контактные данные (владельца кота)</h3>
-                <ul class="question__labels-list">
-                  <li class="question__item">
-                    <label class="question__labels">
-                      <span class="question__form-text">E-mail:*</span>
-                      <input class="question__form-control question__form-control--icon" type="email" name="email"
-                        required placeholder="kuklachev@gmail.com">
-                    </label>
-                  </li>
-                  <li class="question__item">
-                    <label class="question__labels">
-                      <span class="question__form-text question__form-text--size">Телефон:*</span>
-                      <input class="question__form-control question__form-control--icon" type="tel" name="tel" required
-                        placeholder="8 (960) 900-60-90">
-                    </label>
-                  </li>
-                </ul>
+              <ul class="question__labels-list">
+                <li class="question__item">
+                  <label class="question__labels">
+                    <span class="question__form-text">E-mail:*</span>
+                    <input class="question__form-control question__form-control--icon" type="email" name="email"
+                      required placeholder="kuklachev@gmail.com">
+                  </label>
+                </li>
+                <li class="question__item">
+                  <label class="question__labels">
+                    <span class="question__form-text question__form-text--size">Телефон:*</span>
+                    <input class="question__form-control question__form-control--icon" type="tel" name="tel" required
+                      placeholder="8 (960) 900-60-90">
+                  </label>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="form__wrapper">
+          <div class="form__wrapper-min">
             <div class="question__data-field">
               <h3 class="question__title-field">Комментарий</h3>
-                <label class="visually-hidden" for="comment">Комментарий</label>
-                <textarea class="form-field__control form-field__control--comment" rows="7" name="text" cols="33"
-                  id="comment">Расскажите обо всех повадках кота></textarea>
+              <label class="visually-hidden" for="comment">Комментарий</label>
+              <textarea class="form-field__control form-field__control--comment" rows="7" name="text" cols="33"
+                id="comment">Расскажите обо всех повадках кота</textarea>
             </div>
           </div>
           <div class="form__wrapper">
             <div class="question__data-field">
               <h3 class="question__title-field">Дополнительно</h3>
-              <fieldset class="question__field">
-                <ul class="question__list question__list--field">
-                  <li class="question__item question__item--item">
-                    <input class="question__checkbox question__checkbox--before" type="checkbox" name="checkbox"
-                      id="checkbox-1" checked>
-                    <label class="question__label question__label--check" for="checkbox-1">Сахарозаменитель</label>
-                  </li>
-                  <li class="question__item question__item--item">
-                    <input class="question__checkbox question__checkbox--before" type="checkbox" name="checkbox"
-                      id="checkbox-2" checked>
-                    <label class="question__label question__label--check" for="checkbox-2">Питьевая вода</label>
-                  </li>
-                  <li class="question__item question__item--item">
-                    <input class="question__checkbox question__checkbox--before" type="checkbox" name="checkbox"
-                      id="checkbox-3" checked>
-                    <label class="question__label question__label--check" for="checkbox-3">Молоко</label>
-                  </li>
-                  <li class="question__item question__item--item">
-                    <input class="question__checkbox question__checkbox--before" type="checkbox" name="checkbox"
-                      id="checkbox-4" checked>
-                    <label class="question__label question__label--check" for="checkbox-4">Витамины</label>
-                  </li>
-                </ul>
-              </fieldset>
+              <ul class="question__list program-checkbox">
+                <li class="program-checkbox__item program-checkbox__item--item">
+                  <label class="program-checkbox__field program-checkbox__name--check">
+                    <input class="program-checkbox__control visually-hidden" type="checkbox" name="sweetener" checked>
+                    <span class="program-checkbox__name">Сахарозаменитель</span>
+                    <span class="program-checkbox__mark"></span>
+                  </label>
+                </li>
+                <li class="program-checkbox__item program-checkbox__item--item">
+                  <label class="program-checkbox__field program-checkbox__name--check">
+                    <input class="program-checkbox__control visually-hidden" type="checkbox" name="water">
+                    <span class="program-checkbox__name">питьевая вода</span>
+                    <span class="program-checkbox__mark"></span>
+                  </label>
+                </li>
+                <li class="program-checkbox__item program-checkbox__item--item">
+                <label class="program-checkbox__field program-checkbox__name--check">
+                  <input class="program-checkbox__control visually-hidden" type="checkbox" name="milk">
+                  <span class="program-checkbox__name">молоко</span>
+                  <span class="program-checkbox__mark"></span>
+                </label>
+                </li>
+                <li class="program-checkbox__item program-checkbox__item--item">
+                  <label class="program-checkbox__field program-checkbox__name--check">
+                    <input class="program-checkbox__control visually-hidden" type="checkbox" name="vitamins">
+                    <span class="program-checkbox__name">витамины</span>
+                    <span class="program-checkbox__mark"></span>
+                  </label>
+                </li>
+              </ul>
             </div>
           </div>
           <div class="form__wrapper">
             <div class="question__button-field question__data-field--btn">
-              <button class="question__button btn" type="submit">Oтправить заявку</button>
-              <div class="question__field">
-                <p class="question__text">* — Обязательные поля</p>
+              <button class="question__button question__button--font btn" type="submit">Oтправить заявку</button>
+              <div class="question__text-field">
+                <p class="question__text question__text--mg">* — Обязательные поля</p>
               </div>
             </div>
           </div>
@@ -219,7 +225,7 @@
     </section>
     <section class="cooperation cooperation--index">
       <div class="cooperation__wrapper">
-        <div class="cooperation__container">
+        <div class="cooperation__container cooperation__container--form">
           <div class="cooperation__inner">
             <h2 class="cooperation__title">Приглашаем<br>к сотрудничеству дилеров!</h2>
           </div>

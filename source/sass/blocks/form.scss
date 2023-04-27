@@ -12,6 +12,14 @@
   margin-bottom: 25px;
 }
 
+.form__wrapper-min {
+  @include list-reset;
+  max-width: 280px;
+  margin: 0 auto;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
 .form__program {
   margin: 0;
   padding: 0;
