@@ -38,6 +38,7 @@
   content: "";
   background-repeat: no-repeat;
   background-image: url(../img/check-mark.svg);
+  background-size: contain;
 }
 
 .program-checkbox__field:hover .program-checkbox__mark {
@@ -52,4 +53,55 @@
   width: 28px;
   height: 28px;
   border: 1px solid #cdcdcd;
+}
+
+@media (min-width: $tablet-width) {
+  .program-checkbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 22px;
+  }
+
+  .program-checkbox__name {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 61px;
+  }
+
+  .program-checkbox__mark {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border: 1px solid #cdcdcd;
+  }
+
+  .program-checkbox {
+    row-gap: 41px;
+    column-gap: 58px;
+    margin-bottom: 60px;
+  }
+
+  .program-checkbox__control[type=checkbox]:checked + .program-checkbox__name::before {
+    position: absolute;
+    top: 55%;
+    left: 7px;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 26px;
+    content: "";
+    background-repeat: no-repeat;
+    background-image: url(../img/check-mark.svg);
+    background-size: contain;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-checkbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 22px;
+  }
 }
