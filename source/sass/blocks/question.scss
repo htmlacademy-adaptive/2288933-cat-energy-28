@@ -219,7 +219,18 @@
   }
 
   .question__field {
-    padding: 24px 0;
+    padding: 0;
+  }
+
+  .question__labels-list--grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 78px;
+    margin-bottom: 50px;
+  }
+
+  .question__radio-field--border {
+    width: 570px;
   }
 
   .question__text-field {
@@ -235,17 +246,13 @@
   }
 
   .question__form-control--icon {
-    min-width: 486px;
+    max-width: 486px;
   }
 
   .question__field--flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-
-  .question__form-control--icon {
-    min-width: 467px;
   }
 
   .question__button-field {

@@ -30,6 +30,7 @@
   padding: 0;
   font-family: "Oswald";
   font-weight: 400;
+  color: $black;
   font-size: 36px;
   line-height: 40px;
   text-align: left;
@@ -52,7 +53,7 @@
   width: 124px;
   text-align: center;
   padding: 13px 0 17px 0;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $dop-grey;
 }
 
 .example__number-span {
@@ -81,6 +82,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  color: $black;
   text-transform: uppercase;
   display: block;
 
@@ -134,6 +136,7 @@
     line-height: 60px;
     padding-top: 43px;
     margin-bottom: 51px;
+    color: #000000;
   }
 
   .example__text {
@@ -222,6 +225,7 @@
   .example__title {
     padding-top: 23px;
     margin-bottom: 134px;
+    color: #000000;
   }
 
   .example__text {

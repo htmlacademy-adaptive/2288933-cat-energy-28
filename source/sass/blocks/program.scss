@@ -31,7 +31,7 @@
   @include list-reset;
   position: relative;
   padding-bottom: 21px;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid $border-color;
   margin-bottom: 19px;
   min-width: 240px;
 }
@@ -86,6 +86,7 @@
   line-height: 18px;
   max-width: 227px;
   text-align: left;
+  color: $font-grey;
 }
 
 .program-item__link {
