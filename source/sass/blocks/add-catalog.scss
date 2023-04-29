@@ -253,6 +253,8 @@
 @media (min-width: $desktop-width) {
   .add-catalog {
     margin-bottom: 57px;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 
   .add-catalog__container {

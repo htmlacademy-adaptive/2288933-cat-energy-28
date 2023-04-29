@@ -70,6 +70,26 @@
   justify-content: center;
 }
 
+.main-header__logo {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-header__logo-img {
+  &:focus {
+    opacity: 0.3;
+  }
+}
+
 .main-header__logo-container {
   margin: 0;
   padding: 0;

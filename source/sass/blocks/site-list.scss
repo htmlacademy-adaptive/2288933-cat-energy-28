@@ -26,6 +26,16 @@
   font-size: 20px;
   text-transform: uppercase;
   color: $black;
+
+  &:hover {
+    opacity: 0.6;
+  }
+  &:focus {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 
@@ -63,6 +73,12 @@
     font-weight: 400;
     color: $black;
   }
+
+  .site-list__item:nth-child(1),
+  .site-list__item:nth-child(2),
+  .site-list__item:nth-child(3) {
+    border: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -80,6 +96,10 @@
   }
 
   .site-list__link--white-link {
-    color: white;
+    border-bottom: 2px solid $white;
+  }
+
+  .site-list__link--white-text {
+    color: $white;
   }
 }

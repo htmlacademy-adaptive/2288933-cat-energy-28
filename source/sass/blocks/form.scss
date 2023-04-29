@@ -279,13 +279,80 @@
 
   .form__wrapper--line {
     padding-top: 70px;
+
+    &::before {
+      position: absolute;
+      top: 90px;
+      content: "";
+      height: 2px;
+      width: 70px;
+      background-color: $basic-green;
+      z-index: -1;
+      left: -110px;
+    }
+
+    &::after {
+      position: absolute;
+      top: 90px;
+      content: "";
+      height: 2px;
+      width: 778px;
+      background-color: $basic-green;
+      z-index: -1;
+      right: -110px;
+    }
   }
 
   .form__wrapper-min {
     min-width: 1220px;
+
+    &::before {
+      position: absolute;
+      top: 20px;
+      content: "";
+      height: 2px;
+      width: 70px;
+      background-color: $basic-green;
+      z-index: -1;
+      left: -110px;
+    }
+    &::after {
+      position: absolute;
+      top: 20px;
+      content: "";
+      height: 2px;
+      width: 1108px;
+      background-color: $basic-green;
+      z-index: -1;
+      right: -110px;
+    }
   }
 
   .form-field__control {
     height: 174px;
+  }
+
+  .form__wrapper--green-line {
+    &::after {
+      position: absolute;
+      top: 26px;
+      content: "";
+      height: 2px;
+      width: 1078px;
+      background-color: $basic-green;
+      z-index: -1;
+      right: -110px;
+    }
+
+    &::before {
+      position: absolute;
+      top: 26px;
+      content: "";
+      height: 2px;
+      width: 70px;
+      background-color: $basic-green;
+      z-index: -1;
+      left: -110px;
+    }
   }
 }

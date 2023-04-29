@@ -69,6 +69,24 @@
   justify-content: center;
   margin: 0 20px;
   cursor: pointer;
+  background-color: $basic-green;
+  transition: 0.3s all;
+
+  &:hover {
+    background-color: #5EAA2F;
+    transition: 0.3s all;
+  }
+
+  &:focus {
+    background-color: #5EAA2F;
+    transition: 0.3s all;
+  }
+
+  &:active {
+    background-color: #5EAA2F;
+    transition: 0.3s all;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -133,27 +151,27 @@
     }
   }
 
-    .promo__image-cat {
-      background: rgb(255 255 255 / 100%);
-      margin-bottom: 0;
-    }
-
-    .promo__image-soup {
-      position: absolute;
-      margin: 0;
-      top: 542px;
-      left: 0;
-    }
-
-    .promo__button {
-      position: absolute;
-      margin: 0;
-      max-width: 244px;
-      top: 232px;
-      left: 91px;
-      padding: 14px 26px;
-    }
+  .promo__image-cat {
+    background: rgb(255 255 255 / 100%);
+    margin-bottom: 0;
   }
+
+  .promo__image-soup {
+    position: absolute;
+    margin: 0;
+    top: 542px;
+    left: 0;
+  }
+
+  .promo__button {
+    position: absolute;
+    margin: 0;
+    max-width: 244px;
+    top: 232px;
+    left: 91px;
+    padding: 14px 26px;
+  }
+}
 
 
 @media (min-width: $desktop-width) {
@@ -172,6 +190,7 @@
   .promo__slogan-text {
     padding-left: 80px;
     margin-bottom: 52px;
+
     &--font {
       color: $black;
       text-align: left;
@@ -182,6 +201,7 @@
     padding-top: 84px;
     padding-left: 80px;
     max-width: 416px;
+
     &--font {
       color: $black;
     }
@@ -203,4 +223,3 @@
     left: 40%;
   }
 }
-
