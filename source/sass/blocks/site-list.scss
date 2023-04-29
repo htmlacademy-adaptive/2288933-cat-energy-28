@@ -26,14 +26,20 @@
   font-size: 20px;
   text-transform: uppercase;
   color: $black;
+  transition: 0.3s all;
 
   &:hover {
+    transition: 0.3s all;
     opacity: 0.6;
   }
+
   &:focus {
+    transition: 0.3s all;
     opacity: 0.6;
   }
+
   &:active {
+    transition: 0.3s all;
     opacity: 0.3;
   }
 }

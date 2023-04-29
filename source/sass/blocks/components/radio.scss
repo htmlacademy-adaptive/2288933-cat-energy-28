@@ -29,6 +29,13 @@
 
 .radio-list__field:hover .radio-list__mark {
   border: 1px solid #bababa;
+
+  &:hover {
+    border: 1px solid #bababa;
+  }
+  &:disabled {
+    border: 1px solid rgba(73, 73, 73, 30%);
+  }
 }
 
 .radio-list__mark {
@@ -51,6 +58,14 @@
   line-height: 18px;
   color: $grey-subtitle;
   text-transform: uppercase;
+
+  &:hover {
+    color: $grey-subtitle;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -70,8 +85,16 @@
     transform: translateY(-50%);
     width: 40px;
     height: 40px;
-    border: 1px solid #cdcdcd;
+    border: 1px solid $dop-grey;
     border-radius: 50%;
+
+    &:hover {
+      border: 1px solid $dop-grey;
+    }
+
+    &:disabled {
+      border: 1px solid rgba(73, 73, 73, 30%);
+    }
   }
 
   .radio-list__control[type=radio]:checked + .radio-list__name::before {
@@ -84,6 +107,10 @@
     background-color: $basic-green;
     border-radius: 50%;
     content: "";
+  }
+
+  .radio-list__control[type=radio]:checked + .radio-list__name::before:disabled {
+    opacity: 0.3;
   }
 
   .radio-list__name {

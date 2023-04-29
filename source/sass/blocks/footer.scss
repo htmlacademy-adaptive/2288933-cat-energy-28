@@ -57,16 +57,20 @@
 
 .footer__html-link .footer__html-logo {
   fill: #666;
+  transition: 0.3s all;
 
   &:hover {
+    transition: 0.3s all;
     fill: $basic-green;
   }
 
   &:focus {
+    transition: 0.3s all;
     fill: $basic-green;
   }
 
   &:active {
+    transition: 0.3s all;
     fill: $basic-green;
     opacity: 0.3;
   }

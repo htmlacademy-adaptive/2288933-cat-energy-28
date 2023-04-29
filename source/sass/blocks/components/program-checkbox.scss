@@ -25,7 +25,15 @@
   line-height: 18px;
   font-family: "Oswald";
   font-weight: 400;
-  color: $black;
+  color: $grey-subtitle;
+
+  &:hover {
+    color: $grey-subtitle;
+  }
+
+  &:hover {
+    color: rgba(34, 34, 34, 30%);
+  }
 }
 
 .program-checkbox__control[type=checkbox]:checked+.program-checkbox__name::before {
@@ -39,10 +47,24 @@
   background-repeat: no-repeat;
   background-image: url(../img/check-mark.svg);
   background-size: contain;
+
+  &:hover {
+
+  }
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 .program-checkbox__field:hover .program-checkbox__mark {
   border: 1px solid #bababa;
+
+  &:hover {
+    border: 1px solid #bababa;
+  }
+  &:disabled {
+    border: 1px solid rgba(73, 73, 73, 30%);
+  }
 }
 
 .program-checkbox__mark {
@@ -52,7 +74,7 @@
   transform: translateY(-50%);
   width: 28px;
   height: 28px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $dop-grey;
 }
 
 @media (min-width: $tablet-width) {
@@ -75,7 +97,7 @@
     transform: translateY(-50%);
     width: 40px;
     height: 40px;
-    border: 1px solid #cdcdcd;
+    border: 1px solid $dop-grey;
   }
 
   .program-checkbox {

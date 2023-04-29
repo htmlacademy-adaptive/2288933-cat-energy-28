@@ -73,17 +73,17 @@
   transition: 0.3s all;
 
   &:hover {
-    background-color: #5EAA2F;
+    background-color: $basic-green-state;
     transition: 0.3s all;
   }
 
   &:focus {
-    background-color: #5EAA2F;
+    background-color: $basic-green-state;
     transition: 0.3s all;
   }
 
   &:active {
-    background-color: #5EAA2F;
+    background-color: $basic-green-state;
     transition: 0.3s all;
     color: rgba(255, 255, 255, 0.3);
   }

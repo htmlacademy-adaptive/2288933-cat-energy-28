@@ -98,6 +98,24 @@
   padding: 10px 44px;
   background-color: $basic-green;
   display: block;
+  transition: 0.3s all;
+
+  &:hover {
+    transition: 0.3s all;
+    background-color: $basic-green-state;
+  }
+
+  &:focus {
+    transition: 0.3s all;
+    background-color: $basic-green-state;
+
+  }
+
+  &:active {
+    transition: 0.3s all;
+    background-color: $basic-green-state;
+    color: rgba(255, 255, 255, 30%);
+  }
 }
 
 .add-catalog__active {
