@@ -1,4 +1,8 @@
 .instruction {
+  min-width: 100%;
+}
+
+.instruction__wrapper {
   @include list-reset;
   max-width: 280px;
   margin: 0 auto;
@@ -15,6 +19,7 @@
   text-align: left;
   margin-bottom: 40px;
   padding: 5px 0 0 1px;
+  color: $black;
 }
 
 .instruction__list {
@@ -77,10 +82,20 @@
   background: url(../img/watch.svg) no-repeat;
 }
 
+.instruction__number-span {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .instruction {
+    border-bottom: 1px solid $border-color;
+    margin: 0 auto;
+    min-width: 768px;
+    padding-bottom: 57px;
+  }
+
+  .instruction__wrapper {
     min-width: 708px;
-    max-width: 708px;
     margin: 0 auto;
     background-color: $white;
     justify-content: center;
@@ -89,15 +104,94 @@
   .instruction__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-row-gap: 37px;
+    grid-column-gap: 62px;
   }
 
   .instruction__item {
     height: 280px;
+    margin-bottom: 0;
+  }
+
+  .instruction__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .instruction__title {
+    margin: 0;
+    padding: 0;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 20px
+  }
+
+  .instruction__item::before {
+    top: 91px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .instruction__text {
+    position: absolute;
+    max-width: 220px;
+    top: 161px;
+    left: 0;
+    font-size: 16px;
+    line-height: 24px;
+    z-index: 2;
+  }
+
+  .instruction__text--one {
+    max-width: 220px;
+  }
+
+  .instruction__text--two {
+    max-width: 220px;
+  }
+
+  .instruction__text--three {
+    max-width: 220px;
+  }
+
+  .instruction__text--four {
+    max-width: 242px;
+  }
+
+  .instruction__number-span {
+    position: absolute;
+    @include list-reset;
+    display: block;
+    font-family: "Oswald";
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    color: $basic-grey;
+
+    &--one {
+      top: 11px;
+      left: 119px;
+    }
+    &--two {
+      top: 11px;
+      left: 111px;
+    }
+    &--three {
+      top: 11px;
+      left: 114px;
+    }
+    &--four {
+      top: 11px;
+      left: 113px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .instruction {
+    margin-top: 41px;
+  }
+
+  .instruction__wrapper {
     min-width: 1220px;
     max-width: 1220px;
     margin: 0 auto;
@@ -108,5 +202,6 @@
   .instruction__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 79px;
   }
 }

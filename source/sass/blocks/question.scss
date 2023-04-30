@@ -1,4 +1,3 @@
-
 .question__title-field {
   margin: 0;
   padding: 0;
@@ -7,13 +6,19 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
+  margin-bottom: 36px;
 }
 
 .question__field {
   @include list-reset;
-    margin: 0;
-    padding: 24px 0;
-    border: 0;
+  margin: 0;
+  padding: 24px 0;
+  padding-top: 0;
+  border: 0;
+}
+
+.question__labels-list {
+  @include list-reset;
 }
 
 .question__blocks {
@@ -22,8 +27,6 @@
 
 .question__data-field {
   @include list-reset;
-  margin-bottom: 24px;
-
 }
 
 .question__list {
@@ -32,24 +35,63 @@
 }
 
 .question__button {
-  width: calc(100% - 20px * 2);
+  width: 100%;
   margin: 0;
   padding: 0;
-  padding: 7px 44px;
+  padding: 9px 44px;
+  background-color: $basic-green;
+  margin-bottom: 29px;
+
+  &:hover {
+    transition: 0.3s all;
+    background-color: $basic-green-state;
+  }
+
+  &:focus {
+    transition: 0.3s all;
+    background-color: $basic-green-state;
+
+  }
+
+  &:active {
+    transition: 0.3s all;
+    background-color: $basic-green-state;
+    color: rgba(255, 255, 255, 30%);
+  }
 }
 
 .question__form-text {
   margin: 0;
   padding: 0;
-  color: #444;
+  color: $font-grey;
   font-family: "Oswald";
   font-weight: 400;
   font-size: 16px;
-  margin-right: 13px;
   text-transform: uppercase;
+  flex-shrink: 0;
+  margin: auto 13px auto 0;
+
   &--black-color {
     color: $black;
   }
+}
+
+.question__radio-field {
+  @include list-reset;
+
+  &--border {
+    border-bottom: 1px solid #d9d9d9;
+    margin: 0 -20px;
+    padding: 0 20px;
+    width: 280px;
+  }
+}
+
+.question__data-field--border {
+  border-bottom: 1px solid #d9d9d9;
+  margin: 0 -20px;
+  padding: 0 20px;
+
 }
 
 .question__form-control::placeholder {
@@ -63,16 +105,40 @@
 }
 
 .question__form-control {
-  min-width: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
   width: 100%;
-  height: 45px;
-  padding: 13px 20px;
-  &--icon {
-    padding-left: 15px;
+  font-family: inherit;
+  padding: 13px 20px 12px 12px;
+  border: 1px solid #e7e7e7;
+
+  &::placeholder {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  &:hover {
+    border: 1px solid $dop-grey;
+  }
+  &:focus {
+    border: 1px solid $font-grey;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    border: 1px solid $invalid-color;
+  }
+}
+
+.question__item {
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
 .question__labels {
+  position: relative;
   margin: 0;
   padding: 0;
   display: flex;
@@ -81,19 +147,6 @@
   font-weight: 400;
   font-size: 16px;
   text-transform: uppercase;
-  margin-bottom: 12px;
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-
-.question__labels {
-  margin: 0;
-  padding: 0;
-}
-
-.question__radio {
-  @include list-reset;
 }
 
 .question__text {
@@ -105,6 +158,22 @@
   line-height: 16px;
   color: $black;
   text-align: center;
+
+  &--mg {
+    margin-bottom: 7px;
+  }
+}
+
+.question__control-icon--mail {
+  position: absolute;
+  right: 16px;
+  top: 16.5px;
+}
+
+.question__control-icon--phone {
+  position: absolute;
+  right: 15px;
+  top: 15px;
 }
 
 @media (min-width: $tablet-width) {
@@ -122,6 +191,77 @@
   .question__button {
     width: 45%;
     margin-right: 64px;
+    font-size: 20px;
+    padding: 16px 44px;
+  }
+
+  .question__form-text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .question__form-control {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 11px 20px;
+    margin: 2px 0;
+    border: 1px solid $border-block;
+  }
+
+  .question__title-field {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .question__text {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .question__radio-field--border {
+    border: none;
+    width: 100%;
+  }
+
+  .question__data-field {
+    border: none;
+  }
+
+  .question__field {
+    padding: 0 0 72px 0;
+  }
+
+  .question__radio-list {
+    border: 1px solid $border-block;
+  }
+
+  .question__title-field--closed {
+    margin-bottom: 72px;
+  }
+
+  .question__form-text {
+    margin: auto 22px auto 0;
+  }
+
+  .question__title-field--dop {
+    margin-top: 47px;
+    margin-bottom: 63px;
+  }
+
+  .question__text-field {
+    padding-top: 14px;
+  }
+
+  .question__control-icon--mail {
+    position: absolute;
+    right: 19px;
+    top: 20px;
+  }
+
+  .question__control-icon--phone {
+    position: absolute;
+    right: 19px;
+    top: 19px;
   }
 }
 
@@ -132,11 +272,26 @@
   }
 
   .question__field {
-    padding: 24px 0;
+    padding: 0;
+  }
+
+  .question__labels-list--grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 78px;
+    margin-bottom: 50px;
+  }
+
+  .question__radio-field--border {
+    width: 570px;
+  }
+
+  .question__text-field {
+    @include list-reset;
   }
 
   .question__data-field--size-1 {
-     min-width: 569px;
+    min-width: 569px;
   }
 
   .question__data-field--size-2 {
@@ -144,17 +299,13 @@
   }
 
   .question__form-control--icon {
-    min-width: 486px;
+    max-width: 486px;
   }
 
   .question__field--flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-
-  .question__form-control--icon {
-    min-width: 467px;
   }
 
   .question__button-field {
@@ -165,5 +316,17 @@
 
   .question__button {
     margin-right: 84px;
+  }
+
+  .question__control-icon--mail {
+    position: absolute;
+    right: 19px;
+    top: 20px;
+  }
+
+  .question__control-icon--phone {
+    position: absolute;
+    right: 19px;
+    top: 19px;
   }
 }

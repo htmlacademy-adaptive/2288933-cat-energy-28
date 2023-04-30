@@ -1,27 +1,111 @@
-.site-list__item  {
+.site-list__item {
   @include list-reset;
-  padding: 25px 20px 19px;
+  padding: 21px 0 21px;
+  text-align: center;
+  max-height: 65px;
+
   &:nth-child(1) {
-    border-top: 1px solid #E6E6E6;
-  }
-  &:nth-child(2) {
-    border-top: 1px solid #E6E6E6;
-  }
-  &:nth-child(3) {
-    border-top: 1px solid #E6E6E6;
-    border-bottom: 1px solid #E6E6E6;
-  }
-  @media (min-width: $tablet-width) {
+    border-top: 1px solid $border-color;
   }
 
+  &:nth-child(2) {
+    border-top: 1px solid $border-color;
+  }
+
+  &:nth-child(3) {
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+  }
 }
 
 .site-list__link {
   @include list-reset;
   text-decoration: none;
-  color: #000;
   font-family: "Oswald";
   font-weight: 500;
   font-size: 20px;
   text-transform: uppercase;
+  color: $black;
+  transition: 0.3s all;
+
+  &:hover {
+    transition: 0.3s all;
+    opacity: 0.6;
+  }
+
+  &:focus {
+    transition: 0.3s all;
+    opacity: 0.6;
+  }
+
+  &:active {
+    transition: 0.3s all;
+    opacity: 0.3;
+  }
+}
+
+
+.site-list__link--current-link {
+  padding-bottom: 10px;
+  border-bottom: 2px solid $basic-green;
+}
+
+
+@media (min-width: $tablet-width) {
+  .site-list__link--current-link {
+    padding-bottom: 10px;
+    border-bottom: 2px solid $basic-green;
+  }
+
+  @media (min-width: $desktop-width) {
+    .site-list__link--current-link {
+      padding-bottom: 8px;
+    }
+  }
+
+
+  .site-list__item {
+    padding: 0;
+    padding-top: 18px;
+
+    @media (min-width: $desktop-width) {
+      padding-top: 0;
+    }
+  }
+
+  .site-list__link {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $black;
+  }
+
+  .site-list__item:nth-child(1),
+  .site-list__item:nth-child(2),
+  .site-list__item:nth-child(3) {
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__link {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    color: $black;
+  }
+
+  .site-list__item:nth-child(1),
+  .site-list__item:nth-child(2),
+  .site-list__item:nth-child(3) {
+    border: none;
+  }
+
+  .site-list__link--white-link {
+    border-bottom: 2px solid $white;
+  }
+
+  .site-list__link--white-text {
+    color: $white;
+  }
 }

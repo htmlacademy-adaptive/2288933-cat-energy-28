@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Ирина Князева](https://up.htmlacademy.ru/adaptive/28/user/2288933).
-* Наставник: [Олег Цыганов](https://htmlacademy.ru/profile/id904531).
+* Наставник: [Дмитрий Устинов](https://htmlacademy.ru/profile/ustinov-dmitriy).
 
 
 ---

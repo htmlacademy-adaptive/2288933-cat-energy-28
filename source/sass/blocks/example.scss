@@ -5,7 +5,7 @@
   margin: 0 auto;
   justify-content: center;
   padding: 0 20px;
-  padding-bottom: 40px;
+  padding-bottom: 8px;
 }
 
 .example__wrapper {
@@ -30,6 +30,7 @@
   padding: 0;
   font-family: "Oswald";
   font-weight: 400;
+  color: $black;
   font-size: 36px;
   line-height: 40px;
   text-align: left;
@@ -52,13 +53,14 @@
   width: 124px;
   text-align: center;
   padding: 13px 0 17px 0;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $dop-grey;
 }
 
 .example__number-span {
   font-family: "Oswald";
   font-size: 24px;
   line-height: 24px;
+  color: $black;
 }
 
 .example__text-span {
@@ -71,7 +73,7 @@
   left: 50%;
   padding: 0 10px;
   text-align: center;
-  background-color: inherit;
+  background: $basic-grey;
   transform: translate(-50%, 52%);
 }
 
@@ -80,7 +82,13 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  color: $black;
   text-transform: uppercase;
+  display: block;
+
+  &:first-child {
+    margin-bottom: 9px;
+  }
 }
 
 .example__price-box {
@@ -92,20 +100,86 @@
 @media (min-width: $tablet-width) {
   .example {
     @include list-reset;
+    position: relative;
     background-color: $white;
-    min-width: 768px;
-    max-width: 768px;
     margin: 0 auto;
     justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 174px;
+    min-width: 768px;
+    padding-bottom: 0;
+  }
+
+  .example::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    background: $bg-grey;
+    height: 462px;
+    left: 0;
+    top: 618px;
   }
 
   .example__wrapper {
     min-width: 708px;
-    max-width: 708px;
+    margin: 0 auto;
   }
 
   .example__flexbox {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 43px;
+    margin-bottom: 51px;
+    color: #000000;
+  }
+
+  .example__text {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 56px;
+  }
+
+  .example__spanbox-flex {
+    width: 162px;
+    padding: 15px 0 17px 0;
+
+    &:first-child {
+      margin-right: 42px;
+    }
+  }
+
+  .example__text-span {
+    width: 125px;
+  }
+
+  .example__number-span {
+    font-size: 30px;
+    line-height: 37px;
+    color: $black;
+  }
+
+  .example__text-span {
+    background-color: $white;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .example__price-box {
+    width: 174px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .example__price-span {
+    text-align: right;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
@@ -113,20 +187,55 @@
   .example {
     @include list-reset;
     background-color: $white;
-    max-width: 1440px;
+    min-width: 1440px;
     margin: 0 auto;
     justify-content: center;
-    height: 598px;
+
+  }
+
+  .example::before {
+    top: 160px;
+    width: 0;
   }
 
   .example__wrapper {
     min-width: 1220px;
-    max-width: 1220px;
+    margin-bottom: 75px;
   }
 
   .example__flexbox {
+    position: relative;
+    display: block;
+  }
+
+  .example__container {
+    margin-bottom: 63px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+  }
+
+  .example__price-box {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 476px;
+
+  }
+
+  .example__title {
+    padding-top: 23px;
+    margin-bottom: 134px;
+    color: #000000;
+  }
+
+  .example__text {
+    z-index: 3;
+    max-width: 35%;
+    margin-bottom: 69px;
+  }
+
+  .example__price-span:first-child {
+    margin-bottom: 0;
+    margin-right: 63px;
   }
 }
