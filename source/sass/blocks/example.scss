@@ -1,7 +1,7 @@
 .example {
   @include list-reset;
   background-color: $basic-grey;
-  max-width: 320px;
+  min-width: 320px;
   margin: 0 auto;
   justify-content: center;
   padding: 0 20px;
@@ -114,7 +114,7 @@
     content: '';
     position: absolute;
     width: 100%;
-    background: $bg-grey;
+    background: #EAEAEA;
     height: 462px;
     left: 0;
     top: 618px;
@@ -186,14 +186,19 @@
 @media (min-width: $desktop-width) {
   .example {
     @include list-reset;
-    background-color: $white;
     min-width: 1440px;
     margin: 0 auto;
     justify-content: center;
-
+    padding: 0 0 1px;
+    background: linear-gradient(to bottom,#fff 155px,#f2f2f2 90px);
   }
 
   .example::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    background: #EAEAEA;
+    height: 462px;
     top: 160px;
     width: 0;
   }
@@ -237,5 +242,9 @@
   .example__price-span:first-child {
     margin-bottom: 0;
     margin-right: 63px;
+  }
+
+  .example__text-span {
+    background-color: #f2f2f2;
   }
 }

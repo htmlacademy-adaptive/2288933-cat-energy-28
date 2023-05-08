@@ -69,7 +69,8 @@
   width: 270px;
 
   @media (min-width: $tablet-width) {
-    width: 609px;
+    width: 709px;
+    top: 203px;
   }
   @media (min-width: $desktop-width) {
     width: 499px;
@@ -173,7 +174,7 @@
   .promo__image-soup {
     position: absolute;
     margin: 0;
-    top: 542px;
+    top: 203px;
     left: 0;
   }
 
