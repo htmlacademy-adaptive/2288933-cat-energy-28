@@ -100,8 +100,14 @@
           <div class="promo__gradient-block"></div>
           <div class="promo__image-cat"></div>
         </div>
-        <img class="promo__image-soup" src="img/cat-soup.png" width="280" height="270"
+        <picture class="promo__image-soup-wrapper">
+          <source media="(min-width: 1200px)"
+          srcset="img/index-soup/index-soup-desktop.png 1x, img/index-soup/index-soup-desktop@2x.png 2x" width="552" height="499">
+          <source media="(min-width: 768px)"
+          srcset="img/index-soup/index-soup-tablet.png 1x, img/index-soup/index-soup-tablet@2x.png 2x" width="709" height="609">
+          <img class="promo__image-soup" src="img/index-soup/index-soup-mobile.png" srcset="img/index-soup/index-soup-mobile@2x.png 2x" width="280" height="270"
           alt="Изображение супового набора для котов.">
+        </picture>
         <a class="promo__button btn promo__button--padd" href="form.html">Подобрать программу</a>
       </div>
     </section>

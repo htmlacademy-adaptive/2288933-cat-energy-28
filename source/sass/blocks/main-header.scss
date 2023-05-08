@@ -24,10 +24,14 @@
     top: 0;
     left: 50%;
     background: linear-gradient(rgb(104 183 56 / 0.85),
-        rgb(104 183 56 / 0.85)), url('../img/index-bg-cat-desktop.jpg') no-repeat;
+        rgb(104 183 56 / 0.85)), url('../img/cat/index-bg-cat-desktop.jpg') no-repeat;
     background-size: cover;
     z-index: -1;
-
+    @media (min-resolution: 2dppx) {
+      background: linear-gradient(rgb(104 183 56 / 0.85),
+        rgb(104 183 56 / 0.85)), url("../img/cat/index-bg-cat-desktop@2x.jpg");
+      background-size: cover;
+    }
   }
 }
 

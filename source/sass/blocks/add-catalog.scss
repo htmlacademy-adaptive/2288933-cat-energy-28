@@ -124,11 +124,17 @@
   width: 100%;
   height: auto;
   background: linear-gradient(rgb(104 183 56 / 0.85),
-      rgb(104 183 56 / 0.85)), url('../img/cat-inbox.png') no-repeat;
+      rgb(104 183 56 / 0.85)), url('../img/cat/image-cat.jpg') no-repeat;
   background-size: cover;
   box-sizing: border-box;
   text-align: center;
   padding: 59px 61px 43px 58px;
+
+  @media (min-resolution: 2dppx) {
+    background: linear-gradient(rgb(104 183 56 / 0.85),
+      rgb(104 183 56 / 0.85)), url('../img/cat/image-cat@2x.jpg') no-repeat;
+  background-size: cover;
+  }
 }
 
 
