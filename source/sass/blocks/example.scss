@@ -1,10 +1,10 @@
 .example {
   @include list-reset;
-  background-color: $basic-grey;
+  background-color: #EAEAEA;
   min-width: 320px;
   margin: 0 auto;
   justify-content: center;
-  padding: 0 20px;
+
   padding-bottom: 8px;
 }
 
@@ -94,7 +94,8 @@
 .example__price-box {
   color: $black;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  display: flex;
 }
 
 @media (min-width: $tablet-width) {
