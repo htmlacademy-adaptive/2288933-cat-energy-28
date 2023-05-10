@@ -772,7 +772,7 @@ body {
   left: 3px;
   width: 50px;
   height: 53px;
-  background: url(../img/cat_back.svg) no-repeat;
+  background: url(../stack.svg#cat_back) no-repeat;
 }
 
 .program-item__title--marg-1 {
@@ -892,7 +892,7 @@ body {
     left: 394px;
     width: 200px;
     height: 211px;
-    background: url(../img/cat_back.svg) no-repeat;
+    background: url(../stack.svg#cat_back) no-repeat;
   }
 
   .program-item__title--marg-1 {
@@ -989,6 +989,7 @@ body {
     left: 0;
     width: 100px;
     height: 106px;
+    background: url(../stack.svg#cat_back) no-repeat;
   }
 
   .program-item__title--icon-y::after {
