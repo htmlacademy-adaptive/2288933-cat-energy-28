@@ -10,9 +10,15 @@
 .promo__image-cat {
   min-height: 302px;
   background: linear-gradient(rgb(104 183 56 / 0.85),
-      rgb(104 183 56 / 0.85)), url('../img/cat-photo.jpg') no-repeat;
+      rgb(104 183 56 / 0.85)), url('../img/cat/cat-photo.jpg') no-repeat;
   background-size: cover;
   margin-bottom: 135px;
+
+  @media (min-resolution: 2dppx) {
+    background: linear-gradient(rgb(104 183 56 / 0.85),
+      rgb(104 183 56 / 0.85)), url("../img/cat/cat-photo@2x.jpg");
+    background-size: cover;
+  }
 }
 
 .promo__text-block {
@@ -60,6 +66,15 @@
   margin: 0 20px;
   position: absolute;
   top: 167px;
+  width: 270px;
+
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    top: 203px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 499px;
+  }
 }
 
 .promo__button {
@@ -159,7 +174,7 @@
   .promo__image-soup {
     position: absolute;
     margin: 0;
-    top: 542px;
+    top: 203px;
     left: 0;
   }
 
