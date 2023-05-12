@@ -176,6 +176,66 @@
   top: 15px;
 }
 
+.question__title-field--contact {
+  background-color: $white;
+  margin-left: -20px;
+  padding-left: 20px;
+  width: 201px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    margin-left: -40px;
+    padding-left: 40px;
+    width: 554px;
+  }
+  @media (min-width: $desktop-width) {
+    background-color: $white;
+    margin-left: -40px;
+    padding-left: 40px;
+    width: 552px;
+  }
+}
+
+.question__title-field-comment {
+  background-color: $white;
+  margin-left: -20px;
+  padding-left: 20px;
+  width: 133px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    margin-left: -40px;
+    padding-left: 40px;
+    width: 220px ;
+  }
+  @media (min-width: $desktop-width) {
+    background-color: $white;
+    margin-left: -40px;
+    padding-left: 40px;
+    width: 220px;
+  }
+}
+
+.question__title-field--line {
+  background-color: $white;
+  margin-left: -20px;
+  padding-left: 20px;
+  width: 164px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    margin-left: -40px;
+    padding-left: 40px;
+    width: 265px ;
+  }
+  @media (min-width: $desktop-width) {
+    background-color: $white;
+    margin-left: -40px;
+    padding-left: 40px;
+    width: 262px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .question__list {
     display: grid;
@@ -211,6 +271,10 @@
   .question__title-field {
     font-size: 36px;
     line-height: 36px;
+
+    &--comment {
+      background-color: $white;
+    }
   }
 
   .question__text {
