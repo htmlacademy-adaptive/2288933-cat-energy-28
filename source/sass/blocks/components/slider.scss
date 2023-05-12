@@ -1,5 +1,6 @@
 .slider {
   @include list-reset;
+  position: relative;
   width: 280px;
   height: 256px;
 }
@@ -14,6 +15,62 @@
 .slider__demo {
   @include list-reset;
   position: relative;
+}
+
+.slide__scale {
+  position: absolute;
+  top: 0;
+  width: 280px;
+  height: 256px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    width: 560px;
+    height: 512px;
+  }
+
+  @media (min-width: $desktop-width) {}
+}
+
+.slider__range {
+  position: absolute;
+  width: 256px;
+  height: 4px;
+  background-color: #666;
+  transform: rotate(90deg);
+  top: 50%;
+  left: 4%;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 512px;
+    left: 14%;
+  }
+
+  @media (min-width: $desktop-width) {}
+}
+
+.slider__toogle {
+  position: absolute;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background: url(../img/slider-toggle.svg) no-repeat;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  left: 42.3%;
+  top: 42.3%;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    background: url(../img/slider-toggle.svg) no-repeat;
+    left: 47.2%;
+    top: 47.2%;
+  }
+
+  @media (min-width: $desktop-width) {}
 }
 
 .slider__cat--thick {
