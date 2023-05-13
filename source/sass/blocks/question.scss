@@ -126,6 +126,13 @@
 
   &:invalid:not(:placeholder-shown) {
     border: 1px solid $invalid-color;
+    color: $invalid-color;
+    .question__labels-mail::before {
+      background-color: #FF8282;
+    }
+    .question__labels-phone::before {
+      background-color: #FF8282;
+    }
   }
 }
 
@@ -164,16 +171,54 @@
   }
 }
 
-.question__control-icon--mail {
-  position: absolute;
-  right: 16px;
-  top: 16.5px;
+.question__labels-mail {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    width: 18px;
+    height: 14px;
+    mask-image: url('../stack.svg#mail');
+    background-color: $black;
+    mask-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 19px;
+      right: 19px;
+    }
+  }
 }
 
-.question__control-icon--phone {
-  position: absolute;
-  right: 15px;
-  top: 15px;
+.question__labels-phone {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    width: 16px;
+    height: 16px;
+    mask-image: url('../stack.svg#phone');
+    background-color: $black;
+    mask-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 19px;
+      right: 19px;
+    }
+  }
+}
+
+.question__labels-mail:focus-within::before {
+  background-color: $basic-green;
+}
+
+.question__labels-phone:focus-within::before {
+  background-color: $basic-green;
 }
 
 .question__title-field--contact {

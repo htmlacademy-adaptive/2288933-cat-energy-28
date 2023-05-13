@@ -130,28 +130,17 @@
                   Контактные данные (владельца кота)</h3>
                 <ul class="question__labels-list question__labels-list--grid">
                   <li class="question__item">
-                    <label class="question__labels">
+                    <label class="question__labels question__labels-mail" for="mail">
                       <span class="question__form-text">E-mail:*</span>
-                      <input class="question__form-control question__form-control--icon" type="email" name="email"
+                      <input class="question__form-control question__form-control--icon" type="email" id="mail" name="email"
                         required placeholder="kuklachev@gmail.com">
-                      <svg class="question__control-icon question__control-icon--mail" width="18" height="14"
-                        viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path class="question__fill" d="M0.5 5.5V13.5H17.5V5.5M0.5 0.5H17.5V2.5L9 8.5L0.5 2.5V0.5Z"
-                          stroke="black" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
                     </label>
                   </li>
                   <li class="question__item">
-                    <label class="question__labels">
+                    <label class="question__labels question__labels-phone" for="phone">
                       <span class="question__form-text question__form-text--size">Телефон:*</span>
                       <input class="question__form-control question__form-control--icon" type="tel" name="tel" required
-                        placeholder="8 (960) 900-60-90">
-                      <svg class="question__control-icon question__control-icon--phone" width="16" height="16"
-                        viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path class="question__fill"
-                          d="M7 8H15.5M15.5 8L13 5.5M15.5 8L13 10.5M5.5 0.5V5.5H2.5V10.5H5.5V15.5H3C1.5 15.5 0.5 14.5 0.5 13V3C0.5 1.5 1.5 0.5 3 0.5H5.5Z"
-                          stroke="black" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
+                        placeholder="8 (960) 900-60-90" id="phone">
                     </label>
                   </li>
                 </ul>
