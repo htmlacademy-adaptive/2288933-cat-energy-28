@@ -120,7 +120,7 @@
 
 @media (min-width: $desktop-width) {
   .cooperation {
-    max-width: 1440px;
+    min-width: 1440px;
     margin: 0 auto;
     justify-content: center;
   }
