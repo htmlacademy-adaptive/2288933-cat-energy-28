@@ -1,25 +1,36 @@
 .cooperation {
+  @include list-reset;
   background-color: $white;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .cooperation__wrapper {
   @include list-reset;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .cooperation__inner {
   @include list-reset;
-  margin-left: 20px;
 }
 
 .cooperation__container {
+  @include list-reset;
+  max-width: 320px;
+  padding: 26px 20px;
   display: flex;
   flex-wrap: wrap;
-  padding: 26px 0;
+  justify-content: space-between;
+}
+
+.cooperation__container--form {
   background-color: $basic-grey;
-  min-width: 320px;
 }
 
 .cooperation__title {
+  @include list-reset;
   font-family: "Oswald";
   font-weight: 400;
   font-size: 16px;
@@ -32,15 +43,117 @@
 }
 
 .cooperation__street {
+  @include list-reset;
   line-height: 20px;
   text-align: left;
   max-width: 139px;
 }
 
 .cooperation__map {
-  width: 280px;
+  @include list-reset;
+  width: 100%;
+  height: 362px;
 }
 
-.cooperation__address {
-  margin-right: 20px;
+.cooperation__map-height {
+  width: 100%;
+  height: 362px;
+  &::before {
+    position: absolute;
+    background: url("../img/map-logo-mobile.png") no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .cooperation {
+    min-width: 768px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .cooperation__wrapper {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .cooperation__container {
+    max-width: 708px;
+    padding: 60px 70px 60px 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    &--grey-color {
+      background-color: $basic-grey;
+    }
+  }
+
+  .cooperation__title {
+    font-size: 20px;
+    line-height: 26px;
+    max-width: 172px;
+  }
+
+  .cooperation__street {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    max-width: 160px;
+
+    &--mg {
+      margin-bottom: 15px;
+    }
+  }
+
+  .cooperation__map {
+    height: 400px;
+  }
+
+  .cooperation__map-height {
+    height: inherit;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cooperation {
+    min-width: 1440px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .cooperation__wrapper {
+    position: relative;
+    width: 100%;
+  }
+
+  .cooperation__container {
+    position: absolute;
+    min-width: 407px;
+    padding: 60px 80px 56px 80px;
+    top: 95px;
+    left: 111px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: $white;
+
+  }
+
+  .cooperation__map {
+    height: 400px;
+  }
+
+  .cooperation__map-height {
+    height: 400px;
+  }
+
+  .cooperation__street {
+    text-align: left;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

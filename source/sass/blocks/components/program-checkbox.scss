@@ -1,0 +1,129 @@
+.program-checkbox {
+  @include list-reset;
+
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 22px;
+}
+
+.program-checkbox__field {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.program-checkbox__control {
+  margin-right: 16px;
+}
+
+.program-checkbox__name {
+  cursor: pointer;
+  padding-left: 46px;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald";
+  font-weight: 400;
+  color: $grey-subtitle;
+
+  &:hover {
+    color: $grey-subtitle;
+  }
+
+  &:hover {
+    color: rgba(34, 34, 34, 30%);
+  }
+}
+
+.program-checkbox__control[type=checkbox]:checked+.program-checkbox__name::before {
+  position: absolute;
+  top: 50%;
+  left: 7px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 14px;
+  content: "";
+  background-repeat: no-repeat;
+  background-image: url(../img/check-mark.svg);
+  background-size: contain;
+
+  &:hover {
+
+  }
+  &:disabled {
+    opacity: 0.3;
+  }
+}
+
+.program-checkbox__field:hover .program-checkbox__mark {
+  border: 1px solid #bababa;
+
+  &:hover {
+    border: 1px solid #bababa;
+  }
+  &:disabled {
+    border: 1px solid rgba(73, 73, 73, 30%);
+  }
+}
+
+.program-checkbox__mark {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  border: 1px solid $dop-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .program-checkbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 22px;
+  }
+
+  .program-checkbox__name {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 61px;
+  }
+
+  .program-checkbox__mark {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border: 1px solid $dop-grey;
+  }
+
+  .program-checkbox {
+    row-gap: 41px;
+    column-gap: 58px;
+    margin-bottom: 60px;
+  }
+
+  .program-checkbox__control[type=checkbox]:checked + .program-checkbox__name::before {
+    position: absolute;
+    top: 55%;
+    left: 7px;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 26px;
+    content: "";
+    background-repeat: no-repeat;
+    background-image: url(../img/check-mark.svg);
+    background-size: contain;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-checkbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 22px;
+  }
+}

@@ -1,14 +1,220 @@
 .main-header {
-  position: relative;
-  max-width: 280px;
-  padding: 10px 20px 17px;
-  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: 500;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 32px;
+  }
 }
 
-
+.main-header--bg::before {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 720px;
+    min-height: 694px;
+    top: 0;
+    left: 50%;
+    background: linear-gradient(rgb(104 183 56 / 0.85),
+        rgb(104 183 56 / 0.85)), url('../img/cat/index-bg-cat-desktop.jpg') no-repeat;
+    background-size: cover;
+    z-index: -1;
+    @media (min-resolution: 2dppx) {
+      background: linear-gradient(rgb(104 183 56 / 0.85),
+        rgb(104 183 56 / 0.85)), url("../img/cat/index-bg-cat-desktop@2x.jpg");
+      background-size: cover;
+    }
+  }
+}
 
 .main-header__header {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1220px;
+    margin: 0 auto;
+    height: 107px;
+  }
+}
+
+.main-header-wrapper {
   display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    max-height: 52px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.main-header__container {
+  @include list-reset;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.main-header__logo {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-header__logo-container {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  max-width: 280px;
+  justify-content: space-between;
+  height: 38px;
+  padding: 10px 20px 17px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+    margin-top: 53px;
+  }
+}
+
+.main-header__toggle {
+  border: none;
+  padding: 0;
+  height: 38px;
+  width: 28px;
+  position: right;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-header--closed .main-header__toggle::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  width: 24px;
+  height: 2px;
+  background-color: $black;
+  box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: fade($black, 30%);
+  box-shadow:
+    0 8px 0 0 fade($black, 30%),
+    0 16px 0 0 fade($black, 30%);
+}
+
+.main-header--opened .main-header__toggle {
+  top: 0;
+  right: auto;
+  left: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width: 28px;
+    height: 2px;
+    background-color: black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-header--closed .main-nav {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.main-header--opened .main-nav {
+  @media (max-width: 768px) {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 2;
+    transition: .5s linear;
+  }
+}
+
+.main-header--nojs .main-header__toggle {
+  display: none;
+}
+
+.main-header--nojs .main-nav {
+  display: block;
+  position: static;
+  min-height: 0;
+}
+
+.main-header--nojs .main-nav {
+  display: block;
+}
+
+.main-header--opened .main-nav {
+  @media (min-width: 768px) {
+    position: inherit;
+    width: 440px;
+  }
+}
+
+.main-header--opened .main-nav {
+  @media (min-width: 1440px) {
+    position: inherit;
+    width: 480px;
+  }
 }
