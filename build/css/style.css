@@ -3239,8 +3239,8 @@ body {
   right: 18px;
   width: 18px;
   height: 14px;
-  -webkit-mask-image: url("../stack.svg#mail");
-          mask-image: url("../stack.svg#mail");
+  -webkit-mask-image: url("../img/mail.svg");
+          mask-image: url("../img/mail.svg");
   background-color: #000000;
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
@@ -3262,8 +3262,8 @@ body {
   right: 18px;
   width: 16px;
   height: 16px;
-  -webkit-mask-image: url("../stack.svg#phone");
-          mask-image: url("../stack.svg#phone");
+  -webkit-mask-image: url("../img/phone.svg");
+          mask-image: url("../img/phone.svg");
   background-color: #000000;
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
