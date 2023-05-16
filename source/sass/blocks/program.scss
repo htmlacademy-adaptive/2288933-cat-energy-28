@@ -58,6 +58,7 @@
   width: 50px;
   height: 53px;
   background: url(../img/cat_back.svg) no-repeat;
+  background-size: cover;
 }
 
 .program-item__title--marg-1 {
@@ -77,6 +78,7 @@
   width: 67px;
   height: 50px;
   background: url(../img/cat_back-x1.svg) no-repeat;
+  background-size: cover;
 }
 
 .program-item__text {
@@ -98,6 +100,9 @@
   color: $black;
   text-align: left;
   position: relative;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
 
   &:active {
     opacity: 0.6;
@@ -145,7 +150,7 @@
 
   .program__item {
     width: 100%;
-    max-height: 372px;
+    min-height: 372px;
     flex-direction: column;
     padding: 0;
     padding: 78px 28px 55px 53px;
@@ -179,6 +184,7 @@
     width: 200px;
     height: 211px;
     background: url(../img/cat_back.svg) no-repeat;
+    background-size: cover;
   }
 
   .program-item__title--marg-1 {
@@ -236,8 +242,9 @@
 
   .program__item {
     width: 570px;
-    height: 379px;
+    min-height: 379px;
     padding: 0;
+    margin-bottom: 20px;
   }
 
   .program-item__image {
@@ -261,7 +268,7 @@
   }
 
   .program-item__text {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 24px;
     max-width: 457px;
     margin-bottom: 7px;
@@ -277,6 +284,7 @@
     width: 100px;
     height: 106px;
     background: url(../img/cat_back.svg) no-repeat;
+    background-size: cover;
   }
 
   .program-item__title--icon-y::after {

@@ -54,6 +54,8 @@
   text-align: center;
   padding: 13px 0 17px 0;
   border: 1px solid $dop-grey;
+  margin-right: 0;
+  margin-bottom: 20px;
 }
 
 .example__number-span {
@@ -61,6 +63,7 @@
   font-size: 24px;
   line-height: 24px;
   color: $black;
+  margin-right: 10px;
 }
 
 .example__text-span {
@@ -73,7 +76,8 @@
   left: 50%;
   padding: 0 10px;
   text-align: center;
-  background: #EAEAEA;;
+  background: #EAEAEA;
+  ;
   transform: translate(-50%, 52%);
 }
 
@@ -99,6 +103,7 @@
 }
 
 @media (min-width: $tablet-width) {
+
   .example {
     @include list-reset;
     position: relative;
@@ -106,7 +111,7 @@
     margin: 0 auto;
     justify-content: center;
     margin: 0 auto;
-    margin-bottom: 174px;
+    margin-bottom: 100px;
     min-width: 768px;
     padding-bottom: 0;
   }
@@ -149,9 +154,11 @@
   .example__spanbox-flex {
     width: 162px;
     padding: 15px 0 17px 0;
+    margin-right: 42px;
+    margin-bottom: 20px;
 
-    &:first-child {
-      margin-right: 42px;
+    &:last-child {
+      margin-right: 0;
     }
   }
 
@@ -191,7 +198,7 @@
     margin: 0 auto;
     justify-content: center;
     padding: 0 0 1px;
-    background: linear-gradient(to bottom,#fff 155px,#f2f2f2 90px);
+    background: linear-gradient(to bottom, #fff 155px, #f2f2f2 90px);
   }
 
   .example::before {
@@ -209,6 +216,16 @@
     margin-bottom: 75px;
   }
 
+  .example__spanbox-flex {
+    margin-right: 42px;
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+
   .example__flexbox {
     position: relative;
     display: block;
@@ -219,6 +236,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    max-width: 60%;
   }
 
   .example__price-box {
@@ -246,6 +264,7 @@
   }
 
   .example__text-span {
-    background-color: #f2f2f2;;
+    background-color: #f2f2f2;
+    ;
   }
 }

@@ -3,8 +3,8 @@
   background-color: $basic-grey;
   box-sizing: border-box;
   min-width: 320px;
-  height: 240px;
-  padding: 40px 0;
+  min-height: 240px;
+  padding-top: 40px;
 }
 
 .footer__wrapper {
@@ -41,6 +41,8 @@
 
 .footer_logo-link .footer__logotype {
   color: #111111;
+  margin-right: 10px;
+  margin-left: 10px;
 
   &:hover {
     color: #3E3E3E;
@@ -95,7 +97,7 @@
 @media (min-width: $tablet-width) {
   .footer {
     min-width: 768px;
-    max-height: 147px;
+    min-height: 147px;
     padding: 0;
   }
 
@@ -142,7 +144,7 @@
     min-width: 1440px;
     padding-top: 12px;
     padding-bottom: 67px;
-    height: 169px;
+    max-height: 169px;
   }
 
   .footer__wrapper {

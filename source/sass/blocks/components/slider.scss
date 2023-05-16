@@ -180,6 +180,8 @@
     height: 512px;
     background: url(../img/slider/cat-thin-sl-mobile@1x.png) no-repeat;
     background-size: cover;
+    left: 50%;
+    background-position-x: 100%;
 
     @media (min-resolution: 2dppx) {
       background: url(../img/slider/cat-thin-sl-tablet@2x.png) no-repeat;
