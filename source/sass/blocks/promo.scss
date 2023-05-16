@@ -4,25 +4,20 @@
   margin-bottom: 20px;
   margin: 0 auto;
   justify-content: center;
-  margin-bottom: 22px;
 }
 
-.promo__image-cat {
+.promo {
   min-height: 302px;
   background: linear-gradient(rgb(104 183 56 / 0.85),
       rgb(104 183 56 / 0.85)), url('../img/cat/cat-photo.jpg') no-repeat;
-  background-size: cover;
-  margin-bottom: 135px;
+  background-size: 320px 302px;
+  margin-bottom: 20px;
 
   @media (min-resolution: 2dppx) {
     background: linear-gradient(rgb(104 183 56 / 0.85),
-      rgb(104 183 56 / 0.85)), url("../img/cat/cat-photo@2x.jpg");
-    background-size: cover;
+      rgb(104 183 56 / 0.85)), url("../img/cat/cat-photo@2x.jpg") no-repeat;
+      background-size: 320px 302px;
   }
-}
-
-.promo__text-block {
-  position: absolute;
 }
 
 .promo__slogan {
@@ -58,13 +53,14 @@
 
 .promo__wrapper {
   position: relative;
+  display: flex;
+    flex-direction: column;
 }
 
 .promo__image-soup {
   top: 167px;
   display: block;
   margin: 0 20px;
-  position: absolute;
   top: 167px;
   width: 270px;
 
@@ -86,6 +82,7 @@
   cursor: pointer;
   background-color: $basic-green;
   transition: 0.3s all;
+  margin-bottom: 22px;
 
   &:hover {
     background-color: $basic-green-state;
@@ -121,11 +118,6 @@
   .promo__text-block {
     position: relative;
     margin-bottom: 20px;
-  }
-
-  .promo__image-cat {
-    background: $white;
-    height: 609px;
   }
 
   .promo__slogan-text {
@@ -166,12 +158,12 @@
     }
   }
 
-  .promo__image-cat {
+  .promo {
     background: rgb(255 255 255 / 100%);
     margin-bottom: 0;
   }
 
-  .promo__image-soup {
+  y {
     position: absolute;
     margin: 0;
     top: 203px;
@@ -222,7 +214,7 @@
     }
   }
 
-  .promo__image-cat {
+  .promo {
     background: transparent;
   }
 
@@ -232,7 +224,8 @@
   }
 
   .promo__image-soup {
-    width: 509px;
+    position: absolute;
+    width: 552px;
     height: 499px;
     top: 0;
     left: 40%;
