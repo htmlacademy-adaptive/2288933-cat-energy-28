@@ -97,7 +97,7 @@
 @media (min-width: $tablet-width) {
   .footer {
     min-width: 768px;
-    max-height: 147px;
+    min-height: 147px;
     padding: 0;
   }
 
@@ -144,7 +144,7 @@
     min-width: 1440px;
     padding-top: 12px;
     padding-bottom: 67px;
-    height: 169px;
+    max-height: 169px;
   }
 
   .footer__wrapper {
