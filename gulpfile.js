@@ -3,6 +3,8 @@ import plumber from 'gulp-plumber';
 import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
+import csso from 'postcss-csso';
+import rename from 'gulp-rename';
 import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
 import squoosh from 'gulp-libsquoosh';
@@ -18,14 +20,16 @@ import {deleteAsync} from 'del';
 
 export const styles = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true })
-    .pipe(plumber())
-    .pipe(sass().on('error', sass.logError))
-    .pipe(postcss([
-      autoprefixer()
-    ]))
-    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
-    .pipe(browser.stream());
-}
+  .pipe(plumber())
+  .pipe(sass().on('error', sass.logError))
+  .pipe(postcss([
+  autoprefixer(),
+  csso()
+  ]))
+  .pipe(rename('style.min.css'))
+  .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
+  .pipe(browser.stream());
+  }
 
 //HTML
 
