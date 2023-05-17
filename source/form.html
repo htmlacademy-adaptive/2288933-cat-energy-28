@@ -210,19 +210,31 @@
       </form>
     </section>
     <section class="cooperation cooperation--index">
-      <div class="cooperation__wrapper">
-        <div class="cooperation__container cooperation__container--form">
-          <div class="cooperation__inner">
-            <h2 class="cooperation__title">Приглашаем<br>к сотрудничеству дилеров!</h2>
-          </div>
-          <div class="cooperation__address">
-            <p class="cooperation__street">ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург</p>
+      <div class="cooperation__grid">
+        <div class="cooperation__wrapper">
+          <div class="cooperation__container">
+            <div class="cooperation__inner">
+              <h2 class="cooperation__title">Приглашаем<br>к сотрудничеству дилеров!</h2>
+            </div>
+            <div class="cooperation__address">
+              <p class="cooperation__street cooperation__street--mg">ул. Большая Конюшенная, д. 19/8</p>
+              <p class="cooperation__street">Санкт-Петербург</p>
+            </div>
           </div>
         </div>
         <div class="cooperation__map">
           <iframe class="cooperation__map-height"
-            src="https://yandex.ru/map-widget/v1/?um=constructor%3A0e424fa056d916da6aed9e14cec6915b14b709e43ded48f321cc3e3887935456&amp;source=constructor"
-            height="280"></iframe>
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A0e424fa056d916da6aed9e14cec6915b14b709e43ded48f321cc3e3887935456&amp;source=constructor"></iframe>
+          <noscript class="copperation__nojs">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/location-desktop.png 1x, img/location-desktop@2x.png 2x" width="1440" height="400">
+              <source media="(min-width: 768px)" srcset="img/location-tablet.png 1x, img/location-tablet@2x.png 2x"
+                width="768" height="400">
+              <img class="copperation__nojs-map" src="img/location-mobile.png" srcset="img/location-mobile@2x.png 2x" width="320" height="362"
+                alt="Изображение карты с адресом магазина.">
+            </picture>
+          </noscript>
         </div>
       </div>
     </section>
