@@ -218,6 +218,8 @@
     left: 388px;
     width: 268px;
     height: 200px;
+    background: url(../img/cat_back-x1.svg) no-repeat;
+    background-size: cover;
   }
 
   .program__item:last-child {
@@ -292,6 +294,8 @@
     left: -19px;
     width: 134px;
     height: 100px;
+    background: url(../img/cat_back-x1.svg) no-repeat;
+    background-size: cover;
   }
 
   .program-item__link--slim::after {

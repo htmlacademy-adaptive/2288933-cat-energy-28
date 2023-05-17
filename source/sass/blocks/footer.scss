@@ -76,6 +76,11 @@
     fill: $basic-green;
     opacity: 0.3;
   }
+
+  &:disabled {
+    transition: 0.3s all;
+    opacity: 0.2;
+  }
 }
 
 .footer__html-link .footer__html-text {
@@ -91,6 +96,11 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  &:disabled {
+    transition: 0.3s all;
+    opacity: 0.2;
   }
 }
 

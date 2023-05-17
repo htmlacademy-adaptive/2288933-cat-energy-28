@@ -41,6 +41,7 @@
   padding: 9px 44px;
   background-color: $basic-green;
   margin-bottom: 29px;
+  cursor: pointer;
 
   &:hover {
     transition: 0.3s all;
@@ -57,6 +58,12 @@
     transition: 0.3s all;
     background-color: $basic-green-state;
     color: rgba(255, 255, 255, 30%);
+  }
+
+  &:disabled {
+    transition: 0.3s all;
+    background-color: $basic-grey;
+    color: $white;
   }
 }
 
@@ -318,6 +325,7 @@
     padding: 11px 20px;
     margin: 2px 0;
     border: 1px solid $border-block;
+    cursor: pointer;
   }
 
   .question__title-field {

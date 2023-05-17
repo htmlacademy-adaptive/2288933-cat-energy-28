@@ -25,6 +25,10 @@
   background-color: #68b738;
   border-radius: 50%;
   content: "";
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 .radio-list__field:hover .radio-list__mark {
