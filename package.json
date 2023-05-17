@@ -7,17 +7,20 @@
     "@squoosh/lib": "^0.5.3",
     "autoprefixer": "10.4.0",
     "browser-sync": "2.27.7",
+    "del": "^6.0.0",
     "gulp": "4.0.2",
     "gulp-dart-sass": "^1.0.2",
     "gulp-htmlmin": "^5.0.1",
+    "gulp-libsquoosh": "^1.0.12",
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "9.0.1",
     "gulp-rename": "^2.0.0",
     "gulp-stacksvg": "^2.0.1",
     "gulp-svgmin": "^4.1.0",
-    "gulp-svgstore": "^9.0.0",
+    "gulp-svgstore": "^8.0.0",
     "gulp-terser": "^2.1.0",
     "postcss": "8.3.11",
+    "postcss-csso": "^5.0.1",
     "stylelint": "13.13.1",
     "stylelint-config-htmlacademy": "0.1.11"
   },
@@ -51,9 +54,12 @@
     "node": "16.20.0"
   },
   "dependencies": {
+<<<<<<< HEAD
     "del": "^7.0.0",
     "gulp-libsquoosh": "^1.1.2",
     "postcss-csso": "^6.0.1",
+=======
+>>>>>>> 513d54bf7156e880399fffea3dfb9d5f31a20c87
     "squoosh": "^0.0.0"
   }
 }
