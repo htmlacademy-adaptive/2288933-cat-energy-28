@@ -75,19 +75,20 @@
                     <li class="question__item">
                       <label class="question__labels">
                         <span class="question__form-text">Имя:*</span>
-                        <input class="question__form-control" type="text" placeholder="Барсик" required>
+                        <input class="question__form-control" type="text" placeholder="Барсик" required
+                          pattern="^[a-zA-Z]+$, ^[А-Яа-яЁё\s]+$">
                       </label>
                     </li>
                     <li class="question__item">
                       <label class="question__labels">
                         <span class="question__form-text">Вес (кг):*</span>
-                        <input class="question__form-control" type="text" placeholder="7" required>
+                        <input class="question__form-control" type="text" placeholder="7" required pattern="^[ 0-9]+$">
                       </label>
                     </li>
                     <li class="question__item">
                       <label class="question__labels">
                         <span class="question__form-text">Возраст (лет):</span>
-                        <input class="question__form-control" type="text" placeholder="7">
+                        <input class="question__form-control" type="text" placeholder="7" pattern="^[ 0-9]+$">
                       </label>
                     </li>
                   </ul>
@@ -130,19 +131,19 @@
                   Контактные данные (владельца кота)</h3>
                 <ul class="question__labels-list question__labels-list--grid">
                   <li class="question__item">
-                    <label class="question__labels">
+                    <!--Добавить класс "question__invalid" для состояния ошибки-->
+                    <label class="question__labels question__labels-mail">
                       <span class="question__form-text">E-mail:*</span>
                       <input class="question__form-control question__form-control--icon" type="email" name="email"
                         required placeholder="kuklachev@gmail.com">
-                        <span class="question__labels-mail"></span>
                     </label>
                   </li>
                   <li class="question__item">
-                    <label class="question__labels">
+                    <!--Добавить класс "question__invalid" для состояния ошибки-->
+                    <label class="question__labels question__labels-phone">
                       <span class="question__form-text question__form-text--size">Телефон:*</span>
                       <input class="question__form-control question__form-control--icon" type="tel" name="tel" required
-                        placeholder="8 (960) 900-60-90">
-                        <span class="question__labels-phone"></span>
+                        placeholder="8 (960) 900-60-90" pattern="2-[0-9]{3}-[0-9]{3}">
                     </label>
                   </li>
                 </ul>
@@ -162,7 +163,8 @@
           <div class="form__line-dop">
             <div class="form__wrapper form__wrapper--green-line">
               <div class="question__data-field">
-                <h3 class="question__title-field question__title-field--line question__title-field--dop">Дополнительно</h3>
+                <h3 class="question__title-field question__title-field--line question__title-field--dop">Дополнительно
+                </h3>
                 <ul class="question__list program-checkbox">
                   <li class="program-checkbox__item program-checkbox__item--item">
                     <label class="program-checkbox__field program-checkbox__name--check">

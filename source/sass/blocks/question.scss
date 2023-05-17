@@ -114,8 +114,8 @@
   border: 1px solid #e7e7e7;
 
   &::placeholder {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 18px;
   }
   &:hover {
     border: 1px solid $dop-grey;
@@ -127,13 +127,20 @@
   &:invalid:not(:placeholder-shown) {
     border: 1px solid $invalid-color;
     color: $invalid-color;
-    .question__labels-mail::before {
-      background-color: #FF8282;
-    }
-    .question__labels-phone::before {
-      background-color: #FF8282;
-    }
   }
+}
+
+.question__invalid.question__form-control {
+  border: 1px solid $invalid-color;
+    color: $invalid-color;
+}
+
+.question__invalid.question__labels-phone::after {
+  background-color: $invalid-color;
+}
+
+.question__invalid.question__labels-mail::after {
+  background-color: $invalid-color;
 }
 
 .question__item {
@@ -174,7 +181,7 @@
 .question__labels-mail {
   position: relative;
 
-  &::before {
+  &::after {
     content: '';
     position: absolute;
     top: 15px;
@@ -195,7 +202,7 @@
 .question__labels-phone {
   position: relative;
 
-  &::before {
+  &::after {
     content: '';
     position: absolute;
     top: 15px;
