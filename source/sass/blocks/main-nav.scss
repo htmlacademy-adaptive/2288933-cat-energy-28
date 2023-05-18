@@ -12,15 +12,17 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    width: 440px;
+    max-width: 440px;
+    gap: 33px;
     justify-content: space-between;
     flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: space-between;
-    width: 480px;
+    flex-direction: row;
+    gap: 33px;
+    max-width: 1000px;
   }
 }
 
@@ -33,4 +35,3 @@
 .main-nav--closed .site-list__item {
   display: none;
 }
-

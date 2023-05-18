@@ -373,31 +373,9 @@
     margin: auto 0;
   }
 
-  .add-catalog__title-text::before {
-    content: "";
-    position: absolute;
-    transform: translateY(-50%);
-    width: 5vw;
-    height: 2px;
-    background-color: #68b738;
-    top: 65%;
-    left: -110px;
-    z-index: 0;
-  }
-
-  .add-catalog__title-text::after {
-    content: "";
-    position: absolute;
-    transform: translateY(-50%);
-    width: 100vw;
-    height: 2px;
-    background-color: #68b738;
-    top: 65%;
-    left: 373px;
-  }
-
   .add-catalog__subtext--right {
     margin-right: 40px;
+    max-width: 50px;
   }
 
   .add-catalog__active {
