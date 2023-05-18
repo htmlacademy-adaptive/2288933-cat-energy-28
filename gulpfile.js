@@ -12,7 +12,7 @@ import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import { stacksvg } from "gulp-stacksvg";
 import terser from 'gulp-terser';
-import del from 'del';
+import {deleteAsync} from 'del';
 
 
 
@@ -101,7 +101,7 @@ const copy = (done) => {
 // Clean
 
 const clean = () => {
-  return del('build');
+  return deleteAsync('build');
 }
 
 // Server
