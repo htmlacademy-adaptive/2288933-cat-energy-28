@@ -45,15 +45,15 @@
   margin-left: 10px;
 
   &:hover {
-    color: #3E3E3E;
+    opacity: 0.3;
   }
 
   &:focus {
-    color: #3E3E3E;
+    opacity: 0.3;
   }
 
   &:active {
-    color: #6B6B6B;
+    opacity: 0.6;
   }
 }
 
