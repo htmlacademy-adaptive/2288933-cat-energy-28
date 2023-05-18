@@ -314,13 +314,14 @@
 @media (min-width: $desktop-width) {
   .add-catalog {
     margin-bottom: 57px;
-    max-width: 1440px;
+    min-width: 1440px;
     margin: 0 auto;
   }
 
   .add-catalog__container {
     min-width: 1220px;
-    margin: 0 110px;
+    margin: 0 auto;
+    max-width: 1440px;
   }
 
   .add_-catalog__flex-block {
