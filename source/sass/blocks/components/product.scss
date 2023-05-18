@@ -120,7 +120,7 @@
     height: 30px;
     top: 3px;
     left: 45%;
-    background-image: url(../img/plus.svg);
+    background: url(../img/plus.svg) no-repeat;
   }
 }
 
@@ -270,10 +270,15 @@
   }
 
   .product__container--icon::before {
-    width: 60px;
-    height: 60px;
+    content: "";
+    position: absolute;
     top: 53px;
     left: 38%;
+    width: 60px;
+    height: 60px;
+    background: url(../img/plus.svg)no-repeat;
+    background-size: cover;
+}
   }
 
   .product__button-link {
