@@ -50,13 +50,13 @@ const scripts = () => {
 //Images
 
 const optimizeImages = () => {
-  return gulp.src('source/img/**/*.{png,jpg}, source/images/favicons/*.png')
+  return gulp.src('source/img/**/*.{png,jpg})
     .pipe(squoosh())
     .pipe(gulp.dest('build/img'))
 }
 
 const copyImages = () => {
-  return gulp.src('source/img/**/*.{png,jpg}, source/images/favicons/*.png')
+  return gulp.src('source/img/**/*.{png,jpg})
     .pipe(gulp.dest('build/img'))
 }
 
