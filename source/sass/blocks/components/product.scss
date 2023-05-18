@@ -270,15 +270,10 @@
   }
 
   .product__container--icon::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 53px;
     left: 38%;
-    width: 60px;
-    height: 60px;
-    background: url(../img/plus.svg)no-repeat;
-    background-size: cover;
-}
   }
 
   .product__button-link {
