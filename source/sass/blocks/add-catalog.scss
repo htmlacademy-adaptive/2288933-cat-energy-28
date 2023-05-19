@@ -314,13 +314,14 @@
 @media (min-width: $desktop-width) {
   .add-catalog {
     margin-bottom: 57px;
-    max-width: 1440px;
+    min-width: 1440px;
     margin: 0 auto;
   }
 
   .add-catalog__container {
     min-width: 1220px;
-    margin: 0 110px;
+    margin: 0 auto;
+    max-width: 1440px;
   }
 
   .add_-catalog__flex-block {
@@ -373,31 +374,9 @@
     margin: auto 0;
   }
 
-  .add-catalog__title-text::before {
-    content: "";
-    position: absolute;
-    transform: translateY(-50%);
-    width: 5vw;
-    height: 2px;
-    background-color: #68b738;
-    top: 65%;
-    left: -110px;
-    z-index: 0;
-  }
-
-  .add-catalog__title-text::after {
-    content: "";
-    position: absolute;
-    transform: translateY(-50%);
-    width: 100vw;
-    height: 2px;
-    background-color: #68b738;
-    top: 65%;
-    left: 373px;
-  }
-
   .add-catalog__subtext--right {
     margin-right: 40px;
+    max-width: 50px;
   }
 
   .add-catalog__active {

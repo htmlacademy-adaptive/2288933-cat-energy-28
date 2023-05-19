@@ -25,10 +25,14 @@
   background-color: #68b738;
   border-radius: 50%;
   content: "";
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 .radio-list__field:hover .radio-list__mark {
-  border: 1px solid #bababa;
+  border: 1px solid #CDCDCD;
 
   &:hover {
     border: 1px solid #bababa;

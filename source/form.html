@@ -5,12 +5,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Кэт Энерджи</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+  <!--Предзагрузка шрифтов-->
+  <link rel="preload" href="../fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="../fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="../fonts/oswald/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <!--Подключение фавиконок-->
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
@@ -75,19 +79,20 @@
                     <li class="question__item">
                       <label class="question__labels">
                         <span class="question__form-text">Имя:*</span>
-                        <input class="question__form-control" type="text" placeholder="Барсик" required>
+                        <input class="question__form-control" type="text" placeholder="Барсик" required
+                          pattern="^[a-zA-Z]+$, ^[А-Яа-яЁё\s]+$">
                       </label>
                     </li>
                     <li class="question__item">
                       <label class="question__labels">
                         <span class="question__form-text">Вес (кг):*</span>
-                        <input class="question__form-control" type="text" placeholder="7" required>
+                        <input class="question__form-control" type="text" placeholder="7" required pattern="^[ 0-9]+$">
                       </label>
                     </li>
                     <li class="question__item">
                       <label class="question__labels">
                         <span class="question__form-text">Возраст (лет):</span>
-                        <input class="question__form-control" type="text" placeholder="7">
+                        <input class="question__form-control" type="text" placeholder="7" pattern="^[ 0-9]+$">
                       </label>
                     </li>
                   </ul>
@@ -130,19 +135,19 @@
                   Контактные данные (владельца кота)</h3>
                 <ul class="question__labels-list question__labels-list--grid">
                   <li class="question__item">
-                    <label class="question__labels">
+                    <!--Добавить класс "question__invalid" для состояния ошибки-->
+                    <label class="question__labels question__labels-mail">
                       <span class="question__form-text">E-mail:*</span>
                       <input class="question__form-control question__form-control--icon" type="email" name="email"
                         required placeholder="kuklachev@gmail.com">
-                        <span class="question__labels-mail"></span>
                     </label>
                   </li>
                   <li class="question__item">
-                    <label class="question__labels">
+                    <!--Добавить класс "question__invalid" для состояния ошибки-->
+                    <label class="question__labels question__labels-phone">
                       <span class="question__form-text question__form-text--size">Телефон:*</span>
                       <input class="question__form-control question__form-control--icon" type="tel" name="tel" required
-                        placeholder="8 (960) 900-60-90">
-                        <span class="question__labels-phone"></span>
+                        placeholder="8 (960) 900-60-90" pattern="2-[0-9]{3}-[0-9]{3}">
                     </label>
                   </li>
                 </ul>
@@ -162,7 +167,8 @@
           <div class="form__line-dop">
             <div class="form__wrapper form__wrapper--green-line">
               <div class="question__data-field">
-                <h3 class="question__title-field question__title-field--line question__title-field--dop">Дополнительно</h3>
+                <h3 class="question__title-field question__title-field--line question__title-field--dop">Дополнительно
+                </h3>
                 <ul class="question__list program-checkbox">
                   <li class="program-checkbox__item program-checkbox__item--item">
                     <label class="program-checkbox__field program-checkbox__name--check">
@@ -208,19 +214,31 @@
       </form>
     </section>
     <section class="cooperation cooperation--index">
-      <div class="cooperation__wrapper">
-        <div class="cooperation__container cooperation__container--form">
-          <div class="cooperation__inner">
-            <h2 class="cooperation__title">Приглашаем<br>к сотрудничеству дилеров!</h2>
-          </div>
-          <div class="cooperation__address">
-            <p class="cooperation__street">ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург</p>
+      <div class="cooperation__grid">
+        <div class="cooperation__wrapper">
+          <div class="cooperation__container">
+            <div class="cooperation__inner">
+              <h2 class="cooperation__title">Приглашаем<br>к сотрудничеству дилеров!</h2>
+            </div>
+            <div class="cooperation__address">
+              <p class="cooperation__street cooperation__street--mg">ул. Большая Конюшенная, д. 19/8</p>
+              <p class="cooperation__street">Санкт-Петербург</p>
+            </div>
           </div>
         </div>
         <div class="cooperation__map">
           <iframe class="cooperation__map-height"
-            src="https://yandex.ru/map-widget/v1/?um=constructor%3A0e424fa056d916da6aed9e14cec6915b14b709e43ded48f321cc3e3887935456&amp;source=constructor"
-            height="280"></iframe>
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A0e424fa056d916da6aed9e14cec6915b14b709e43ded48f321cc3e3887935456&amp;source=constructor"></iframe>
+          <noscript class="copperation__nojs">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/location-desktop.png 1x, img/location-desktop@2x.png 2x"
+                width="1440" height="400">
+              <source media="(min-width: 768px)" srcset="img/location-tablet.png 1x, img/location-tablet@2x.png 2x"
+                width="768" height="400">
+              <img class="copperation__nojs-map" src="img/location-mobile.png" srcset="img/location-mobile@2x.png 2x"
+                width="320" height="362" alt="Изображение карты с адресом магазина.">
+            </picture>
+          </noscript>
         </div>
       </div>
     </section>
@@ -232,32 +250,32 @@
         <a class="footer_logo-link">
           <h3 class="visually-hidden">Cat Energy</h3>
           <svg class="footer__logotype" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
-            width="129" height="24" fill="none">
-            <path class="footer__logotype"
-              d="M2.10253 22.0513C0.968358 20.3682 0.405343 18.3503 0.50003 16.3077V7.79487C0.362683 5.73031 0.890444 3.67661 2.00238 1.94872C3.1041 0.615385 4.80676 0 7.31067 0C9.81458 0 11.4171 0.615385 12.4187 1.74359C13.506 3.17255 14.0409 4.96181 13.921 6.76923V8.82051H9.01333V6.46154C9.05297 5.76385 8.95065 5.06533 8.71286 4.41026C8.58576 4.14583 8.38431 3.9264 8.13443 3.78018C7.88455 3.63395 7.59766 3.56763 7.31067 3.58974C6.60958 3.58974 6.10879 3.79487 5.90848 4.30769C5.68191 5.03643 5.58025 5.79984 5.60801 6.5641V17.5385C5.55512 18.2799 5.69327 19.0227 6.00864 19.6923C6.20895 20.2051 6.70973 20.4103 7.41083 20.4103C8.11192 20.4103 8.51255 20.2051 8.71286 19.6923C8.94058 18.9992 9.04242 18.2692 9.01333 17.5385V15.0769H13.921V17.1282C14.0229 18.9651 13.4911 20.7803 12.4187 22.2564C11.4171 23.4872 9.71443 24.1026 7.31067 24.1026C4.90692 24 3.1041 23.3846 2.10253 22.0513Z"
+            width="128" height="24" viewBox="0 0 128 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M1.60254 22.0513C0.468362 20.3682 -0.0946535 18.3503 3.39748e-05 16.3077V7.79487C-0.137313 5.73031 0.390448 3.67661 1.50238 1.94872C2.6041 0.615385 4.30676 0 6.81068 0C9.31459 0 10.9171 0.615385 11.9187 1.74359C13.006 3.17255 13.5409 4.96181 13.421 6.76923V8.82051H8.51334V6.46154C8.55297 5.76385 8.45066 5.06533 8.21287 4.41026C8.08577 4.14583 7.88432 3.9264 7.63444 3.78018C7.38455 3.63395 7.09767 3.56763 6.81068 3.58974C6.10958 3.58974 5.6088 3.79487 5.40848 4.30769C5.18191 5.03643 5.08025 5.79984 5.10802 6.5641V17.5385C5.05512 18.2799 5.19327 19.0227 5.50864 19.6923C5.70895 20.2051 6.20974 20.4103 6.91083 20.4103C7.61193 20.4103 8.01255 20.2051 8.21287 19.6923C8.44058 18.9992 8.54242 18.2692 8.51334 17.5385V15.0769H13.421V17.1282C13.5229 18.9651 12.9911 20.7803 11.9187 22.2564C10.9171 23.4872 9.21443 24.1026 6.81068 24.1026C4.40692 24 2.6041 23.3846 1.60254 22.0513Z"
               fill="#111111" />
-            <path class="footer__logotype"
-              d="M19.8302 0.307617H25.5391L29.7457 23.6922H25.1385L24.3372 18.7692H21.0321L20.2308 23.6922H15.5235L19.8302 0.307617ZM23.9366 15.6922L22.7347 6.56403L21.5329 15.6922H23.9366Z"
+            <path
+              d="M19.3302 0.307617H25.0391L29.2457 23.6922H24.6385L23.8373 18.7692H20.5321L19.7308 23.6922H15.0235L19.3302 0.307617ZM23.4366 15.6922L22.2347 6.56403L21.0329 15.6922H23.4366Z"
               fill="#111111" />
-            <path class="footer__logotype"
-              d="M33.2512 4.20505H29.8458V0.307617H41.7645V4.10249H38.3591V23.6922H33.2512V4.20505Z" fill="#111111" />
-            <path class="footer__logotype"
-              d="M50.8787 0.307617H59.6925V2.76916H53.9836V10.4615H58.5908V12.8204H53.9836V21.4358H59.6925V23.7948H50.7786V0.307617H50.8787Z"
+            <path d="M32.7512 4.20505H29.3459V0.307617H41.2645V4.10249H37.8592V23.6922H32.7512V4.20505Z"
               fill="#111111" />
-            <path class="footer__logotype"
-              d="M62.2966 0.307617H64.5L71.0102 15.7948V0.307617H73.6142V23.6922H71.6111L65.0008 7.69223V23.6922H62.2966V0.307617Z"
+            <path
+              d="M50.3787 0.307617H59.1925V2.76916H53.4836V10.4615H58.0908V12.8204H53.4836V21.4358H59.1925V23.7948H50.2786V0.307617H50.3787Z"
               fill="#111111" />
-            <path class="footer__logotype"
-              d="M76.6189 0.307617H85.4327V2.76916H79.7238V10.4615H84.331V12.8204H79.7238V21.4358H85.4327V23.7948H76.6189V0.307617Z"
+            <path
+              d="M61.7966 0.307617H64L70.5102 15.7948V0.307617H73.1142V23.6922H71.1111L64.5008 7.69223V23.6922H61.7966V0.307617Z"
               fill="#111111" />
-            <path class="footer__logotype"
-              d="M88.0368 0.3076H92.644C94.4564 0.179397 96.2575 0.685711 97.7519 1.7435C98.8537 2.66657 99.3544 4.3076 99.3544 6.46145C99.3544 9.4358 98.453 11.282 96.5501 11.8973L99.7551 23.5897H96.6502L93.6455 12.6153H91.1416V23.5897H87.9366V0.3076H88.0368ZM92.4437 10.3589C93.4762 10.446 94.5053 10.1553 95.3482 9.53837C95.9491 9.02555 96.2496 7.99991 96.2496 6.46145C96.2774 5.69719 96.1757 4.93378 95.9491 4.20504C95.7237 3.68211 95.3366 3.24964 94.8474 2.97427C94.1576 2.65236 93.4003 2.51137 92.644 2.56401H91.2418V10.2563H92.4437V10.3589Z"
+            <path
+              d="M76.1189 0.307617H84.9327V2.76916H79.2238V10.4615H83.831V12.8204H79.2238V21.4358H84.9327V23.7948H76.1189V0.307617Z"
               fill="#111111" />
-            <path class="footer__logotype"
-              d="M103.361 21.9487C102.32 20.1554 101.831 18.0821 101.959 15.9999V8.20507C101.934 6.71875 102.102 5.23567 102.459 3.79481C102.794 2.71811 103.462 1.78218 104.362 1.12815C105.481 0.450275 106.771 0.128917 108.068 0.20507C110.171 0.20507 111.674 0.71789 112.575 1.8461C113.612 3.33582 114.108 5.14977 113.977 6.9743V7.79481H110.973V7.07687C110.977 6.21789 110.91 5.36008 110.772 4.51276C110.688 3.97732 110.4 3.49792 109.971 3.17943C109.408 2.80104 108.74 2.62099 108.068 2.66661C107.35 2.61949 106.639 2.83785 106.065 3.28199C105.829 3.48529 105.637 3.73569 105.499 4.01787C105.361 4.30004 105.281 4.60805 105.264 4.92302C105.132 5.83993 105.065 6.76543 105.063 7.69225V16.4102C104.99 17.7384 105.194 19.0674 105.664 20.3076C106.065 21.1281 106.866 21.4358 108.068 21.4358C108.543 21.4964 109.024 21.4119 109.452 21.1929C109.88 20.9739 110.234 20.6302 110.472 20.2051C111.001 18.9081 111.241 17.5064 111.173 16.1025V14.4615H108.268V12.1025H114.077V23.6923H112.074L111.774 21.0256C111.511 21.9193 110.965 22.6975 110.22 23.2364C109.476 23.7753 108.578 24.0441 107.667 23.9999C106.84 24.0498 106.013 23.8885 105.261 23.5304C104.51 23.1724 103.857 22.6289 103.361 21.9487Z"
+            <path
+              d="M87.5368 0.3076H92.144C93.9564 0.179397 95.7575 0.685711 97.2519 1.7435C98.3537 2.66657 98.8544 4.3076 98.8544 6.46145C98.8544 9.4358 97.953 11.282 96.0501 11.8973L99.2551 23.5897H96.1502L93.1455 12.6153H90.6416V23.5897H87.4366V0.3076H87.5368ZM91.9437 10.3589C92.9762 10.446 94.0054 10.1553 94.8482 9.53837C95.4491 9.02555 95.7496 7.99991 95.7496 6.46145C95.7774 5.69719 95.6757 4.93378 95.4491 4.20504C95.2237 3.68211 94.8366 3.24964 94.3474 2.97427C93.6576 2.65236 92.9003 2.51137 92.144 2.56401H90.7418V10.2563H91.9437V10.3589Z"
               fill="#111111" />
-            <path class="footer__logotype"
-              d="M120.487 15.4871L115.58 0.410156H118.584L122.09 11.6922L125.495 0.410156H128.5L123.592 15.4871V23.6922H120.588V15.4871H120.487Z"
+            <path
+              d="M102.861 21.9487C101.82 20.1554 101.331 18.0821 101.459 15.9999V8.20507C101.434 6.71875 101.602 5.23567 101.959 3.79481C102.294 2.71811 102.962 1.78218 103.862 1.12815C104.981 0.450275 106.271 0.128917 107.568 0.20507C109.671 0.20507 111.174 0.71789 112.075 1.8461C113.112 3.33582 113.608 5.14977 113.477 6.9743V7.79481H110.473V7.07687C110.477 6.21789 110.41 5.36008 110.272 4.51276C110.188 3.97732 109.9 3.49792 109.471 3.17943C108.908 2.80104 108.24 2.62099 107.568 2.66661C106.85 2.61949 106.139 2.83785 105.565 3.28199C105.329 3.48529 105.137 3.73569 104.999 4.01787C104.861 4.30004 104.781 4.60805 104.764 4.92302C104.632 5.83993 104.565 6.76543 104.563 7.69225V16.4102C104.49 17.7384 104.694 19.0674 105.164 20.3076C105.565 21.1281 106.366 21.4358 107.568 21.4358C108.043 21.4964 108.524 21.4119 108.952 21.1929C109.38 20.9739 109.734 20.6302 109.972 20.2051C110.501 18.9081 110.741 17.5064 110.673 16.1025V14.4615H107.768V12.1025H113.577V23.6923H111.574L111.274 21.0256C111.011 21.9193 110.465 22.6975 109.72 23.2364C108.976 23.7753 108.078 24.0441 107.167 23.9999C106.34 24.0498 105.513 23.8885 104.761 23.5304C104.01 23.1724 103.357 22.6289 102.861 21.9487V21.9487Z"
+              fill="#111111" />
+            <path
+              d="M119.987 15.4871L115.08 0.410156H118.085L121.59 11.6922L124.995 0.410156H128L123.092 15.4871V23.6922H120.088V15.4871H119.987Z"
               fill="#111111" />
           </svg>
         </a>
