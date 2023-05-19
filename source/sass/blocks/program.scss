@@ -139,7 +139,7 @@
     background-color: $white;
     justify-content: center;
     margin-top: -13px;
-    margin-bottom: 51px;
+    margin-bottom: 45px;
   }
 
   .program__list {
@@ -150,11 +150,11 @@
 
   .program__item {
     width: 100%;
-    min-height: 372px;
+    min-height: auto;
     flex-direction: column;
     padding: 0;
-    padding: 78px 28px 55px 53px;
-    margin-bottom: 33px;
+    padding: 78px 28px 59px 53px;
+    margin-bottom: 30px;
   }
 
   .program-item__title {
@@ -179,7 +179,7 @@
   }
 
   .program-item__title--icon-x::after {
-    top: 126px;
+    top: 124px;
     left: 394px;
     width: 200px;
     height: 211px;
@@ -214,8 +214,8 @@
   }
 
   .program-item__title--icon-y::after {
-    top: 126px;
-    left: 388px;
+    top: 129px;
+    left: 359px;
     width: 268px;
     height: 200px;
     background: url(../img/cat_back-x1.svg) no-repeat;

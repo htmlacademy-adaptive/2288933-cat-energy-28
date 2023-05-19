@@ -112,7 +112,7 @@
     margin: 0 auto;
     justify-content: center;
     margin: 0 auto;
-    margin-bottom: 100px;
+    margin-bottom: 68px;
     min-width: 768px;
     padding-bottom: 0;
   }
@@ -150,11 +150,12 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 56px;
+    padding: 12px 0 0;
   }
 
   .example__spanbox-flex {
     width: 162px;
-    padding: 15px 0 17px 0;
+    padding: 13px 0 20px;
     margin-right: 42px;
     margin-bottom: 20px;
 
@@ -171,19 +172,22 @@
     font-size: 30px;
     line-height: 37px;
     color: $black;
-    margin-right: 10px;
   }
 
   .example__text-span {
     background-color: $white;
     font-size: 14px;
     line-height: 14px;
+    bottom: 2px;
+
   }
 
   .example__price-box {
     width: 174px;
     margin-top: 10px;
     margin-bottom: 0;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 
   .example__price-span {

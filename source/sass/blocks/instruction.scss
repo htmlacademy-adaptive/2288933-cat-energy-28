@@ -70,18 +70,22 @@
 
 .instruction__item--leaf::before {
   background: url(../img/green-leaf.svg) no-repeat;
+  background-size: cover;
 }
 
 .instruction__item--pow::before {
   background: url(../img/powder.svg) no-repeat;
+  background-size: cover;
 }
 
 .instruction__item--cafe::before {
   background: url(../img/cafe.svg) no-repeat;
+  background-size: cover;
 }
 
 .instruction__item--watch::before {
   background: url(../img/watch.svg) no-repeat;
+  background-size: cover;
 }
 
 .instruction__number-span {

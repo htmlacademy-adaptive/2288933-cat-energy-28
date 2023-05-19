@@ -139,10 +139,13 @@
   .footer__list {
     @include list-reset;
     justify-content: space-between;
+    margin-left: 26px;
   }
 
   .footer__block {
     margin-bottom: 0;
+    border: none;
+    padding: 6px 0 16px;
   }
 
   .footer__html-link {
@@ -153,6 +156,16 @@
     padding: 0;
     margin: 0;
     padding-top: 9px;
+  }
+
+  .footer__logo-link .footer__logotype {
+    width: 143px;
+    height: 26px;
+    margin-left: 0;
+  }
+
+  .footer__html-logo-link {
+    margin-top: 0;
   }
 }
 
