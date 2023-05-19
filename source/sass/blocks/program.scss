@@ -250,7 +250,7 @@
   }
 
   .program-item__image {
-    margin-top: 77px;
+    margin-top: 78px;
     margin-left: 52px;
     margin-bottom: 0;
   }
@@ -290,7 +290,7 @@
   }
 
   .program-item__title--icon-y::after {
-    top: 25px;
+    top: 29px;
     left: -19px;
     width: 134px;
     height: 100px;
@@ -306,5 +306,9 @@
   .program-item__link--pro::after {
     top: 9px;
     left: 181px;
+  }
+
+  .program__item:last-child {
+    margin-bottom: 20px;
   }
 }

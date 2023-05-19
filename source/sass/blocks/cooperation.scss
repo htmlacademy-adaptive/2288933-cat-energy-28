@@ -192,7 +192,7 @@
   .cooperation__container {
     position: absolute;
     min-width: 407px;
-    padding: 60px 80px 56px 80px;
+    padding: 60px 78px 40px;
     top: 95px;
     left: 111px;
     display: flex;
@@ -204,6 +204,14 @@
 
   .cooperation__map {
     height: 400px;
+  }
+
+  .cooperation__address {
+    margin-top: -6px;
+  }
+
+  .cooperation__street--mg {
+    margin-bottom: 21px;
   }
 
   .cooperation__map-height {
