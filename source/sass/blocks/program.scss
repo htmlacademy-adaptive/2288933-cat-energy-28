@@ -19,8 +19,8 @@
   width: 100%;
   background-color: $basic-grey;
   flex-direction: column;
-  padding: 20px;
-  margin-bottom: 20px;
+  padding: 20px 20px 23px 20px;
+  margin: 0 0 21px;
 
   &:last-child {
     margin-bottom: 0
@@ -116,7 +116,7 @@
   width: 24px;
   height: 12px;
   z-index: 3;
-  top: 7px;
+  top: 3px;
   left: 102px;
 }
 
@@ -127,8 +127,8 @@
   width: 24px;
   height: 12px;
   z-index: 3;
-  top: 7px;
-  left: 102px;
+  top: 4px;
+  left: 98px;
 }
 
 @media (min-width: $tablet-width) {

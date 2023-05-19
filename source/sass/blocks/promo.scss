@@ -62,7 +62,7 @@
   display: block;
   margin: 0 20px;
   top: 167px;
-  width: 270px;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
     width: 709px;
@@ -82,7 +82,6 @@
   cursor: pointer;
   background-color: $basic-green;
   transition: 0.3s all;
-  margin-bottom: 22px;
 
   &:hover {
     background-color: $basic-green-state;

@@ -26,6 +26,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: -10px;
 }
 
 .footer__html-text {
@@ -36,7 +37,9 @@
 .footer__block {
   margin: 0;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #D9D9D9;
 }
 
 .footer__logo-link .footer__logotype {
@@ -55,6 +58,10 @@
   &:active {
     opacity: 0.6;
   }
+}
+
+.footer__html-logo-link {
+  margin-top: 7px;
 }
 
 .footer__html-link .footer__html-logo {

@@ -133,11 +133,12 @@
 .main-header--closed .main-header__toggle::before {
   content: "";
   position: absolute;
-  top: 24px;
+  top: 23px;
   width: 24px;
   height: 2px;
   background-color: $black;
   box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
+  right: 19px;
 }
 
 .main-nav--closed .main-nav__toggle:active::before {
