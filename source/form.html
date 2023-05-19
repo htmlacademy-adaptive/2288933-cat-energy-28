@@ -64,7 +64,7 @@
     <h1 class="visually-hidden">Страница подбора программы питания для котов с формой анкеты.</h1>
     <section class="form__program">
       <div class="form__wrapper">
-        <div class="question__title-field">
+        <div class="form__title-field">
           <h2 class="form__title">Подбор программы</h2>
           <p class="form__text">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
         </div>
@@ -98,7 +98,7 @@
                   </ul>
                 </fieldset>
               </div>
-              <div class="question__radio-field question__radio-field--border question__data-field--size-2">
+              <div class="question__radio-field question__radio-field--border question__radio-field--size-2">
                 <ul class="question__radio-list radio-list">
                   <li class="radio-list__item">
                     <label class="radio-list__field">
@@ -159,7 +159,7 @@
               <div class="question__data-field">
                 <h3 class="question__title-field question__title-field-comment">Комментарий</h3>
                 <label class="visually-hidden" for="comment">Комментарий</label>
-                <textarea class="form-field__control form-field__control--comment" rows="7" name="text" cols="33"
+                <textarea class="question__control question__control--comment" rows="7" name="text" cols="33"
                   id="comment">Расскажите обо всех повадках кота</textarea>
               </div>
             </div>
@@ -171,28 +171,28 @@
                 </h3>
                 <ul class="question__list program-checkbox">
                   <li class="program-checkbox__item program-checkbox__item--item">
-                    <label class="program-checkbox__field program-checkbox__name--check">
+                    <label class="program-checkbox__field">
                       <input class="program-checkbox__control visually-hidden" type="checkbox" name="sweetener" checked>
                       <span class="program-checkbox__name">Сахарозаменитель</span>
                       <span class="program-checkbox__mark"></span>
                     </label>
                   </li>
                   <li class="program-checkbox__item program-checkbox__item--item">
-                    <label class="program-checkbox__field program-checkbox__name--check">
+                    <label class="program-checkbox__field">
                       <input class="program-checkbox__control visually-hidden" type="checkbox" name="water">
                       <span class="program-checkbox__name">питьевая вода</span>
                       <span class="program-checkbox__mark"></span>
                     </label>
                   </li>
                   <li class="program-checkbox__item program-checkbox__item--item">
-                    <label class="program-checkbox__field program-checkbox__name--check">
+                    <label class="program-checkbox__field">
                       <input class="program-checkbox__control visually-hidden" type="checkbox" name="milk">
                       <span class="program-checkbox__name">молоко</span>
                       <span class="program-checkbox__mark"></span>
                     </label>
                   </li>
                   <li class="program-checkbox__item program-checkbox__item--item">
-                    <label class="program-checkbox__field program-checkbox__name--check">
+                    <label class="program-checkbox__field">
                       <input class="program-checkbox__control visually-hidden" type="checkbox" name="vitamins">
                       <span class="program-checkbox__name">витамины</span>
                       <span class="program-checkbox__mark"></span>
@@ -203,7 +203,7 @@
             </div>
           </div>
           <div class="form__wrapper">
-            <div class="question__button-field question__data-field--btn">
+            <div class="question__button-field">
               <button class="question__button question__button--font btn" type="submit">Oтправить заявку</button>
               <div class="question__text-field">
                 <p class="question__text question__text--mg">* — Обязательные поля</p>
@@ -247,9 +247,9 @@
 
     <div class="footer__wrapper">
       <div class="footer__block footer__block--logo">
-        <a class="footer_logo-link">
+        <a class="footer__logo-link">
           <h3 class="visually-hidden">Cat Energy</h3>
-          <svg class="footer__logotype" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+          <svg class="footer__logotype" aria-hidden="true" focusable="false"
             width="128" height="24" viewBox="0 0 128 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M1.60254 22.0513C0.468362 20.3682 -0.0946535 18.3503 3.39748e-05 16.3077V7.79487C-0.137313 5.73031 0.390448 3.67661 1.50238 1.94872C2.6041 0.615385 4.30676 0 6.81068 0C9.31459 0 10.9171 0.615385 11.9187 1.74359C13.006 3.17255 13.5409 4.96181 13.421 6.76923V8.82051H8.51334V6.46154C8.55297 5.76385 8.45066 5.06533 8.21287 4.41026C8.08577 4.14583 7.88432 3.9264 7.63444 3.78018C7.38455 3.63395 7.09767 3.56763 6.81068 3.58974C6.10958 3.58974 5.6088 3.79487 5.40848 4.30769C5.18191 5.03643 5.08025 5.79984 5.10802 6.5641V17.5385C5.05512 18.2799 5.19327 19.0227 5.50864 19.6923C5.70895 20.2051 6.20974 20.4103 6.91083 20.4103C7.61193 20.4103 8.01255 20.2051 8.21287 19.6923C8.44058 18.9992 8.54242 18.2692 8.51334 17.5385V15.0769H13.421V17.1282C13.5229 18.9651 12.9911 20.7803 11.9187 22.2564C10.9171 23.4872 9.21443 24.1026 6.81068 24.1026C4.40692 24 2.6041 23.3846 1.60254 22.0513Z"

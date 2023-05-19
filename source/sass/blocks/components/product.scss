@@ -137,7 +137,7 @@
   text-transform: initial;
 }
 
-.product__button-link {
+.product__link-btn {
   display: block;
   line-height: 20px;
   padding: 10px 44px;
@@ -151,6 +151,17 @@
   border: none;
   margin-top: 22px;
   transition: 0.3s all;
+
+  &--font {
+    font-family: "Oswald";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: $black;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
 
   &:hover {
     transition: 0.3s all;
@@ -276,7 +287,7 @@
     left: 38%;
   }
 
-  .product__button-link {
+  .product__link-btn {
     padding: 9px 44px;
     margin-top: 86px;
     width: 160px;
@@ -332,7 +343,7 @@
     margin-top: 23px;
   }
 
-  .product__button-link {
+  .product__link-btn {
     padding: 10px 0;
     margin-top: 89px;
     width: 100%;

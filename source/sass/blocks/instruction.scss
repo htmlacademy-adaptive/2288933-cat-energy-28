@@ -66,19 +66,19 @@
   background-size: 50px;
 }
 
-.instruction-item--leaf::before {
+.instruction__item--leaf::before {
   background: url(../img/green-leaf.svg) no-repeat;
 }
 
-.instruction-item--pow::before {
+.instruction__item--pow::before {
   background: url(../img/powder.svg) no-repeat;
 }
 
-.instruction-item--cafe::before {
+.instruction__item--cafe::before {
   background: url(../img/cafe.svg) no-repeat;
 }
 
-.instruction-item--watch::before {
+.instruction__item--watch::before {
   background: url(../img/watch.svg) no-repeat;
 }
 

@@ -4,6 +4,17 @@
   min-width: 320px;
 }
 
+.form__title-field {
+  margin: 0;
+  padding: 0;
+  color: $black;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 36px;
+}
+
 .form__wrapper {
   @include list-reset;
   max-width: 280px;
@@ -123,6 +134,15 @@
     max-width: 628px;
     margin: 0 auto;
     justify-content: center;
+  }
+
+  .form__title-field {
+    font-size: 36px;
+    line-height: 36px;
+
+    &--comment {
+      background-color: $white;
+    }
   }
 
   .form-field__control {

@@ -3,6 +3,24 @@
   padding: 0;
   background-color: $white;
   min-width: 320px;
+  position: relative;
+  width: 100%;
+  &::after {
+    position: absolute;
+    top: 30px;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: $basic-green;
+    z-index: 1;
+}
+}
+
+.promo-catalog__wrapper-container {
+  margin: 0 auto;
+  margin-bottom: 8px;
+  color: $black;
+  text-transform: uppercase;
 }
 
 .add-catalog__container {
@@ -164,20 +182,6 @@
   min-width: 280px;
 }
 
-.add-catalog__line {
-  position: relative;
-  width: 100%;
-  &::after {
-    position: absolute;
-    top: 30px;
-    content: "";
-    height: 2px;
-    width: 100%;
-    background-color: $basic-green;
-    z-index: 1;
-}
-}
-
 .add-catalog__title-text--dop {
   background-color: $white;
   margin-left: -20px;
@@ -204,6 +208,27 @@
     min-width: 708px;
     margin-bottom: 75px;
   }
+
+  .promo-catalog__wrapper-container {
+    max-width: 708px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .add-catalog {
+    position: relative;
+    width: 100%;
+    &::after {
+      position: absolute;
+      top: 90px;
+      content: "";
+      height: 2px;
+      width: 100%;
+      background-color: $basic-green;
+      z-index: 1;
+  }
+  }
+
 
   .add-catalog__text-flex {
     display: flex;
@@ -295,20 +320,6 @@
     padding: 10px 0;
     width: 100%;
   }
-
-  .add-catalog__line {
-    position: relative;
-    width: 100%;
-    &::after {
-      position: absolute;
-      top: 90px;
-      content: "";
-      height: 2px;
-      width: 100%;
-      background-color: $basic-green;
-      z-index: 1;
-  }
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -322,6 +333,13 @@
     min-width: 1220px;
     margin: 0 auto;
     max-width: 1440px;
+  }
+
+  .promo-catalog__wrapper-container {
+    min-width: 1220px;
+    max-width: 1220px;
+    margin: 0 auto;
+    justify-content: center;
   }
 
   .add_-catalog__flex-block {
@@ -400,7 +418,7 @@
     top: 0;
     left: 41px;
   }
-  .add-catalog__line {
+  .add-catalog {
     position: relative;
     width: 100%;
     &::after {
