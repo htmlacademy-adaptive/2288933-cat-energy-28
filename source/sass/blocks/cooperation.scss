@@ -4,6 +4,10 @@
   width: 100%;
   margin: 0 auto;
   justify-content: center;
+
+  &--index {
+    background-color: $basic-grey;
+  }
 }
 
 .cooperation__wrapper {
@@ -117,9 +121,14 @@
 
 @media (min-width: $tablet-width) {
   .cooperation {
-    min-width: 768px;
+    width: 100%;
+    background-color: $white;
     margin: 0 auto;
     justify-content: center;
+
+    &--index {
+      background-color: $basic-grey;
+    }
   }
 
   .cooperation__wrapper {
@@ -129,7 +138,7 @@
 
   .cooperation__container {
     max-width: 708px;
-    padding: 60px 70px 60px 70px;
+    padding: 56px 70px 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -145,6 +154,7 @@
     line-height: 26px;
     max-width: 172px;
     margin-bottom: 20px;
+    margin-top: 4px;
   }
 
   .cooperation__street {
@@ -174,6 +184,10 @@
       background-size: cover;
     }
   }
+
+  .cooperation__street--mg {
+    margin-bottom: 20px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -190,19 +204,30 @@
 
   .cooperation__container {
     position: absolute;
-    min-width: 407px;
-    padding: 60px 80px 56px 80px;
+    min-width: 410px;
+    padding: 61px 79px 40px 78px;
     top: 95px;
     left: 111px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: $white;
-
   }
 
   .cooperation__map {
     height: 400px;
+  }
+
+  .cooperation__title {
+    margin-top: 0;
+  }
+
+  .cooperation__address {
+    margin-top: -6px;
+  }
+
+  .cooperation__street--mg {
+    margin-bottom: 21px;
   }
 
   .cooperation__map-height {

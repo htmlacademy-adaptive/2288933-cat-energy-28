@@ -6,10 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Кэт Энерджи</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+
   <!--Предзагрузка шрифтов-->
   <link rel="preload" href="../fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="../fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -29,10 +26,10 @@
     <div class="main-header__wrapper">
       <div class="main-header__header">
         <div class="main-header__logo-container">
-          <a class="main-header__logo logo">
+          <a class="main-header__logo logo" href="index.html">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/logo-desktop-cat.svg">
-              <source media="(min-width: 768px)" srcset="img/logo-tablet-cat.svg">
+              <source media="(min-width: 1200px)" srcset="img/logo-desktop-cat.svg" width="202" height="59">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet-cat.svg" width="174" height="52">
               <img class="main-header__logo-img" src="img/logo-mobile.svg" width="191" height="38"
                 alt="Магазин функционального питания для котов - Cat Energy.">
             </picture>
@@ -63,30 +60,36 @@
   <main class="main-container">
     <h1 class="visually-hidden">Кэт Энерджи - сайт подбора программ правильного питания для котов.</h1>
     <section class="promo container">
-      <div class="promo__wrapper">
-        <h2 class="visually-hidden">Приветственный баннер с котом.</h2>
-        <div class="promo__text-block">
-          <p class="promo__slogan promo__slogan--font">Функциональное
-            питание для котов</p>
-          <p class="promo__slogan-text promo__slogan-text--font">Занялся собой? Займись котом!</p>
-        </div>
-        <div class="promo__cat-wrapper">
-          <div class="promo__gradient-block"></div>
-          <div class="promo__image-cat"></div>
-        </div>
-        <picture class="promo__image-soup-wrapper">
-          <source type="image/webp" media="(min-width: 1200px)" srcset="img/index-soup-desktop.webp 1x, img/index-soup-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/index-soup-tablet.webp 1x, img/index-soup-tablet@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 320px)" srcset="img/index-soup-mobile.webp 1x, img/index-soup-mobile@2x.webp 2x">
-          <source media="(min-width: 1200px)" srcset="img/index-soup-desktop.png 1x, img/index-soup-desktop@2x.png 2x"
-            width="552" height="499">
-          <source media="(min-width: 768px)" srcset="img/index-soup-tablet.png 1x, img/index-soup-tablet@2x.png 2x"
-            width="709" height="609">
-          <img class="promo__image-soup" src="img/index-soup-mobile.png" srcset="img/index-soup-mobile@2x.png 2x"
-            width="280" height="270" alt="Изображение супового набора для котов.">
-        </picture>
-        <a class="promo__button btn promo__button--padd" href="form.html">Подобрать программу</a>
+      <div class="promo__cat">
+        <span class="visually-hidden">Баннер в виде фотографии кота с зеленым прозрачным градиентом.</span>
       </div>
+      <div class="promo__section-wrapper">
+        <div class="promo__wrapper">
+          <h2 class="visually-hidden">Приветственный баннер с котом.</h2>
+          <div class="promo__text-block">
+            <p class="promo__slogan promo__slogan--font">Функциональное
+              питание для котов</p>
+            <p class="promo__slogan-text promo__slogan-text--font">Занялся собой? Займись котом!</p>
+          </div>
+          <div class="promo__cat-wrapper">
+            <div class="promo__gradient-block"></div>
+            <div class="promo__image-cat"></div>
+          </div>
+          <picture class="promo__image-soup-wrapper">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/index-soup-desktop.webp 1x, img/index-soup-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/index-soup-tablet.webp 1x, img/index-soup-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 320px)" srcset="img/index-soup-mobile.webp 1x, img/index-soup-mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)" srcset="img/index-soup-desktop.png 1x, img/index-soup-desktop@2x.png 2x"
+              width="552" height="499">
+            <source media="(min-width: 768px)" srcset="img/index-soup-tablet.png 1x, img/index-soup-tablet@2x.png 2x"
+              width="709" height="609">
+            <img class="promo__image-soup" src="img/index-soup-mobile.png" srcset="img/index-soup-mobile@2x.png 2x"
+              width="280" height="270" alt="Изображение супового набора для котов.">
+          </picture>
+          <a class="promo__button btn promo__button--padd" href="form.html">Подобрать программу</a>
+        </div>
+      </div>
+
     </section>
     <section class="program">
       <h2 class="visually-hidden">Программа подбора питания для котов.</h2>
@@ -98,7 +101,7 @@
               Пора
               на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           </div>
-          <a class="program-item__link program-item__link--slim">Каталог slim</a>
+          <a class="program-item__link program-item__link--slim" href="catalog.html">Каталог slim</a>
         </li>
         <li class="program__item program-item">
           <div class="program-item__image program-item__image--pro">
@@ -106,7 +109,7 @@
             <p class="program-item__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
               поможет вашему коту нарастить необходимые мышцы!</p>
           </div>
-          <a class="program-item__link program-item__link--pro">Каталог pro</a>
+          <a class="program-item__link program-item__link--pro" href="catalog.html">Каталог pro</a>
         </li>
       </ul>
     </section>
@@ -114,22 +117,22 @@
       <div class="instruction__wrapper">
         <h2 class="instruction__title">Как это работает</h2>
         <ul class="instruction__list">
-          <li class="instruction__item instruction-item--leaf">
+          <li class="instruction__item instruction__item--leaf">
             <p class="instruction__text instruction__text--one">Функциональное питание содержит только полезные
               питательные вещества.</p>
             <span class="instruction__number-span instruction__number-span--one">1</span>
           </li>
-          <li class="instruction__item instruction-item--pow">
+          <li class="instruction__item instruction__item--pow">
             <p class="instruction__text instruction__text--two">Выпускается в виде порошка, который нужно лишь залить
               кипятком и готово.</p>
             <span class="instruction__number-span instruction__number-span--two">2</span>
           </li>
-          <li class="instruction__item instruction-item--cafe">
+          <li class="instruction__item instruction__item--cafe">
             <p class="instruction__text instruction__text--three">Замените один-два приема обычной еды на наше
               функциональное питание.</p>
             <span class="instruction__number-span instruction__number-span--three">3</span>
           </li>
-          <li class="instruction__item instruction-item--watch">
+          <li class="instruction__item instruction__item--watch">
             <p class="instruction__text instruction__text--four">Уже через месяц наслаждайтесь изменениями к лучшему
               вашего питомца!</p>
             <span class="instruction__number-span instruction__number-span--four">4</span>
@@ -182,7 +185,7 @@
         </div>
       </div>
     </section>
-    <section class="cooperation cooperation--index">
+    <section class="cooperation">
       <div class="cooperation__grid">
         <div class="cooperation__wrapper">
           <div class="cooperation__container">
@@ -213,12 +216,11 @@
     </section>
   </main>
   <footer class="footer">
-
     <div class="footer__wrapper">
       <div class="footer__block footer__block--logo">
-        <a class="footer_logo-link">
+        <a class="footer__logo-link" href="index.html">
           <h3 class="visually-hidden">Cat Energy</h3>
-          <svg class="footer__logotype" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="128" height="24" viewBox="0 0 128 24" xmlns="http://www.w3.org/2000/svg">
+          <svg class="footer__logotype" aria-hidden="true" focusable="false" width="128" height="24" viewBox="0 0 128 24" xmlns="http://www.w3.org/2000/svg">
           <path class="footer__logotype" d="M1.60254 22.0513C0.468362 20.3682 -0.0946535 18.3503 3.39748e-05 16.3077V7.79487C-0.137313 5.73031 0.390448 3.67661 1.50238 1.94872C2.6041 0.615385 4.30676 0 6.81068 0C9.31459 0 10.9171 0.615385 11.9187 1.74359C13.006 3.17255 13.5409 4.96181 13.421 6.76923V8.82051H8.51334V6.46154C8.55297 5.76385 8.45066 5.06533 8.21287 4.41026C8.08577 4.14583 7.88432 3.9264 7.63444 3.78018C7.38455 3.63395 7.09767 3.56763 6.81068 3.58974C6.10958 3.58974 5.6088 3.79487 5.40848 4.30769C5.18191 5.03643 5.08025 5.79984 5.10802 6.5641V17.5385C5.05512 18.2799 5.19327 19.0227 5.50864 19.6923C5.70895 20.2051 6.20974 20.4103 6.91083 20.4103C7.61193 20.4103 8.01255 20.2051 8.21287 19.6923C8.44058 18.9992 8.54242 18.2692 8.51334 17.5385V15.0769H13.421V17.1282C13.5229 18.9651 12.9911 20.7803 11.9187 22.2564C10.9171 23.4872 9.21443 24.1026 6.81068 24.1026C4.40692 24 2.6041 23.3846 1.60254 22.0513Z" fill="#111111"/>
           <path class="footer__logotype" d="M19.3302 0.307617H25.0391L29.2457 23.6922H24.6385L23.8373 18.7692H20.5321L19.7308 23.6922H15.0235L19.3302 0.307617ZM23.4366 15.6922L22.2347 6.56403L21.0329 15.6922H23.4366Z" fill="#111111"/>
           <path class="footer__logotype" d="M32.7512 4.20505H29.3459V0.307617H41.2645V4.10249H37.8592V23.6922H32.7512V4.20505Z" fill="#111111"/>
@@ -234,7 +236,7 @@
       <div class="footer__block footer__block--social">
         <ul class="footer__list social-list">
           <li class="social-list__item">
-            <a class="social-list__link">
+            <a class="social-list__link" href="https://vk.com/">
               <h3 class="visually-hidden">Vkontakte.</h3>
               <svg class="social-list__icon social-list__icon--vk" width="28" height="17" aria-hidden="true"
                 focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 12">
@@ -245,7 +247,7 @@
             </a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link">
+            <a class="social-list__link" href="https://www.youtube.com/">
               <h3 class="visually-hidden">Youtube.</h3>
               <svg class="social-list__icon social-list__icon--youtube" width="29" height="22" viewBox="0 0 29 22"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -256,7 +258,7 @@
             </a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link">
+            <a class="social-list__link" href="https://web.telegram.org/k/">
               <h3 class="visually-hidden">Telegram</h3>
               <svg class="social-list__icon social-list__icon--telegram" width="29" height="22" viewBox="0 0 29 22"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -269,9 +271,9 @@
         </ul>
       </div>
       <div class="footer__block-html footer__block-html--copyright">
-        <a class="footer__html-link">
+        <a class="footer__html-link"  href="https://htmlacademy.ru/study">
           <h3 class="footer__html-text">HTML Academy</h3>
-          <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="footer__html-logo-link" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path class="footer__html-logo"
               d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
               fill="#666666" />

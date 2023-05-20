@@ -19,8 +19,8 @@
   width: 100%;
   background-color: $basic-grey;
   flex-direction: column;
-  padding: 20px;
-  margin-bottom: 20px;
+  padding: 20px 20px 23px 20px;
+  margin: 0 0 21px;
 
   &:last-child {
     margin-bottom: 0
@@ -103,6 +103,7 @@
   margin-right: 20px;
   display: flex;
   flex-direction: column;
+  text-decoration: none;
 
   &:active {
     opacity: 0.6;
@@ -116,7 +117,7 @@
   width: 24px;
   height: 12px;
   z-index: 3;
-  top: 7px;
+  top: 3px;
   left: 102px;
 }
 
@@ -127,8 +128,8 @@
   width: 24px;
   height: 12px;
   z-index: 3;
-  top: 7px;
-  left: 102px;
+  top: 4px;
+  left: 98px;
 }
 
 @media (min-width: $tablet-width) {
@@ -139,7 +140,7 @@
     background-color: $white;
     justify-content: center;
     margin-top: -13px;
-    margin-bottom: 51px;
+    margin-bottom: 45px;
   }
 
   .program__list {
@@ -150,11 +151,11 @@
 
   .program__item {
     width: 100%;
-    min-height: 372px;
+    min-height: auto;
     flex-direction: column;
     padding: 0;
-    padding: 78px 28px 55px 53px;
-    margin-bottom: 33px;
+    padding: 78px 28px 59px 53px;
+    margin-bottom: 30px;
   }
 
   .program-item__title {
@@ -179,7 +180,7 @@
   }
 
   .program-item__title--icon-x::after {
-    top: 126px;
+    top: 124px;
     left: 394px;
     width: 200px;
     height: 211px;
@@ -214,8 +215,8 @@
   }
 
   .program-item__title--icon-y::after {
-    top: 126px;
-    left: 388px;
+    top: 129px;
+    left: 359px;
     width: 268px;
     height: 200px;
     background: url(../img/cat_back-x1.svg) no-repeat;
@@ -250,7 +251,7 @@
   }
 
   .program-item__image {
-    margin-top: 77px;
+    margin-top: 78px;
     margin-left: 52px;
     margin-bottom: 0;
   }
@@ -290,7 +291,7 @@
   }
 
   .program-item__title--icon-y::after {
-    top: 25px;
+    top: 29px;
     left: -19px;
     width: 134px;
     height: 100px;
@@ -306,5 +307,9 @@
   .program-item__link--pro::after {
     top: 9px;
     left: 181px;
+  }
+
+  .program__item:last-child {
+    margin-bottom: 20px;
   }
 }

@@ -1,6 +1,6 @@
 .site-list__item {
   @include list-reset;
-  padding: 21px 0 21px;
+  padding: 24px 0 19px;
   text-align: center;
   max-height: 65px;
 
@@ -53,7 +53,12 @@
 
 @media (min-width: $tablet-width) {
   .site-list__link--current-link {
-    padding-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid $basic-green;
+  }
+
+  .site-list__link--current-link-catalog {
+    padding-bottom: 3px;
     border-bottom: 2px solid $basic-green;
   }
 
@@ -93,6 +98,11 @@
     line-height: 30px;
     font-weight: 400;
     color: $black;
+  }
+
+  .site-list__link--current-link-catalog {
+    padding-bottom: 8px;
+    border-bottom: 2px solid $basic-green;
   }
 
   .site-list__item:nth-child(1),

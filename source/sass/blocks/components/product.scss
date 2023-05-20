@@ -3,29 +3,54 @@
   flex-wrap: wrap;
 }
 
-.product__image {
-  height: 86px;
-}
-
-.product__image--small-img {
-  margin: 0;
-  padding: 0;
-  margin: 14px 36px 12px;
-}
-
-.product__image--big-img {
-  margin: 0;
-  padding: 0;
-  margin: 11px 28px 1px;
-  width: 84px;
-  height: 100px;
-}
-
 .product__table {
   margin: 0;
   padding: 0;
   min-width: 140px;
-  border-spacing: 0px 1px;
+  border-spacing: 0;
+}
+
+.product-image {
+  margin: 0;
+
+  &--chicken-500 {
+    width: 68px;
+    height: 86px;
+  }
+
+  &--chicken-1000 {
+    width: 84px;
+    height: 100px;
+  }
+
+  &--fish-500 {
+    width: 68px;
+    height: 78px;
+  }
+
+  &--fish-1000 {
+    width: 84px;
+    height: 100px;
+  }
+
+  &--grechka-500 {
+    width: 68px;
+    height: 78px;
+  }
+
+  &--grechka-1000 {
+    width: 84px;
+    height: 100px;
+  }
+
+  &--rise-500 {
+    width: 72px;
+    height: 84px;
+  }
+}
+
+.product-image--chicken-500 {
+  margin-top: 5px;
 }
 
 .product__title {
@@ -35,7 +60,7 @@
   line-height: 20px;
   margin: 0;
   padding: 0;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
   color: $grey-subtitle;
   text-transform: uppercase;
 }
@@ -50,7 +75,7 @@
   font-family: "Lato";
   font-size: 12px;
   line-height: 16px;
-  text-transform: capitalize;
+  text-transform: none;
 }
 
 .product__options--title {
@@ -73,7 +98,7 @@
   text-decoration: none;
   width: 100%;
   border: none;
-  margin-top: 8px;
+  margin-top: 12px;
   transition: 0.3s all;
 
   &--font {
@@ -118,7 +143,7 @@
     position: absolute;
     width: 30px;
     height: 30px;
-    top: 3px;
+    top: 5px;
     left: 45%;
     background: url(../img/plus.svg) no-repeat;
   }
@@ -127,7 +152,7 @@
 .product__title--mg {
   text-align: center;
   margin: 0 auto;
-  margin-top: 57px;
+  margin-top: 59px;
   margin-bottom: 7px;
 }
 
@@ -137,7 +162,16 @@
   text-transform: initial;
 }
 
-.product__button-link {
+.product__picture-block {
+  width: 140px;
+  height: 112px;
+  display: flex;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+}
+
+.product__link-btn {
   display: block;
   line-height: 20px;
   padding: 10px 44px;
@@ -151,6 +185,17 @@
   border: none;
   margin-top: 22px;
   transition: 0.3s all;
+
+  &--font {
+    font-family: "Oswald";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: $black;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
 
   &:hover {
     transition: 0.3s all;
@@ -171,6 +216,11 @@
   }
 }
 
+.product__link-goods {
+  @include list-reset;
+  text-decoration: none;
+}
+
 @media (min-width: $tablet-width) {
   .product__container {
     flex-direction: column;
@@ -178,6 +228,7 @@
 
   .product__picture-block {
     width: 100%;
+    text-align: center;
   }
 
   .product__description {
@@ -186,15 +237,15 @@
 
   .product__link {
     padding: 10px 0;
-    margin-top: 11px;
+    margin-top: 13px;
   }
 
   .product__title {
     text-align: center;
     font-size: 20px;
     line-height: 24px;
-    padding-top: 161px;
-    margin: 0 auto 12px;
+    padding-top: 52px;
+    margin: 0 auto 13px;
 
     &--wd {
       max-width: 60%;
@@ -207,7 +258,7 @@
   }
 
   .product__table {
-    width: 100%;
+    width: 98%;
     margin-bottom: 33px;
     margin: 0 0 20px 0;
   }
@@ -229,35 +280,25 @@
     margin: 0;
     padding: 0;
     position: absolute;
-    margin: 14px 36px 12px;
-    top: -14%;
-    height: 172px;
-    width: auto;
-    left: 18%;
+    left: 82px;
+    top: -43px;
   }
 
   .product__image--big-img {
     margin: 0;
     padding: 0;
     position: absolute;
-    margin: 14px 36px 12px;
-    top: -20%;
-    height: 200px;
-    width: auto;
-    left: 13%;
+    left: 78px;
+    top: -71px;
   }
 
   .product__title--mg {
-    margin: 0;
-    padding: 0;
     text-align: center;
     font-size: 20px;
     line-height: 24px;
-    padding-top: 162px;
-    margin: 0;
-    margin-bottom: 20px;
+    padding: 160px 0 0;
     width: 70%;
-    margin-left: 15%;
+    margin: 0 0 20px 15%;
   }
 
   .product__options--mg {
@@ -267,6 +308,7 @@
     line-height: 18px;
     width: 80%;
     margin-left: 10%;
+    margin-bottom: 2px;
   }
 
   .product__container--icon::before {
@@ -274,12 +316,56 @@
     position: absolute;
     top: 53px;
     left: 38%;
+    background-image: url(../img/plus-tablet.svg) no-repeat;
+    width: 60px;
+    height: 60px;
+    background-size: cover;
   }
 
-  .product__button-link {
+  .product__link-btn {
     padding: 9px 44px;
     margin-top: 86px;
     width: 160px;
+  }
+
+  .product-image {
+    margin: 0;
+    padding: 0;
+
+    &--chicken-500 {
+      width: 161px;
+      height: 172px;
+    }
+
+    &--chicken-1000 {
+      width: 168px;
+      height: 206px;
+    }
+
+    &--fish-500 {
+      width: 163px;
+      height: 174px;
+    }
+
+    &--fish-1000 {
+      width: 168px;
+      height: 200px;
+    }
+
+    &--grechka-500 {
+      width: 161px;
+      height: 171px;
+    }
+
+    &--grechka-1000 {
+      width: 168px;
+      height: 200px;
+    }
+
+    &--rise-500 {
+      width: 163px;
+      height: 174px;
+    }
   }
 }
 
@@ -288,11 +374,27 @@
     width: 100%;
     line-height: 21px;
     margin: 0 11px;
-    margin-bottom: 17px;
+    margin-bottom: 18px;
+    padding-top: 48px;
   }
 
   .product__title--wd {
     max-width: 154px;
+  }
+
+  .product__options--desktop {
+    margin-right: 2px;
+  }
+
+  .product__container--icon {
+    padding-top: 110px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 48px;
+      left: 32.5%;
+    }
   }
 
   .product__options {
@@ -302,7 +404,7 @@
 
   .product__table {
     width: 100%;
-    padding: 0px 0px 0 3px;
+    padding: 0 0 0 3px;
   }
 
   .product__link {
@@ -310,17 +412,7 @@
     width: 100%;
   }
 
-  .product__image--small-img {
-    top: -16%;
-    left: 8%;
-  }
 
-  .product__image--big-img {
-    top: -22%;
-    height: 195px;
-    width: auto;
-    left: 3%;
-  }
 
   .product__title--mg {
     margin: 0;
@@ -332,10 +424,77 @@
     margin-top: 23px;
   }
 
-  .product__button-link {
+  .product__link-btn {
     padding: 10px 0;
     margin-top: 89px;
     width: 100%;
   }
 
+  .product-image {
+    margin: 0;
+    padding: 0;
+
+    &--chicken-500 {
+      width: 161px;
+      height: 172px;
+    }
+
+    &--chicken-1000 {
+      width: 172px;
+      height: 196px;
+    }
+
+    &--fish-500 {
+      width: 163px;
+      height: 174px;
+    }
+
+    &--fish-1000 {
+      width: 172px;
+      height: 196px;
+    }
+
+    &--grechka-500 {
+      width: 161px;
+      height: 171px;
+    }
+
+    &--grechka-1000 {
+      width: 172px;
+      height: 196px;
+    }
+
+    &--rise-500 {
+      width: 163px;
+      height: 174px;
+    }
+  }
+
+  .product__image--small-img {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 43px;
+    top: -55px;
+  }
+
+  .product__image--big-img {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 39px;
+    top: -82px;
+  }
+
+  .product__options--value {
+    margin-right: -2px;
+  }
+
+  .product__options--price {
+    margin-right: 5px;
+  }
+
+  .product__row--desktop-mg .product__options--value {
+    margin-right: 3px;
+  }
 }
