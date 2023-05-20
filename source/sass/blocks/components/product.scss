@@ -3,29 +3,53 @@
   flex-wrap: wrap;
 }
 
-.product__image {
-  height: 86px;
-}
-
-.product__image--small-img {
-  margin: 0;
-  padding: 0;
-  margin: 14px 36px 12px;
-}
-
-.product__image--big-img {
-  margin: 0;
-  padding: 0;
-  margin: 11px 28px 1px;
-  width: 84px;
-  height: 100px;
-}
-
 .product__table {
   margin: 0;
   padding: 0;
   min-width: 140px;
-  border-spacing: 0px 1px;
+  border-spacing: 0;
+}
+
+.product-image {
+  margin: 0;
+  &--chicken-500 {
+    width: 68px;
+    height: 86px;
+  }
+
+  &--chicken-1000 {
+    width: 84px;
+    height: 100px;
+  }
+
+  &--fish-500 {
+    width: 68px;
+    height: 78px;
+  }
+
+  &--fish-1000 {
+    width: 84px;
+    height: 100px;
+  }
+
+  &--grechka-500 {
+    width: 68px;
+    height: 78px;
+  }
+
+  &--grechka-1000 {
+    width: 84px;
+    height: 100px;
+  }
+
+  &--rise-500 {
+    width: 72px;
+    height: 84px;
+  }
+}
+
+.product-image--chicken-500 {
+  margin-top: 5px;
 }
 
 .product__title {
@@ -35,7 +59,7 @@
   line-height: 20px;
   margin: 0;
   padding: 0;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
   color: $grey-subtitle;
   text-transform: uppercase;
 }
@@ -50,7 +74,7 @@
   font-family: "Lato";
   font-size: 12px;
   line-height: 16px;
-  text-transform: capitalize;
+  text-transform: none;
 }
 
 .product__options--title {
@@ -73,7 +97,7 @@
   text-decoration: none;
   width: 100%;
   border: none;
-  margin-top: 8px;
+  margin-top: 12px;
   transition: 0.3s all;
 
   &--font {
@@ -118,7 +142,7 @@
     position: absolute;
     width: 30px;
     height: 30px;
-    top: 3px;
+    top: 5px;
     left: 45%;
     background: url(../img/plus.svg) no-repeat;
   }
@@ -127,7 +151,7 @@
 .product__title--mg {
   text-align: center;
   margin: 0 auto;
-  margin-top: 57px;
+  margin-top: 59px;
   margin-bottom: 7px;
 }
 
@@ -136,6 +160,15 @@
   margin: 0 auto;
   text-transform: initial;
 }
+
+.product__picture-block {
+  width: 140px;
+  height: 112px;
+  display: flex;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  }
 
 .product__link-btn {
   display: block;
@@ -182,6 +215,8 @@
   }
 }
 
+
+
 @media (min-width: $tablet-width) {
   .product__container {
     flex-direction: column;
@@ -189,6 +224,7 @@
 
   .product__picture-block {
     width: 100%;
+    text-align: center;
   }
 
   .product__description {
@@ -240,22 +276,12 @@
     margin: 0;
     padding: 0;
     position: absolute;
-    margin: 14px 36px 12px;
-    top: -14%;
-    height: 172px;
-    width: auto;
-    left: 18%;
   }
 
   .product__image--big-img {
     margin: 0;
     padding: 0;
     position: absolute;
-    margin: 14px 36px 12px;
-    top: -20%;
-    height: 200px;
-    width: auto;
-    left: 13%;
   }
 
   .product__title--mg {
@@ -292,6 +318,45 @@
     margin-top: 86px;
     width: 160px;
   }
+
+  .product-image {
+    margin: 0;
+    padding: 0;
+    &--chicken-500 {
+      width: 161px;
+      height: 172px;
+    }
+
+    &--chicken-1000 {
+      width: 168px;
+      height: 206px;
+    }
+
+    &--fish-500 {
+      width: 163px;
+      height: 174px;
+    }
+
+    &--fish-1000 {
+      width: 168px;
+      height: 200px;
+    }
+
+    &--grechka-500 {
+      width: 161px;
+      height: 171px;
+    }
+
+    &--grechka-1000 {
+      width: 168px;
+      height: 200px;
+    }
+
+    &--rise-500 {
+      width: 163px;
+      height: 174px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -321,17 +386,7 @@
     width: 100%;
   }
 
-  .product__image--small-img {
-    top: -16%;
-    left: 8%;
-  }
 
-  .product__image--big-img {
-    top: -22%;
-    height: 195px;
-    width: auto;
-    left: 3%;
-  }
 
   .product__title--mg {
     margin: 0;
@@ -347,6 +402,45 @@
     padding: 10px 0;
     margin-top: 89px;
     width: 100%;
+  }
+
+  .product-image {
+    margin: 0;
+    padding: 0;
+    &--chicken-500 {
+      width: 161px;
+      height: 172px;
+    }
+
+    &--chicken-1000 {
+      width: 172px;
+      height: 196px;
+    }
+
+    &--fish-500 {
+      width: 163px;
+      height: 174px;
+    }
+
+    &--fish-1000 {
+      width: 172px;
+      height: 196px;
+    }
+
+    &--grechka-500 {
+      width: 161px;
+      height: 171px;
+    }
+
+    &--grechka-1000 {
+      width: 172px;
+      height: 196px;
+    }
+
+    &--rise-500 {
+      width: 163px;
+      height: 174px;
+    }
   }
 
 }

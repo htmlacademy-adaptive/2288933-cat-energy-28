@@ -4,6 +4,10 @@
   width: 100%;
   margin: 0 auto;
   justify-content: center;
+
+  &--index {
+    background-color: $basic-grey;
+  }
 }
 
 .cooperation__wrapper {
