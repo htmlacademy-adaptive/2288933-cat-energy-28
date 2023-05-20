@@ -325,13 +325,11 @@
 
   .question__control {
     width: 100%;
-    min-height: 174px;
+    min-height: 161px;
     padding: 10px 0 0 19px;
-  }
-
-  .question__control {
     width: calc(100% - 19px);
     margin-top: 40px;
+    margin-bottom: 14px;
 
     &--comment {
       font-size: 20px;
@@ -355,15 +353,25 @@
     font-size: 20px;
     line-height: 30px;
     max-width: 150px;
+    margin: 15px 14px 16px 0px;
   }
 
   .question__form-control {
     font-size: 20px;
     line-height: 30px;
-    padding: 11px 20px;
-    margin: 2px 0;
+    padding: 10px 19px;
+    margin: 5px 0;
     border: 1px solid $border-block;
     cursor: pointer;
+
+    &--icon {
+      margin-left: 7px;
+    }
+  }
+
+  .question__form-control::placeholder {
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .question__title-field {
@@ -390,7 +398,7 @@
   }
 
   .question__field {
-    padding: 0 0 72px 0;
+    padding: 0 0 70px 0;
   }
 
   .question__radio-list {
@@ -402,7 +410,7 @@
   }
 
   .question__form-text {
-    margin: auto 22px auto 0;
+    margin: auto 14px auto 0;
   }
 
   .question__title-field--dop {
@@ -424,6 +432,21 @@
     position: absolute;
     right: 19px;
     top: 19px;
+  }
+
+  .question__item {
+    margin-bottom: 10px;
+  }
+
+  .question__labels-mail::after {
+    top: 24px;
+    right: 15px
+  }
+
+  .question__labels-phone::after {
+    top: 23px;
+    right: 15px;
+
   }
 }
 
