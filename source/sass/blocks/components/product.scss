@@ -12,6 +12,7 @@
 
 .product-image {
   margin: 0;
+
   &--chicken-500 {
     width: 68px;
     height: 86px;
@@ -168,7 +169,7 @@
   vertical-align: middle;
   justify-content: center;
   align-items: center;
-  }
+}
 
 .product__link-btn {
   display: block;
@@ -327,6 +328,7 @@
   .product-image {
     margin: 0;
     padding: 0;
+
     &--chicken-500 {
       width: 161px;
       height: 172px;
@@ -369,11 +371,27 @@
     width: 100%;
     line-height: 21px;
     margin: 0 11px;
-    margin-bottom: 17px;
+    margin-bottom: 18px;
+    padding-top: 48px;
   }
 
   .product__title--wd {
     max-width: 154px;
+  }
+
+  .product__options--desktop {
+    margin-right: 2px;
+  }
+
+  .product__container--icon {
+    padding-top: 110px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 48px;
+      left: 32.5%;
+    }
   }
 
   .product__options {
@@ -383,7 +401,7 @@
 
   .product__table {
     width: 100%;
-    padding: 0px 0px 0 3px;
+    padding: 0 0 0 3px;
   }
 
   .product__link {
@@ -412,6 +430,7 @@
   .product-image {
     margin: 0;
     padding: 0;
+
     &--chicken-500 {
       width: 161px;
       height: 172px;
@@ -448,4 +467,31 @@
     }
   }
 
+  .product__image--small-img {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 43px;
+    top: -55px;
+  }
+
+  .product__image--big-img {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 39px;
+    top: -82px;
+  }
+
+  .product__options--value {
+    margin-right: -2px;
+  }
+
+  .product__options--price {
+    margin-right: 5px;
+  }
+
+  .product__row--desktop-mg .product__options--value {
+    margin-right: 3px;
+  }
 }

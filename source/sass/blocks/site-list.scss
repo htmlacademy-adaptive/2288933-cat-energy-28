@@ -100,6 +100,11 @@
     color: $black;
   }
 
+  .site-list__link--current-link-catalog {
+    padding-bottom: 8px;
+    border-bottom: 2px solid $basic-green;
+  }
+
   .site-list__item:nth-child(1),
   .site-list__item:nth-child(2),
   .site-list__item:nth-child(3) {
