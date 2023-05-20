@@ -446,7 +446,6 @@
   .question__labels-phone::after {
     top: 23px;
     right: 15px;
-
   }
 }
 
@@ -454,6 +453,10 @@
   .question__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .question__labels-list {
+    min-width: 569px;
   }
 
   .question__field {
@@ -505,17 +508,37 @@
 
   .question__button {
     margin-right: 84px;
+    width: 568px;
+    margin-top: 6px;
   }
 
-  .question__control-icon--mail {
-    position: absolute;
-    right: 19px;
-    top: 20px;
+  .question__labels-mail::after {
+    top: 24px;
+    right: 20px;
   }
 
-  .question__control-icon--phone {
-    position: absolute;
+  .question__labels-phone::after {
+    top: 23px;
     right: 19px;
-    top: 19px;
   }
+
+  .question__title-field {
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 2px;
+}
+
+.question__control {
+  max-height: 164px;
+  margin-bottom: 51px;
+}
+
+.question__text--mg {
+  margin-top: 22px;
+  margin-left: 1px;
+}
+
+.question__button-field {
+  margin-bottom: 60px;
+}
 }

@@ -122,4 +122,13 @@
   }
 }
 
-@media (min-width: $desktop-width) {}
+@media (min-width: $desktop-width) {
+
+  .radio-list {
+    padding: 32px 27px 31px 28px;
+}
+
+  .radio-list__name {
+    padding-left: 59px;
+  }
+}

@@ -26,6 +26,7 @@
 .form__line {
   position: relative;
   width: 100%;
+
   &::after {
     position: absolute;
     top: 15px;
@@ -40,6 +41,7 @@
 .form__line-comment {
   position: relative;
   width: 100%;
+
   &::after {
     position: absolute;
     top: 14px;
@@ -116,6 +118,7 @@
 .form__line-dop {
   position: relative;
   width: 100%;
+
   &::after {
     position: absolute;
     top: 12px;
@@ -199,6 +202,7 @@
   .form__line {
     position: relative;
     width: 100%;
+
     &::after {
       position: absolute;
       top: 99px;
@@ -213,6 +217,7 @@
   .form__line-comment {
     position: relative;
     width: 100%;
+
     &::after {
       position: absolute;
       top: 20px;
@@ -223,6 +228,7 @@
   .form__line-dop {
     position: relative;
     width: 100%;
+
     &::after {
       position: absolute;
       top: 22px;
@@ -258,7 +264,17 @@
   }
 
   .form__wrapper--line {
-    padding-top: 70px;
+    padding-top: 63px;
+  }
+
+  .form__line::after {
+    position: absolute;
+    top: 86px;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #68b738;
+    z-index: -1;
   }
 
   .form-field__control {
@@ -268,6 +284,7 @@
   .form__line-dop {
     position: relative;
     width: 100%;
+
     &::after {
       position: absolute;
       top: 26px;
@@ -277,5 +294,20 @@
       background-color: $basic-green;
       z-index: -1;
     }
+  }
+
+  .form__line-comment {
+    position: relative;
+    width: 100%;
+
+    &::after {
+      position: absolute;
+      top: 23px;
+      content: "";
+    }
+  }
+
+  .form__line-dop::after {
+    top: 24px;
   }
 }
