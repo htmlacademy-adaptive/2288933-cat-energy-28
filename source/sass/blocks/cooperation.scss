@@ -125,6 +125,10 @@
     background-color: $white;
     margin: 0 auto;
     justify-content: center;
+
+    &--index {
+      background-color: $basic-grey;
+    }
   }
 
   .cooperation__wrapper {
@@ -134,7 +138,7 @@
 
   .cooperation__container {
     max-width: 708px;
-    padding: 60px 70px 40px 70px;
+    padding: 56px 70px 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -150,6 +154,7 @@
     line-height: 26px;
     max-width: 172px;
     margin-bottom: 20px;
+    margin-top: 4px;
   }
 
   .cooperation__street {
@@ -178,6 +183,10 @@
       background-image: url("../img/location-tablet@2x.png") no-repeat center;
       background-size: cover;
     }
+  }
+
+  .cooperation__street--mg {
+    margin-bottom: 20px;
   }
 }
 

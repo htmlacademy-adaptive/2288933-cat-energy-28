@@ -57,6 +57,11 @@
     border-bottom: 2px solid $basic-green;
   }
 
+  .site-list__link--current-link-catalog {
+    padding-bottom: 3px;
+    border-bottom: 2px solid $basic-green;
+  }
+
   @media (min-width: $desktop-width) {
     .site-list__link--current-link {
       padding-bottom: 8px;
