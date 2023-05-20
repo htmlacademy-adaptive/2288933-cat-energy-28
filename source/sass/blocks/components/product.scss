@@ -216,7 +216,10 @@
   }
 }
 
-
+.product__link-goods {
+  @include list-reset;
+  text-decoration: none;
+}
 
 @media (min-width: $tablet-width) {
   .product__container {
