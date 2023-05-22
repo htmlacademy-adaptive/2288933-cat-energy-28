@@ -28,7 +28,6 @@
   background-color: #68b738;
   border-radius: 50%;
 
-
   &:hover {
     background-color: #68b738;
   }
@@ -68,11 +67,11 @@
   color: $grey-subtitle;
   text-transform: uppercase;
 
-  &:hover {
+  &:focus-visible {
     color: $grey-subtitle;
   }
 
-  &:focus {
+  &:hover {
     color: $grey-subtitle;
   }
 
@@ -101,11 +100,11 @@
     border: 1px solid $dop-grey;
     border-radius: 50%;
 
-    &:hover {
+    &:focus-visible {
       border: 1px solid $dop-grey;
     }
 
-    &:focus-within {
+    &:hover {
       border: 1px solid $dop-grey;
     }
 
