@@ -216,7 +216,7 @@
     right: 18px;
     width: 18px;
     height: 14px;
-    mask-image: url('../img/mail-icon.svg');
+    mask-image: url('../img/sprite.svg#mail-icon');
     background-color: $black;
     mask-repeat: no-repeat;
 
@@ -237,7 +237,7 @@
     right: 18px;
     width: 16px;
     height: 16px;
-    mask-image: url('../img/phone-icon.svg');
+    mask-image: url('../img/sprite.svg#phone-icon');
     background-color: $black;
     mask-repeat: no-repeat;
 

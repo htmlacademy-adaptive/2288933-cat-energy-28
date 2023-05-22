@@ -44,7 +44,7 @@
   height: 14px;
   content: "";
   background-repeat: no-repeat;
-  background-image: url(../img/check-mark.svg);
+  background-image: url(../img/sprite.svg#check-mark);
   background-size: contain;
 
   &:hover {}
@@ -114,7 +114,7 @@
     height: 26px;
     content: "";
     background-repeat: no-repeat;
-    background-image: url(../img/check-mark.svg);
+    background-image: url(../img/sprite.svg#check-mark);
     background-size: contain;
   }
 }

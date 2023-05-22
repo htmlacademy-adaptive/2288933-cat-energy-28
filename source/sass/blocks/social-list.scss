@@ -10,7 +10,7 @@
   }
 }
 
-.social-list__link .social-list__icon {
+.social-list__icon {
   fill: #666666;
 
   &:hover {
@@ -55,8 +55,4 @@
   .social-list__icon--vk {
     vertical-align: middle;
   }
-}
-
-@media (min-width: $desktop-width) {
-
 }

@@ -13,10 +13,13 @@
 
 .radio-list__control {
   margin-right: 15px;
+  cursor: pointer;
 }
 
 .radio-list__control[type=radio]:checked+.radio-list__name::before {
+  content: "";
   position: absolute;
+  cursor: pointer;
   top: 50%;
   left: 9px;
   transform: translateY(-50%);
@@ -24,7 +27,7 @@
   height: 13px;
   background-color: #68b738;
   border-radius: 50%;
-  content: "";
+
 
   &:disabled {
     opacity: 0.3;
@@ -32,14 +35,14 @@
 }
 
 .radio-list__field:hover .radio-list__mark {
-  border: 1px solid #CDCDCD;
+  outline: 1px solid #CDCDCD;
 
   &:hover {
-    border: 1px solid #bababa;
+    outline: 1px solid #bababa;
   }
 
   &:disabled {
-    border: 1px solid rgba(73, 73, 73, 30%);
+    outline: 1px solid rgba(73, 73, 73, 30%);
   }
 }
 
