@@ -37,6 +37,7 @@
   &:hover {
     border: 1px solid #bababa;
   }
+
   &:disabled {
     border: 1px solid rgba(73, 73, 73, 30%);
   }
@@ -101,7 +102,7 @@
     }
   }
 
-  .radio-list__control[type=radio]:checked + .radio-list__name::before {
+  .radio-list__control[type=radio]:checked+.radio-list__name::before {
     position: absolute;
     top: 5px;
     left: 12px;
@@ -113,7 +114,7 @@
     content: "";
   }
 
-  .radio-list__control[type=radio]:checked + .radio-list__name::before:disabled {
+  .radio-list__control[type=radio]:checked+.radio-list__name::before:disabled {
     opacity: 0.3;
   }
 
@@ -126,7 +127,7 @@
 
   .radio-list {
     padding: 32px 27px 31px 28px;
-}
+  }
 
   .radio-list__name {
     padding-left: 59px;

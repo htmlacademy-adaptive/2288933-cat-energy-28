@@ -1,6 +1,5 @@
 .program-checkbox {
   @include list-reset;
-
   text-transform: uppercase;
   margin-bottom: 40px;
   display: grid;
@@ -48,9 +47,8 @@
   background-image: url(../img/check-mark.svg);
   background-size: contain;
 
-  &:hover {
+  &:hover {}
 
-  }
   &:disabled {
     opacity: 0.3;
   }
@@ -62,6 +60,7 @@
   &:hover {
     border: 1px solid #bababa;
   }
+
   &:disabled {
     border: 1px solid rgba(73, 73, 73, 30%);
   }
@@ -106,7 +105,7 @@
     margin-bottom: 60px;
   }
 
-  .program-checkbox__control[type=checkbox]:checked + .program-checkbox__name::before {
+  .program-checkbox__control[type=checkbox]:checked+.program-checkbox__name::before {
     position: absolute;
     top: 55%;
     left: 7px;

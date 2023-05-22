@@ -5,6 +5,7 @@
   min-width: 320px;
   position: relative;
   width: 100%;
+
   &::after {
     position: absolute;
     top: 30px;
@@ -13,15 +14,12 @@
     width: 100%;
     background-color: $basic-green;
     z-index: 1;
+  }
 }
-}
-
-
 
 .add-catalog__container {
   padding: 0;
   margin: 0;
-
   margin: 0 20px;
 }
 
@@ -50,7 +48,6 @@
 
 .add-catalog__list {
   @include list-reset;
-
 }
 
 .add-catalog__item {
@@ -62,7 +59,6 @@
   &:last-child {
     padding-bottom: 19px;
     border-bottom: 1px solid #CDCDCD;
-    ;
   }
 
   &:not(:first-child) {
@@ -114,7 +110,6 @@
   &:focus {
     transition: 0.3s all;
     background-color: $basic-green-state;
-
   }
 
   &:active {
@@ -138,11 +133,10 @@
 
   @media (min-resolution: 2dppx) {
     background: linear-gradient(rgb(104 183 56 / 0.85),
-      rgb(104 183 56 / 0.85)), url('../img/cat/image-cat@2x.jpg') no-repeat;
-  background-size: cover;
+        rgb(104 183 56 / 0.85)), url('../img/cat/image-cat@2x.jpg') no-repeat;
+    background-size: cover;
   }
 }
-
 
 .add-catalog__cat-image-xl-1 {
   position: relative;
@@ -190,8 +184,9 @@
     background-color: $white;
     margin-left: -40px;
     padding-left: 40px;
-    width: 374px ;
+    width: 374px;
   }
+
   @media (min-width: $desktop-width) {
     background-color: $white;
     margin-left: -40px;
@@ -210,6 +205,7 @@
   .add-catalog {
     position: relative;
     width: 100%;
+
     &::after {
       position: absolute;
       top: 90px;
@@ -218,7 +214,7 @@
       width: 100%;
       background-color: $basic-green;
       z-index: 1;
-  }
+    }
   }
 
 
@@ -352,7 +348,7 @@
 
   .add-catalog__item:last-child {
     padding-bottom: 15px;
-}
+  }
 
   .add-catalog__image-cat {
     width: 245px;
@@ -418,9 +414,11 @@
     top: 0;
     left: 41px;
   }
+
   .add-catalog {
     position: relative;
     width: 100%;
+
     &::after {
       position: absolute;
       top: 97px;
@@ -429,6 +427,6 @@
       width: 100%;
       background-color: $basic-green;
       z-index: 1;
-  }
+    }
   }
 }

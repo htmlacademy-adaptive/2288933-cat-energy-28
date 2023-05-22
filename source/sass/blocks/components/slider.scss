@@ -30,8 +30,6 @@
     width: 560px;
     height: 512px;
   }
-
-  @media (min-width: $desktop-width) {}
 }
 
 .slider__range {
@@ -48,8 +46,6 @@
     width: 512px;
     left: 14%;
   }
-
-  @media (min-width: $desktop-width) {}
 
   &:hover {
     background-color: $basic-green;
@@ -83,8 +79,6 @@
     left: 47.2%;
     top: 47.2%;
   }
-
-  @media (min-width: $desktop-width) {}
 }
 
 .slider__cat--thick {
@@ -101,8 +95,6 @@
     background: url(../img/slider/cat-thick-sl-mobile@2x.png) no-repeat;
     background-size: cover;
   }
-
-
 }
 
 .slider__cat--thin {
@@ -152,7 +144,6 @@
     background: url(../img/slider/cat-thin-sl-mobile@1x.png) no-repeat;
     background-size: cover;
     margin-right: 74px;
-
 
     @media (min-resolution: 2dppx) {
       background: url(../img/slider/cat-thin-sl-tablet@2x.png) no-repeat;
