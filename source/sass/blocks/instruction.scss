@@ -12,7 +12,7 @@
 
 .instruction__title {
   @include list-reset;
-  font-family: "Oswald";
+  font-family: "Oswald", "Roboto", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
@@ -167,7 +167,7 @@
     position: absolute;
     @include list-reset;
     display: block;
-    font-family: "Oswald";
+    font-family: "Oswald", "Roboto", sans-serif;
     font-weight: 400;
     font-size: 280px;
     line-height: 280px;

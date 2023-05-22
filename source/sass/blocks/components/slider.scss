@@ -50,6 +50,19 @@
   }
 
   @media (min-width: $desktop-width) {}
+
+  &:hover {
+    background-color: $basic-green;
+  }
+
+  &:focus-within {
+    background-color: $basic-green;
+  }
+
+  &:active {
+    background-color: #5EAA2F;
+    opacity: 0.6;
+  }
 }
 
 .slider__toogle {
