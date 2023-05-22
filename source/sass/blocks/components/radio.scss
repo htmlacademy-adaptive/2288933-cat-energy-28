@@ -16,7 +16,7 @@
   cursor: pointer;
 }
 
-.radio-list__control[type=radio]:checked+.radio-list__name::before {
+.radio-list__control[type=radio]:checked+.radio-list__mark::before {
   content: "";
   position: absolute;
   cursor: pointer;
@@ -29,21 +29,22 @@
   border-radius: 50%;
 
 
+  &:hover {
+    background-color: #68b738;
+  }
+
   &:disabled {
+    background-color: #68b738;
     opacity: 0.3;
   }
 }
 
 .radio-list__field:hover .radio-list__mark {
   outline: 1px solid #CDCDCD;
+}
 
-  &:hover {
-    outline: 1px solid #bababa;
-  }
-
-  &:disabled {
-    outline: 1px solid rgba(73, 73, 73, 30%);
-  }
+.radio-list__control:focus-visible + .radio-list__mark {
+  border-color: #BABABA;
 }
 
 .radio-list__mark {
@@ -68,6 +69,10 @@
   text-transform: uppercase;
 
   &:hover {
+    color: $grey-subtitle;
+  }
+
+  &:focus {
     color: $grey-subtitle;
   }
 
@@ -100,15 +105,19 @@
       border: 1px solid $dop-grey;
     }
 
+    &:focus-within {
+      border: 1px solid $dop-grey;
+    }
+
     &:disabled {
       border: 1px solid rgba(73, 73, 73, 30%);
     }
   }
 
-  .radio-list__control[type=radio]:checked+.radio-list__name::before {
+  .radio-list__control[type=radio]:checked+.radio-list__mark::before {
     position: absolute;
-    top: 5px;
-    left: 12px;
+    top: 20px;
+    left: 11px;
     transform: translateY(-50%);
     width: 18px;
     height: 18px;
@@ -117,7 +126,7 @@
     content: "";
   }
 
-  .radio-list__control[type=radio]:checked+.radio-list__name::before:disabled {
+  .radio-list__control[type=radio]:checked+.radio-list__mark::before:disabled {
     opacity: 0.3;
   }
 
