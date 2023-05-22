@@ -25,6 +25,21 @@
   }
 }
 
+.social-list__link {
+  fill: #666666;
+
+  &:hover {
+    fill: $basic-green;
+  }
+  &:focus {
+    fill: $basic-green;
+  }
+  &:active {
+    fill: $basic-green;
+    opacity: 0.3;
+  }
+}
+
 .social-list__icon--vk {
   vertical-align: middle;
 }
