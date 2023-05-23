@@ -26,6 +26,11 @@
   }
 }
 
+.main-nav--no-js.main-nav {
+  display: block;
+  position: relative;
+}
+
 .main-nav__wrapper {
   @media (min-width: $desktop-width) {
     padding-top: 69px;
