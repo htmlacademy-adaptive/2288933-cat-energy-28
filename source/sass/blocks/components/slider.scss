@@ -33,6 +33,7 @@
 }
 
 .slider__range {
+  cursor: pointer;
   position: absolute;
   width: 256px;
   height: 4px;
@@ -46,22 +47,32 @@
     width: 512px;
     left: 14%;
   }
+}
 
-  &:hover {
+.slider__scale:hover, .slider__scale:focus-visible {
+  .slider__range {
     background-color: $basic-green;
   }
 
-  &:focus-within {
-    background-color: $basic-green;
+  .slider__toogle {
+    background: url(../img/sprite.svg#slider-toggle2) no-repeat;
   }
+}
 
-  &:active {
+.slider__scale:active {
+
+  .slider__range {
     background-color: #5EAA2F;
-    opacity: 0.6;
+  }
+
+  .slider__toogle {
+    background: url(../img/sprite.svg#slider-toggle3) no-repeat;
+    transition: 0.3s;
   }
 }
 
 .slider__toogle {
+  cursor: pointer;
   position: absolute;
   border: none;
   border-radius: 50%;
@@ -72,18 +83,6 @@
   background-position-y: 50%;
   left: 43.3%;
   top: 42.3%;
-
-  &:hover,
-  &:focus-visible {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background-position-x: 50%;
-    background-position-y: 50%;
-    left: 43.3%;
-    top: 42.3%;
-    background: url(../img/sprite.svg#toggle-sl-green) no-repeat;
-  }
 
   @media (min-width: $tablet-width) {
     position: absolute;
