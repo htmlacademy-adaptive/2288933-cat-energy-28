@@ -130,6 +130,7 @@
   font-weight: 400;
   font-size: 16px;
   text-transform: uppercase;
+  padding-right: 40px;
 }
 
 .question__form-control {
@@ -138,7 +139,7 @@
   line-height: 18px;
   width: 100%;
   font-family: inherit;
-  padding: 13px 20px 12px 12px;
+  padding: 13px 45px 12px 12px;
   border: 1px solid #e7e7e7;
 
   &::placeholder {
@@ -360,7 +361,7 @@
   .question__form-control {
     font-size: 20px;
     line-height: 30px;
-    padding: 10px 19px;
+    padding: 10px 43px 10px 19px;
     margin: 5px 0;
     border: 1px solid $border-block;
     cursor: pointer;
