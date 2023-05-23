@@ -40,3 +40,31 @@
 .main-nav--closed .site-list__item {
   display: none;
 }
+@media (min-width: $tablet-width) {
+  .main-nav {
+    z-index: 1;
+  }
+
+  .main-nav__list {
+    max-width: 470px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav--desk {
+    z-index: 1;
+  }
+
+  .main-nav__list--desk {
+    max-width: 550px;
+  }
+
+  .main-nav {
+    z-index: 1;
+  }
+
+  .main-nav__list {
+    max-width: 890px;
+  }
+}
+
