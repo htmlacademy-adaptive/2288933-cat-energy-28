@@ -171,9 +171,33 @@
                 <div class="slider__demo">
                   <div class="slider__cat slider__cat--thick">
                     <span class="visually-hidden">Слайд с толстым котом.</span>
+                    <picture>
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/slider/cat-thick-sl-tablet@1x.webp 1x, img/slider/cat-thick-sl-tablet@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 320px)"
+                        srcset="img/slider/cat-thick-sl-mobile@1x.webp 1x, img/slider/cat-thick-sl-mobile@2x.webp 2x">
+                      <source media="(min-width: 768px)"
+                        srcset="img/slider/cat-thick-sl-tablet@1x.png 1x, img/slider/cat-thick-sl-tablet@2x.png 2x"
+                        width="560" height="512">
+                      <img class="slider__cat-thick" src="img/slider/cat-thick-sl-mobile@1x.png"
+                        srcset="img/slider/cat-thick-sl-mobile@2x.png 2x" width="280" height="256"
+                        alt="Изображение супового набора для котов.">
+                    </picture>
                   </div>
                   <div class="slider__cat slider__cat--thin">
                     <span class="visually-hidden">Слайд с худым котом.</span>
+                    <picture>
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/slider/cat-thin-sl-tablet@1x.webp 1x, img/slider/cat-thin-sl-tablet@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 320px)"
+                        srcset="img/slider/cat-thin-sl-mobile@1x.webp 1x, img/slider/cat-thin-sl-mobile@2x.webp 2x">
+                      <source media="(min-width: 768px)"
+                        srcset="img/slider/cat-thin-sl-tablet@1x.png 1x, img/slider/cat-thin-sl-tablet@2x.png 2x"
+                        width="560" height="512">
+                      <img class="slider__cat-thin" src="img/slider/cat-thin-sl-mobile@1x.png"
+                        srcset="img/slider/cat-thick-sl-mobile@2x.png 2x" width="280" height="256"
+                        alt="Изображение супового набора для котов.">
+                    </picture>
                   </div>
                   <!--<input class="slider__cat-range cat-range" type="range" id="volume" name="volume" min="0" max="100">
                   <label for="volume"></label>-->

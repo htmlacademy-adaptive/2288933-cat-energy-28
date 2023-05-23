@@ -38,11 +38,15 @@
   }
 }
 
-.radio-list__field:hover .radio-list__mark {
+.radio-list__control:hover .radio-list__mark {
   outline: 1px solid #CDCDCD;
 }
 
 .radio-list__control:focus-visible + .radio-list__mark {
+  border-color: #BABABA;
+}
+
+.radio-list__control:disabled + .radio-list__mark {
   border-color: #BABABA;
 }
 

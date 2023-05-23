@@ -12,6 +12,9 @@
   display: flex;
   flex-wrap: wrap;
   max-width: 280px;
+  margin: 0;
+  padding: 0;
+  margin-top: 21px;
 }
 
 .program__item {
@@ -184,6 +187,7 @@
     margin-bottom: 0;
     min-width: 708px;
     max-width: 708px;
+    margin: 12px 0 0;
   }
 
   .program__item {
@@ -278,6 +282,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     min-width: 1220px;
+    margin: 0;
   }
 
   .program__item {
