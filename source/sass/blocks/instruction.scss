@@ -115,8 +115,11 @@
   }
 
   .instruction__item {
-    height: 280px;
-    margin-bottom: 0;
+    margin: 0;
+    min-height: 280px;
+    width: 246px;
+    padding-left: 0;
+    background-repeat: no-repeat;
   }
 
   .instruction__item:last-child {
@@ -132,19 +135,21 @@
   }
 
   .instruction__item::before {
-    top: 91px;
+    top: 93px;
     width: 80px;
     height: 80px;
   }
 
   .instruction__text {
-    position: absolute;
     max-width: 220px;
     top: 161px;
     left: 0;
     font-size: 16px;
     line-height: 24px;
     z-index: 2;
+    padding-top: 119px;
+    z-index: 2;
+    max-width: 220px;
   }
 
   .instruction__text--one {
@@ -209,6 +214,18 @@
   .instruction__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 79px;
+    grid-column-gap: 78px;
+  }
+
+  .instruction__text {
+    max-width: 220px;
+    top: 161px;
+    left: 0;
+    font-size: 16px;
+    line-height: 24px;
+    z-index: 2;
+    padding-top: 119px;
+    z-index: 2;
+    max-width: 220px;
   }
 }
