@@ -8,7 +8,7 @@
   margin: 0;
   padding: 0;
   color: $black;
-  font-family: "Oswald";
+  font-family: "Oswald", "Roboto", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
@@ -75,7 +75,7 @@
   margin: 0;
   padding: 0;
   color: $black;
-  font-family: "Oswald";
+  font-family: "Oswald", "Roboto", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
@@ -89,7 +89,7 @@
   font-size: 14px;
   line-height: 18px;
   color: $black;
-  font-family: "Oswald";
+  font-family: "Oswald", "Roboto", sans-serif;
   font-weight: 400;
   min-width: 226px;
   margin-bottom: 39px;
@@ -97,7 +97,7 @@
 }
 
 .form-field__control--comment {
-  font-family: "Oswald";
+  font-family: "Oswald", "Roboto", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;

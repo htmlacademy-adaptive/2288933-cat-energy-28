@@ -21,7 +21,7 @@
 .site-list__link {
   @include list-reset;
   text-decoration: none;
-  font-family: "Oswald";
+  font-family: "Oswald", "Roboto", sans-serif;
   font-weight: 500;
   font-size: 20px;
   text-transform: uppercase;

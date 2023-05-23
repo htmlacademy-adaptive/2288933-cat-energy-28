@@ -14,7 +14,7 @@
 .catalog__subtext {
   margin: 0;
   padding: 0;
-  font-family: "Lato";
+  font-family: "Lato", "Arial", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -30,7 +30,7 @@
 
 .catalog__sublink--font-color {
   background-color: $basic-grey;
-  font-family: "Oswald";
+  font-family: "Oswald", "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;

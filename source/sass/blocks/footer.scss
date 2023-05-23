@@ -3,8 +3,8 @@
   background-color: $basic-grey;
   box-sizing: border-box;
   min-width: 320px;
-  min-height: 240px;
   padding-top: 40px;
+  padding-bottom: 40px
 }
 
 .footer__wrapper {
@@ -20,20 +20,35 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 132px;
+  justify-content: space-between;
+  margin: 0 auto;
+  gap: 24px;
 }
 
 .footer__html-link {
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: -10px;
+  max-width: 132px;
+  justify-content: start;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .footer__html-text {
-  font-size: 16px;
-  line-height: 19px;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
   cursor: pointer;
+
+  &:hover, &:focus-visible {
+    color: #444444;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .footer__block {
@@ -63,11 +78,36 @@
   }
 }
 
-.footer__html-logo-link {
-  margin-top: 7px;
+.footer__block-html {
+  @include list-reset;
+  display: flex;
+  max-width: 281px;
+  justify-content: space-between;
 }
 
-.footer__html-link .footer__html-logo {
+.footer__html-logo-html {
+  display: block;
+  mask-image: url("../img/sprite.svg#logo-html");
+  background-color: #666666;
+  width: 27px;
+  height: 34px;
+  vertical-align: middle;
+
+  &:hover {
+    background-color: #68B738;
+  }
+
+  &:focus-visible {
+    background-color: #68B738;
+  }
+
+  &:active {
+    background-color: #68B738;
+    opacity: 0.3;
+  }
+}
+
+.footer__html-logo-link {
   fill: #666;
   transition: 0.3s all;
 
@@ -117,7 +157,6 @@
 @media (min-width: $tablet-width) {
   .footer {
     min-width: 768px;
-    min-height: 147px;
     padding: 0;
   }
 
@@ -144,23 +183,28 @@
   .footer__list {
     @include list-reset;
     justify-content: space-between;
-    margin-left: 26px;
+    margin: 2px 0px 0 26px;
   }
 
   .footer__block {
     margin-bottom: 0;
     border: none;
     padding: 6px 0 16px;
+
+    &--social {
+      margin-right: 7px;
+    }
   }
 
   .footer__html-link {
-    width: 168px;
+    width: 140px;
   }
 
   .footer__html-text {
     padding: 0;
     margin: 0;
-    padding-top: 9px;
+    padding-top: 5px;
+    margin-left: -8px;
   }
 
   .footer__logo-link .footer__logotype {
@@ -179,7 +223,7 @@
     min-width: 1440px;
     padding-top: 12px;
     padding-bottom: 67px;
-    max-height: 169px;
+    min-height: 169px;
   }
 
   .footer__wrapper {

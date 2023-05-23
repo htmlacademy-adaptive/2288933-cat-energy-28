@@ -13,10 +13,13 @@
 
 .radio-list__control {
   margin-right: 15px;
+  cursor: pointer;
 }
 
-.radio-list__control[type=radio]:checked+.radio-list__name::before {
+.radio-list__control[type=radio]:checked+.radio-list__mark::before {
+  content: "";
   position: absolute;
+  cursor: pointer;
   top: 50%;
   left: 9px;
   transform: translateY(-50%);
@@ -24,22 +27,27 @@
   height: 13px;
   background-color: #68b738;
   border-radius: 50%;
-  content: "";
+
+  &:hover {
+    background-color: #68b738;
+  }
 
   &:disabled {
+    background-color: #68b738;
     opacity: 0.3;
   }
 }
 
-.radio-list__field:hover .radio-list__mark {
-  border: 1px solid #CDCDCD;
+.radio-list__control:hover .radio-list__mark {
+  outline: 1px solid #CDCDCD;
+}
 
-  &:hover {
-    border: 1px solid #bababa;
-  }
-  &:disabled {
-    border: 1px solid rgba(73, 73, 73, 30%);
-  }
+.radio-list__control:focus-visible + .radio-list__mark {
+  border-color: #BABABA;
+}
+
+.radio-list__control:disabled + .radio-list__mark {
+  border-color: #BABABA;
 }
 
 .radio-list__mark {
@@ -56,12 +64,16 @@
 .radio-list__name {
   @include list-reset;
   padding-left: 45px;
-  font-family: "Oswald";
+  font-family: "Oswald", "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   color: $grey-subtitle;
   text-transform: uppercase;
+
+  &:focus-visible {
+    color: $grey-subtitle;
+  }
 
   &:hover {
     color: $grey-subtitle;
@@ -92,6 +104,10 @@
     border: 1px solid $dop-grey;
     border-radius: 50%;
 
+    &:focus-visible {
+      border: 1px solid $dop-grey;
+    }
+
     &:hover {
       border: 1px solid $dop-grey;
     }
@@ -101,10 +117,10 @@
     }
   }
 
-  .radio-list__control[type=radio]:checked + .radio-list__name::before {
+  .radio-list__control[type=radio]:checked+.radio-list__mark::before {
     position: absolute;
-    top: 5px;
-    left: 12px;
+    top: 20px;
+    left: 11px;
     transform: translateY(-50%);
     width: 18px;
     height: 18px;
@@ -113,7 +129,7 @@
     content: "";
   }
 
-  .radio-list__control[type=radio]:checked + .radio-list__name::before:disabled {
+  .radio-list__control[type=radio]:checked+.radio-list__mark::before:disabled {
     opacity: 0.3;
   }
 
@@ -126,7 +142,7 @@
 
   .radio-list {
     padding: 32px 27px 31px 28px;
-}
+  }
 
   .radio-list__name {
     padding-left: 59px;

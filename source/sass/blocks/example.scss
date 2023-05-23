@@ -1,7 +1,7 @@
 .example {
   @include list-reset;
   background-color: #EAEAEA;
-  min-width: 320px;
+  width: 100%;
   margin: 0 auto;
   justify-content: center;
 
@@ -22,20 +22,20 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 14px;
+  margin: 1px 0 13px;
 }
 
 .example__title {
   margin: 0;
   padding: 0;
-  font-family: "Oswald";
+  font-family: "Oswald", "Roboto", sans-serif;
   font-weight: 400;
   color: $black;
   font-size: 36px;
   line-height: 40px;
   text-align: left;
   padding-top: 25px;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 }
 
 .example__text {
@@ -59,7 +59,7 @@
 }
 
 .example__number-span {
-  font-family: "Oswald";
+  font-family: "Oswald", "Roboto", sans-serif;
   font-size: 24px;
   line-height: 24px;
   color: $black;
@@ -67,7 +67,7 @@
 }
 
 .example__text-span {
-  font-family: "Lato";
+  font-family: "Lato", "Arial", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
@@ -82,7 +82,7 @@
 }
 
 .example__price-span {
-  font-family: "Oswald";
+  font-family: "Oswald", "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
