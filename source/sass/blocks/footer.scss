@@ -21,7 +21,7 @@
   flex-wrap: wrap;
   justify-content: center;
   max-width: 132px;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 0 auto;
   gap: 24px;
 }
@@ -182,7 +182,7 @@
 
   .footer__list {
     @include list-reset;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin: 2px 0px 0 26px;
   }
 
@@ -223,7 +223,6 @@
     min-width: 1440px;
     padding-top: 12px;
     padding-bottom: 67px;
-    min-height: 169px;
   }
 
   .footer__wrapper {
@@ -234,7 +233,7 @@
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding: 50px 30px;
   }
