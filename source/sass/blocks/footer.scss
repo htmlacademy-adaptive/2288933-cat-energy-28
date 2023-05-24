@@ -91,7 +91,6 @@
   background-color: #666666;
   width: 27px;
   height: 34px;
-  vertical-align: middle;
 
   &:hover {
     background-color: #68B738;
@@ -158,6 +157,7 @@
   .footer {
     min-width: 768px;
     padding: 0;
+    min-height: 147px;
   }
 
   .footer__wrapper {
@@ -189,7 +189,7 @@
   .footer__block {
     margin-bottom: 0;
     border: none;
-    padding: 6px 0 16px;
+    padding: 6px 0 3px;
 
     &--social {
       margin-right: 7px;
@@ -223,6 +223,7 @@
     min-width: 1440px;
     padding-top: 12px;
     padding-bottom: 67px;
+    min-height: 169px;
   }
 
   .footer__wrapper {
@@ -233,7 +234,7 @@
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     padding: 50px 30px;
   }
