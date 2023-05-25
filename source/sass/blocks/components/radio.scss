@@ -21,7 +21,7 @@
   position: absolute;
   cursor: pointer;
   top: 50%;
-  left: 9px;
+  left: 8px;
   transform: translateY(-50%);
   width: 13px;
   height: 13px;
@@ -43,7 +43,7 @@
 }
 
 .radio-list__control:focus-visible + .radio-list__mark {
-  border-color: #BABABA;
+  border-color: #000000;
 }
 
 .radio-list__control:disabled + .radio-list__mark {

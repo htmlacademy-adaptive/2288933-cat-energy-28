@@ -4,7 +4,7 @@ img {
 }
 
 body {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   font-style: normal;
   font-size: 14px;
   line-height: 18px;
@@ -28,7 +28,9 @@ body {
   box-sizing: border-box;
 }
 
-.main-container, .form, .catalog-container {
+.main-container,
+.form,
+.catalog-container {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -43,7 +45,6 @@ body {
   padding: 0;
   border: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;

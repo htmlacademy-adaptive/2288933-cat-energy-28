@@ -19,7 +19,6 @@
 
 .add-catalog__container {
   padding: 0;
-  margin: 0;
   margin: 0 20px;
 }
 
@@ -28,7 +27,6 @@
 }
 
 .add-catalog__title {
-  padding: 0;
   margin: 0;
   padding: 17px 0 24px;
 }
@@ -58,7 +56,7 @@
 
   &:last-child {
     padding-bottom: 19px;
-    border-bottom: 1px solid #CDCDCD;
+    border-bottom: 1px solid #cdcdcd;
   }
 
   &:not(:first-child) {
@@ -87,7 +85,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0px 0 15px;
+  margin: 0 0 15px;
 }
 
 .add-catalog__subtext {
@@ -96,7 +94,6 @@
 
 .add-catalog__link {
   margin: 0;
-  padding: 0;
   padding: 10px 44px;
   background-color: $basic-green;
   display: block;
