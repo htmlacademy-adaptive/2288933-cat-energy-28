@@ -45,10 +45,6 @@
   @include list-reset;
 }
 
-.question__radio-field {
-  @include list-reset;
-}
-
 .question__list {
   @include list-reset;
   min-width: 280px;
@@ -57,7 +53,6 @@
 .question__button {
   width: 100%;
   margin: 0;
-  padding: 0;
   padding: 9px 44px;
   background-color: $basic-green;
   margin-bottom: 22px;
@@ -71,7 +66,6 @@
   &:focus {
     transition: 0.3s all;
     background-color: $basic-green-state;
-
   }
 
   &:active {
@@ -88,7 +82,6 @@
 }
 
 .question__form-text {
-  margin: 0;
   padding: 0;
   color: $font-grey;
   font-family: "Oswald", "Roboto", sans-serif;
@@ -115,20 +108,14 @@
   }
 }
 
-.question__radio-field--border {
-  border-bottom: 1px solid #d9d9d9;
-  margin: 0 -20px;
-  padding: 0 20px;
-
-}
-
 .question__form-control::placeholder {
   margin: 0;
   padding: 0;
-  color: #444;
+  color: #444444;
   font-family: "Oswald", "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  line-height: 18px;
   text-transform: uppercase;
   padding-right: 40px;
 }
@@ -142,13 +129,10 @@
   padding: 13px 45px 12px 12px;
   border: 1px solid #e7e7e7;
 
-  &::placeholder {
-    font-size: 16px;
-    line-height: 18px;
-  }
   &:hover {
     border: 1px solid $dop-grey;
   }
+
   &:focus {
     border: 1px solid $font-grey;
   }
@@ -161,7 +145,7 @@
 
 .question__invalid.question__form-control {
   border: 1px solid $invalid-color;
-    color: $invalid-color;
+  color: $invalid-color;
 }
 
 .question__invalid.question__labels-phone::after {
@@ -211,13 +195,12 @@
   position: relative;
 
   &::after {
-    content: '';
     position: absolute;
     top: 15px;
     right: 18px;
     width: 18px;
     height: 14px;
-    mask-image: url('../img/sprite.svg#mail-icon');
+    mask-image: url("../img/sprite.svg#mail-icon");
     background-color: $black;
     mask-repeat: no-repeat;
 
@@ -232,13 +215,12 @@
   position: relative;
 
   &::after {
-    content: '';
     position: absolute;
     top: 15px;
     right: 18px;
     width: 16px;
     height: 16px;
-    mask-image: url('../img/sprite.svg#phone-icon');
+    mask-image: url("../img/sprite.svg#phone-icon");
     background-color: $black;
     mask-repeat: no-repeat;
 
@@ -269,6 +251,7 @@
     padding-left: 40px;
     width: 554px;
   }
+
   @media (min-width: $desktop-width) {
     background-color: $white;
     margin-left: -40px;
@@ -287,8 +270,9 @@
     background-color: $white;
     margin-left: -40px;
     padding-left: 40px;
-    width: 220px ;
+    width: 220px;
   }
+
   @media (min-width: $desktop-width) {
     background-color: $white;
     margin-left: -40px;
@@ -307,8 +291,9 @@
     background-color: $white;
     margin-left: -40px;
     padding-left: 40px;
-    width: 265px ;
+    width: 265px;
   }
+
   @media (min-width: $desktop-width) {
     background-color: $white;
     margin-left: -40px;
@@ -326,7 +311,6 @@
   }
 
   .question__control {
-    width: 100%;
     min-height: 161px;
     padding: 10px 0 0 19px;
     width: calc(100% - 19px);
@@ -355,7 +339,7 @@
     font-size: 20px;
     line-height: 30px;
     max-width: 150px;
-    margin: 15px 14px 16px 0px;
+    margin: auto 14px auto 0;
   }
 
   .question__form-control {
@@ -411,10 +395,6 @@
     margin-bottom: 72px;
   }
 
-  .question__form-text {
-    margin: auto 14px auto 0;
-  }
-
   .question__title-field--dop {
     margin-top: 47px;
     margin-bottom: 63px;
@@ -442,7 +422,7 @@
 
   .question__labels-mail::after {
     top: 24px;
-    right: 15px
+    right: 15px;
   }
 
   .question__labels-phone::after {
@@ -467,6 +447,8 @@
 
   .question__control {
     height: 174px;
+    max-height: 164px;
+    margin-bottom: 51px;
   }
 
   .question__labels-list--grid {
@@ -506,6 +488,7 @@
     display: flex;
     justify-content: start;
     min-width: 826px;
+    margin-bottom: 60px;
   }
 
   .question__button {
@@ -528,19 +511,10 @@
     font-size: 36px;
     line-height: 36px;
     margin-top: 2px;
-}
+  }
 
-.question__control {
-  max-height: 164px;
-  margin-bottom: 51px;
-}
-
-.question__text--mg {
-  margin-top: 22px;
-  margin-left: 1px;
-}
-
-.question__button-field {
-  margin-bottom: 60px;
-}
+  .question__text--mg {
+    margin-top: 22px;
+    margin-left: 1px;
+  }
 }

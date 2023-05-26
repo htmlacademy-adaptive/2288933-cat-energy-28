@@ -24,7 +24,7 @@
 .catalog__sublink {
   margin: 0;
   padding: 0;
-  color: #444;
+  color: #444444;
   margin-bottom: 25px;
 }
 
@@ -76,7 +76,7 @@
 
     &:last-child {
       background-color: $white;
-      border: 2px solid #F2F2F2;;
+      border: 2px solid #f2f2f2;
     }
   }
 }
@@ -90,7 +90,10 @@
   }
 
   .catalog__list {
-    grid-row-gap: 145px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+    grid-column-gap: 80px;
+    grid-row-gap: 143px;
   }
 
   .catalog__card-item {
@@ -102,12 +105,5 @@
     max-width: 1220px;
     margin: 0 auto;
     justify-content: center;
-  }
-
-  .catalog__list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
-    grid-column-gap: 80px;
-    grid-row-gap: 143px;
   }
 }
