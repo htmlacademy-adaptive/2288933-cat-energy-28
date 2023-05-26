@@ -149,9 +149,16 @@
   }
 
   .form-field__control {
-    width: 100%;
     min-height: 174px;
     padding: 10px 0 0 19px;
+    width: calc(100% - 19px);
+    margin-top: 40px;
+
+    &--comment {
+      font-size: 20px;
+      line-height: 30px;
+      text-align: left;
+    }
   }
 
   .form__wrapper-min {
@@ -164,29 +171,12 @@
   .form__title {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 55px;
   }
 
   .form__text {
     font-size: 20px;
     line-height: 30px;
-  }
-
-  .form-field__control {
-    width: calc(100% - 19px);
-    margin-top: 40px;
-
-    &--comment {
-      font-size: 20px;
-      line-height: 30px;
-      text-align: left;
-    }
-  }
-
-  .form__title {
-    margin-bottom: 55px;
-  }
-
-  .form__text {
     margin-bottom: 62px;
   }
 
@@ -287,12 +277,12 @@
 
     &::after {
       position: absolute;
-      top: 26px;
       content: "";
       height: 2px;
       width: 100%;
       background-color: $basic-green;
       z-index: -1;
+      top: 24px;
     }
   }
 
@@ -305,9 +295,5 @@
       top: 23px;
       content: "";
     }
-  }
-
-  .form__line-dop::after {
-    top: 24px;
   }
 }

@@ -1,6 +1,6 @@
 .example {
   @include list-reset;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   width: 100%;
   margin: 0 auto;
   justify-content: center;
@@ -16,7 +16,6 @@
 }
 
 .example__container {
-  margin: 0;
   padding: 0;
   text-align: center;
   display: flex;
@@ -76,8 +75,7 @@
   left: 50%;
   padding: 0 10px;
   text-align: center;
-  background: #EAEAEA;
-  ;
+  background: #eaeaea;
   transform: translate(-50%, 52%);
 }
 
@@ -104,24 +102,21 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .example {
     @include list-reset;
     position: relative;
     background-color: $white;
-    margin: 0 auto;
     justify-content: center;
-    margin: 0 auto;
-    margin-bottom: 68px;
+    margin: 0 0 68px 0;
     min-width: 768px;
     padding-bottom: 0;
   }
 
   .example::before {
-    content: '';
+    content: " ";
     position: absolute;
     width: 100%;
-    background: #EAEAEA;
+    background: #eaeaea;
     height: 462px;
     left: 0;
     top: 618px;
@@ -166,20 +161,16 @@
 
   .example__text-span {
     width: 125px;
+    background-color: $white;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 2px;
   }
 
   .example__number-span {
     font-size: 30px;
     line-height: 37px;
     color: $black;
-  }
-
-  .example__text-span {
-    background-color: $white;
-    font-size: 14px;
-    line-height: 14px;
-    bottom: 2px;
-
   }
 
   .example__price-box {
@@ -204,17 +195,16 @@
     margin: 0 auto;
     justify-content: center;
     padding: 0 0 1px;
-    background: linear-gradient(to bottom, #fff 155px, #f2f2f2 90px);
+    background: linear-gradient(to bottom, #ffffff 155px, #f2f2f2 90px);
   }
 
   .example::before {
-    content: '';
+    content: " ";
     position: absolute;
     width: 100%;
-    background: #EAEAEA;
+    background: #eaeaea;
     height: 462px;
     top: 160px;
-    width: 0;
   }
 
   .example__wrapper {
@@ -251,7 +241,6 @@
     flex-wrap: wrap;
     min-width: 476px;
     flex-direction: inherit;
-
   }
 
   .example__title {
@@ -273,6 +262,5 @@
 
   .example__text-span {
     background-color: #f2f2f2;
-    ;
   }
 }

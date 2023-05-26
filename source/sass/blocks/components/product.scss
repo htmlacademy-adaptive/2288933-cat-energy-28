@@ -14,6 +14,7 @@
   margin: 0;
 
   &--chicken-500 {
+    margin-top: 5px;
     width: 68px;
     height: 86px;
   }
@@ -47,10 +48,6 @@
     width: 72px;
     height: 84px;
   }
-}
-
-.product-image--chicken-500 {
-  margin-top: 5px;
 }
 
 .product__title {
@@ -137,13 +134,12 @@
   position: relative;
 
   &::before {
-    content: '';
     position: absolute;
     width: 30px;
     height: 30px;
     top: 5px;
     left: 45%;
-    background: url(../img/sprite.svg#plus) no-repeat;
+    background: url("../img/sprite.svg#plus") no-repeat;
   }
 }
 
@@ -257,7 +253,6 @@
 
   .product__table {
     width: 98%;
-    margin-bottom: 33px;
     margin: 0 0 20px 0;
   }
 
@@ -310,11 +305,10 @@
   }
 
   .product__container--icon::before {
-    content: '';
     position: absolute;
     top: 53px;
     left: 38%;
-    background-image: url(../img/sprite.svg#plus-tablet) no-repeat;
+    background-image: url("../img/sprite.svg#plus-tablet") no-repeat;
     width: 60px;
     height: 60px;
     background-size: cover;
@@ -409,8 +403,6 @@
     padding: 10px 0;
     width: 100%;
   }
-
-
 
   .product__title--mg {
     margin: 0;

@@ -118,19 +118,16 @@
 
 .add-catalog__active {
   margin: 0;
-  padding: 0;
   width: 100%;
   height: auto;
-  background: linear-gradient(rgb(104 183 56 / 0.85),
-      rgb(104 183 56 / 0.85)), url('../img/cat/image-cat.jpg') no-repeat;
+  background: linear-gradient(rgb(104 183 56 / 0.85), rgb(104 183 56 / 0.85)), url("../img/cat/image-cat.jpg") no-repeat;
   background-size: cover;
   box-sizing: border-box;
   text-align: center;
   padding: 59px 61px 43px 58px;
 
   @media (min-resolution: 2dppx) {
-    background: linear-gradient(rgb(104 183 56 / 0.85),
-        rgb(104 183 56 / 0.85)), url('../img/cat/image-cat@2x.jpg') no-repeat;
+    background: linear-gradient(rgb(104 183 56 / 0.85), rgb(104 183 56 / 0.85)), url("../img/cat/image-cat@2x.jpg") no-repeat;
     background-size: cover;
   }
 }
@@ -154,12 +151,11 @@
 
 .add-catalog__image-cat {
   padding: 0;
-  margin: 0;
   margin: 33px 0 35px;
 }
 
 .add-catalog__cat-image-xl-1::after {
-  content: '';
+  content: " ";
   position: absolute;
   width: 100%;
   height: auto;
@@ -314,9 +310,19 @@
 
 @media (min-width: $desktop-width) {
   .add-catalog {
-    min-width: 1220px;
-    margin: 0 auto;
-    margin-bottom: 52px;
+    margin: 0 0 52px 0;
+    position: relative;
+    width: 100%;
+
+    &::after {
+      position: absolute;
+      top: 97px;
+      content: "";
+      height: 2px;
+      width: 100%;
+      background-color: $basic-green;
+      z-index: 1;
+    }
   }
 
   .add-catalog__container {
@@ -372,10 +378,8 @@
   .add-catalog__span-flexbox {
     display: grid;
     grid-template-columns: 1fr max-content;
-    margin: 0;
     padding: 0;
-    margin: auto 0;
-    margin-top: 13px;
+    margin: 13px 0 0;
   }
 
   .add-catalog__subtitle {
@@ -411,20 +415,5 @@
     padding-top: 186px;
     top: 0;
     left: 41px;
-  }
-
-  .add-catalog {
-    position: relative;
-    width: 100%;
-
-    &::after {
-      position: absolute;
-      top: 97px;
-      content: "";
-      height: 2px;
-      width: 100%;
-      background-color: $basic-green;
-      z-index: 1;
-    }
   }
 }

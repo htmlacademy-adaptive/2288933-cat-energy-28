@@ -6,9 +6,11 @@
   &:hover {
     opacity: 0.3;
   }
-  &:focus {
+
+  &:focus-visible {
     opacity: 0.3;
   }
+
   &:active {
     opacity: 0.6;
   }
@@ -16,6 +18,7 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
+
   @media (min-width: $desktop-width) {
     display: none;
   }
