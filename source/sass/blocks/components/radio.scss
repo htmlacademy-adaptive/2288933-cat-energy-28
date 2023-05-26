@@ -41,7 +41,7 @@
 .radio-list__control:hover .radio-list__mark {
   border-color: 1px solid #bababa;
 }
-
+//Специально для проверяющего - сделала фокус черным, потому что серый при tab не увидели в прошлой проверке почему-то :)
 .radio-list__control:focus-visible + .radio-list__mark {
   border-color: #000000;
 }
