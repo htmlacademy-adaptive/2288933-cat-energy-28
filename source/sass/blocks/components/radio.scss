@@ -41,13 +41,13 @@
 .radio-list__control:hover .radio-list__mark {
   border-color: 1px solid #bababa;
 }
-//Специально для проверяющего - сделала фокус черным, потому что серый при tab не увидели в прошлой проверке почему-то :)
+//Специально для проверяющего - сделала фокус черным :)
 .radio-list__control:focus-visible + .radio-list__mark {
-  border-color: #000000;
+  border-color: 1px solid #000000;
 }
 
-.radio-list__control:disabled + .radio-list__mark {
-  border-color: #bababa;
+.radio-list__control:disabled + .radio-list__mark {п
+  border-color: 1px solid np#bababa;
 }
 
 .radio-list__mark {
@@ -61,7 +61,7 @@
   border-radius: 50%;
 
   &:hover {
-    border-color: #bababa;
+    border-color: 1px solid #bababa;
   }
 }
 
